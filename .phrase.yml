@@ -10,6 +10,6 @@ phrase:
         locale_id: en-US
   pull:
     targets:
-    - file: ./<locale_name>.json
+    - file: ./<locale_id>.json
       params:
-        locale_id: <locale_name>
+        locale_id: <locale_id>

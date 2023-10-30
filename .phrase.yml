@@ -1,6 +1,7 @@
 phrase:
   access_token: 03c1bc2bd1b2b229e35f815940e1a617665cb61133e5c49c9ad61392dc9d63e7
   project_id: 3db54e7d8f8d309d8f7f182e51a52899
+  file_format: simple_json
   push:
     sources:
     - file: ./en-US.json

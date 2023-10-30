@@ -7,9 +7,9 @@ phrase:
     - file: ./en-US.json
       params:
         file_format: simple_json
-        locale_id: 88f157cd85486e85d4a43d4a48160fe4
+        locale_id: en-US
   pull:
     targets:
-    - file: ./es-ES.json
+    - file: ./<locale_name>.json
       params:
-        locale_id: 26d25a04648316694d1108c3597ceee3
+        locale_id: <locale_name>

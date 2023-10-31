@@ -8,6 +8,7 @@ phrase:
       params:
         file_format: simple_json
         locale_id: en-US
+        update_translations: true
   pull:
     targets:
     - file: ./<locale_name>.json

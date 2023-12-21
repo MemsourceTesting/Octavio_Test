@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/NewStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title"></h1>
+        <p> </p>
+        <p><b>Important</b> :  </p>
+        <p></p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Coordonnées</p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p></p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p></p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Objet</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Nom</b>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Adresse e-mail</b>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Numéro de téléphone</b>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 649px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 142px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 86px;" class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Santé</b>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>
+                        </p>
+                        <p> </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 649px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 143px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 112px;" class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Données financières</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Informations de paiement
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                        <p> </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Infos financières
+                        </p>
+                        <p> </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 648px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 125px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 143px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 648px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 144px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Masquer les données sensibles
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Contacts</b>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 641px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 150px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 120px;" class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Assistance clientèle
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 642px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 150px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" style="width: 85px;" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 641px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Rechercher les données
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 642px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>ID utilisateur</b>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 642px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>ID utilisateur</b>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 645px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Données d’utilisation</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 646px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Analyses</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 647px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>other: jours
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Objet</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>
+                        </p>
+                        <p></p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Non applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

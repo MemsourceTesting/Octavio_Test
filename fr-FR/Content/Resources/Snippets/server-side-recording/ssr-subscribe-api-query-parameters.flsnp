@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">auth_token</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../access-token-guide-general-link.flsnp"></MadCap:snippetText>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">destination_credentials</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>Utiliser le format suivant</p>
+                        <p>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">target_uri</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">target_type</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">filter_uris</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                        <p><b>Remarque</b> : </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                Historique
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>Le paramètre par défaut est Numérique.</p>
+                    </li>
+                    <li>
+                        <p><b>Exemple</b> : </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>Le paramètre par défaut est Numérique.</p>
+                    </li>
+                    <li>
+                        <p><b>Exemple</b> : </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="Glossary.Term16"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">Uniform Resource Identifier. A URI identifies an individual user or channel in the Vivox system.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term0"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SDK</Term>
+    </Terms>
+    <Definition
+      Link="">Software development kit. An SDK is a package of tools that are used to build a software application.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term1"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">An application programming interface that connects computers or software so they can communicate over a network connection.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term2"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>XML</Term>
+    </Terms>
+    <Definition
+      Link="">Extensible Markup Language. XML is an electronic standard for encoding digital documents for human and machine use. It is a highly customizable, text-based format that consists of Unicode characters.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term3"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>POST HTTP</Term>
+    </Terms>
+    <Definition
+      Link="">A common HTTP request method that is used to upload a file or submit a web form.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term4"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SIP</Term>
+    </Terms>
+    <Definition
+      Link="">Session Initiation Protocol. SIP is used to manage real-time text or voice communication sessions with one or more participants (for example, a telephone call or a conference call).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term5"
+    Stem="False"
+    IgnoreCase="false">
+    <Terms>
+      <Term>XMPP</Term>
+    </Terms>
+    <Definition
+      Link="">Extensible Messaging and Presence Protocol. XMPP is used to manage instant messaging and online presence over a network.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term6"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>ASCII</Term>
+    </Terms>
+    <Definition
+      Link="">An electronic communication standard that is used to encode text characters into seven-bit integers, which allows for the sharing of documents and files. Vivox uses ASCII for text and presence services.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term7"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>API</Term>
+    </Terms>
+    <Definition
+      Link="">Application programming interface. An API connects software programs so they can communicate with one another.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term8"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>OpenSSL</Term>
+    </Terms>
+    <Definition
+      Link="">A software library that is used by internet servers for secure communication over a network.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term9"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>cURL</Term>
+    </Terms>
+    <Definition
+      Link="">A command-line tool that is used for transferring files with a URL syntax.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term10"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SSL</Term>
+    </Terms>
+    <Definition
+      Link="">Secure Sockets Layer. SSL is a protocol that is used to provide secure communication over a network.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term12"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>RTP</Term>
+    </Terms>
+    <Definition
+      Link="">Real-time Transport Protocol. RTP is used to deliver streaming audio and video media over a network.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term13"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>HTTPS</Term>
+    </Terms>
+    <Definition
+      Link="">A protocol that is used for secure communication over the internet.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term14"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>JSON</Term>
+    </Terms>
+    <Definition
+      Link="">JavaScript Object Notation is a lightweight data-interchange format based on a subset of JavaScript. JSON is a programming language often used for APIs. It is a language-independent text format that uses conventions from the C-family, including C, C++, C#, Java, JavaScript, Perl, and Python.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term15"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>UTF-8</Term>
+    </Terms>
+    <Definition
+      Link="">An electronic communication standard for encoding variable-width characters.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term17"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>AAR</Term>
+    </Terms>
+    <Definition
+      Link="">Android archive files. AAR files contain resources for the Android platform.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term18"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>ProGuard</Term>
+    </Terms>
+    <Definition
+      Link="">A command-line tool that optimizes Java code.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term19"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">Computer hardware that performs the operations specified by computer software.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term20"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">A tool that is used to access C-syntax configuration files.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term22"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>IETF</Term>
+    </Terms>
+    <Definition
+      Link="">The organization that develops internet standards.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term23"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">A secure method for transmitting information in JSON format.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term11"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>TLS</Term>
+    </Terms>
+    <Definition
+      Link="">Transport Layer Security. TLS is a protocol that is used to provide secure communication over a network for email, instant messaging, and voice.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term24"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>VoIP</Term>
+    </Terms>
+    <Definition
+      Link="">Voice over Internet Protocol. VoIP is used to deliver voice communication over the internet.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term25"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">A unique identifier for generating Vivox access tokens that often uses this format: &lt;customer_fragment&gt;-&lt;application_fragment&gt;-&lt;platform&gt;. An issuer has a single publisher and associated billing entity.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term26"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">A software program that can compress and decompress digital audio. Vivox uses the Opus, PCMU, Siren 7, and Siren 14 audio codecs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term27"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>PCU</Term>
+    </Terms>
+    <Definition
+      Link="">Peak concurrent users. This is the highest number of end users who are simultaneously signed in to the services for a supported title at any given moment during a monthly billing period.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term28"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>AEC</Term>
+    </Terms>
+    <Definition
+      Link="">Acoustic echo cancellation. A feature that is used when playing and recording audio at the same time to prevent the capture device from picking up the audio that is playing.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term29"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>DVPS</Term>
+    </Terms>
+    <Definition
+      Link="">Dynamic voice processing switching. This listens for audio route changes and then automatically adapts to use optimal acoustic echo cancellation settings.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term30"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Canal</Term>
+    </Terms>
+    <Definition
+      Link="">Also known as a positional channel. This is a persistent resource that enables a user's transmitted audio to originate from a discrete positional 3D space.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term31"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>SSR</Term>
+    </Terms>
+    <Definition
+      Link="">Server-side recording. This is an optional paid Vivox service that you use to capture and review conversations that occur on the Vivox platform.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term32"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term></Term>
+    </Terms>
+    <Definition
+      Link="">Speech-to-text. This is an optional paid Vivox service that you use to provide audio transcription to any user who has opted in to receiving it.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term33"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>TTS</Term>
+    </Terms>
+    <Definition
+      Link="">Text-to-speech. This is a Vivox service that you use to convert text messages into synthesized speech that is then transmitted into a voice channel.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term34"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Canal</Term>
+    </Terms>
+    <Definition
+      Link="">A resource that is used to provide audio or text to one or more participants.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term35"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Session</Term>
+    </Terms>
+    <Definition
+      Link="">A Vivox Core SDK concept for a group of users who are attached to the same resource.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term21">
+    <Terms>
+      <Term>HMAC</Term>
+    </Terms>
+    <Definition>Hash-based message authentication code. HMAC is an authentication code that involves the use of a cryptographic hash function and a secret cryptographic key.</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

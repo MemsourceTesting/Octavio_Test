@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p></p>
+        <ul style="margin-left: 6pt;">
+            <li>
+                <p> </p>
+                <p><b>Remarque</b> : </p>
+            </li>
+            <li>
+                <p>  </p>
+            </li>
+            <li>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+                <p>32 × <i>ConversationalDistance</i> ÷ <i>AudioFadeIntensityByDistance</i>.</p>
+                <p></p>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+                <p><i>AudioFadeIntensityByDistance</i> = 3 ÷ (1 + 1.75 × log<sub>10</sub>(<i>ConversationalDistance</i>))</p>
+            </li>
+        </ul>
+    </body>
+</html>

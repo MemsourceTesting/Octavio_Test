@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <ul>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+        </ul>
+        <p> </p>
+        <MadCap:snippetBlock src="note-working-with-positional-and-non-positional-channels.flsnp" />
+        <h2></h2>
+        <p style="font-weight: normal;"></p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton>
+            </MadCap:codeSnippetCopyButton>
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">sip:confctl-e-issuer.channel-name@domain.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p></p>
+        <h2></h2>
+        <p style="font-weight: normal;"></p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton>
+            </MadCap:codeSnippetCopyButton>
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">sip:confctl-g-issuer.channel-name@domain.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p></p>
+        <p></p>
+        <p></p>
+        <h2></h2>
+        <p style="font-weight: normal;"></p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton>
+            </MadCap:codeSnippetCopyButton>
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">sip:confctl-d-issuer.channel-name@domain.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p></p>
+        <p> <b>Remarque</b> : </p>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <ul>
+            <li>
+                <p>Requis(e)</p>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                        <p></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Recommandé</p>
+                <p><b>Remarque</b> : </p>
+                <ul>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.MODIFY_AUDIO_SETTINGS</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                        <p><b>Remarque</b> :  </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

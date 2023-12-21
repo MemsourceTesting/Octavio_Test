@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">curl -x POST
+http://{{host}}/ssr/subscribe?auth_token={{auth_token}}&amp;history=0&amp;destination_credentials={"bucket":"bucket-name","access_key_id":"aws-access-id","secret_access_key":"aws-secret-key"}&amp;target_uri=sip:.issuer.speaker.@domain.vivox.com&amp;target_type=speaker&amp;ttl=5</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

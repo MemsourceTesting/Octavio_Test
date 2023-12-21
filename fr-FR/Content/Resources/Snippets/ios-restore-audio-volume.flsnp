@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">AVAudioSessionCategoryPlayAndRecord</span>
+                </p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">AVAudioSessionModeVoiceChat</span>
+                </p>
+            </li>
+        </ul>
+        <p><b>Remarque</b> : </p>
+    </body>
+</html>

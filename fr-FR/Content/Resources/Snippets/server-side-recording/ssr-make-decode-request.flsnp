@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">curl -x POST
+http://{{host}}/ssr/decode?auth_token={{auth_token}}&amp;destination_credentials={"access_key_id":"aws-access-id","secret_access_key":"aws-secret-key"}&amp;s3_uri=”s3://bucket-name/uuid/”&amp;decode_options=”[“concat”]“</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

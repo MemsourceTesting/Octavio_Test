@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p> </p>
+        <MadCap:snippetBlock src="note-working-with-positional-and-non-positional-channels.flsnp" />
+        <p>   </p>
+        <p> </p>
+    </body>
+</html>

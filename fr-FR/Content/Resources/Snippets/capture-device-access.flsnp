@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <ul>
+            <li>
+                <p>Android </p>
+            </li>
+            <li>
+                <p>iOS</p>
+            </li>
+            <li>
+                <p>macOS</p>
+            </li>
+            <li>
+                <p>Windows 8 et Word 2016, 2013, 2010, 2007</p>
+            </li>
+        </ul>
+        <p>  </p>
+        <p><b>Remarque</b> : </p>
+    </body>
+</html>

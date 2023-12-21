@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">auth_token</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../access-token-guide-general-link.flsnp"></MadCap:snippetText>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">destination_credentials</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>Utiliser le format suivant</p>
+                        <p><span style="font-family: monospace;">{"access_key_id":"aws-access-id","secret_access_key":"aws-secret-key"}</span>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">s3_uri</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>Utiliser le format suivant</p>
+                        <p><span style="font-family: monospace;">s3://bucket-name/uuid/</span>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">decode_options</span> </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>Configurez les options suivantes.</p>
+                        <ul>
+                            <li>
+                                <p></p>
+                            </li>
+                            <li>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

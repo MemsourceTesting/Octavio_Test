@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title"></h1>
+        <p></p>
+        <ul>
+            <li>200 caractères maximum.</li>
+            <li></li>
+            <MadCap:snippetBlock src="valid-characters.flsnp" />
+        </ul>
+        <p><b>Remarque</b> :   </p>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>DVPS is enabled by default. To disable DVPS, perform either of the following actions:</p>
+        <p><b>Note</b>: Disabling DVPS is not recommended.</p>
+        <ul>
+            <li>
+                <p>When you initialize the Vivox SDK, configure the <span style="font-family: monospace;">dynamic_voice_processing_switching</span> parameter.</p>
+            </li>
+            <li>
+                <p>After the you initialize the Vivox SDK, call <span style="font-family: monospace;">vx_set_dynamic_voice_processing_switching_enabled()</span>.</p>
+            </li>
+        </ul>
+    </body>
+</html>

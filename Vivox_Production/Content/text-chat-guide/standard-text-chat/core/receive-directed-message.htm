@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Receive a directed message</h1>
+        <p>When a <a href="../../../Core/developer-guide/messaging/directed-text.htm">directed message</a> is received, the <span style="font-family: monospace;">vx_evt_user_to_user_message</span> event is raised.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">typedef struct vx_evt_user_to_user_message
+{
+    /**
+    * The common properties for all events.
+    */
+    vx_evt_base_t base;
+    /**
+    * Handle returned from successful Account Login request.
+    * \see vx_req_account_anonymous_login
+    */
+    VX_HANDLE account_handle;
+    /**
+    * URI of the account sending the message.
+    */
+    char *from_uri;
+    /**
+    * The encoded URI for the sending user with the tag.
+    * This uniquely identifies users that might be signed in with the same account name from multiple devices (Multi-Login).
+    */
+    char *encoded_uri_with_tag;
+    /**
+    * The content of the message being received, UTF-8 encoded.
+    */
+    char *message_body;
+    /**
+    * The language (default NULL, implies "en").
+    */
+    char *language;
+    /**
+    * Namespace of the custom application stanza (optional, default NULL).
+    */
+    char *application_stanza_namespace;
+    /**
+    * Custom application stanza body (optional, default NULL).
+    */
+    char *application_stanza_body;
+    /**
+    * The displayname if the from_uri had a displayname
+    */
+    char *from_displayname;
+}
+
+vx_evt_user_to_user_message_t;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

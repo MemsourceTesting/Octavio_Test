@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Channel-based message edit</h1>
+        <p>To edit a channel-based message, you need to sign in and join at least one channel. The message to be edited must have been sent to every participant in the channel.</p>
+        <p><b>Note:</b> Only the sender of a message can edit it.</p>
+        <p>Use  <span style="font-family: monospace;">vx_req_session_edit_message</span> to make an edit request. <span style="font-family: monospace;">vx_req_session_edit_message</span> will return:</p>
+        <ul>
+            <li>
+                <p>The message-id</p>
+            </li>
+            <li>
+                <p>The newly edited message</p>
+            </li>
+            <li>
+                <p>The edit action timestamp</p>
+            </li>
+        </ul>
+        <p>You will receive a <span style="font-family: monospace;">vx_evt_session_edit_message</span> event for every message edited.</p>
+        <p>The following code is an example of how to edit a message for a specific channel:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">vx_req_session_edit_message *req;
+vx_req_session_edit_message_create(&amp;req);
+req-&gt;session_handle = vx_strdup("channelName");
+req-&gt;message_id = vx_strdup("oldMessageID");
+req-&gt;new_message = vx_strdup("This is a test message");
+vx_issue_request2(&amp;req-&gt;base);</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>After you edit this message, the game must then process the <span style="font-family: monospace;">vx_evt_session_edit_message</span> event.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">void HandleSessionEditMessage(vx_evt_session_edit_message *evt)
+{
+    // Use information in events to display messages
+    …
+}
+void HandleSessionEditMessage(vx_resp_session_edit_message_t *resp)
+{
+    if (resp != nullptr) {
+       // Ended properly
+    } else {
+       // Ended abnormally
+    }
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

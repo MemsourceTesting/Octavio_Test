@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Example: Join token</h1>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"jerky"</span> to join the channel <span style="font-family: monospace;">"sip:confctl-g-blindmelon.testchannel@tla.vivox.com"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload</p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":444000,
+    "f":"sip:.blindmelon-AppName-dev.jerky.@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"join",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjQ0NDAwMCwiZiI6InNpcDouYmxpbmRtZWxvbi1BcHBOYW1lLWRldi5qZXJreS5AdGxhLnZpdm94LmNvbSIsImlzcyI6ImJsaW5kbWVsb24tQXBwTmFtZS1kZXYiLCJ2eGEiOiJqb2luIiwidCI6InNpcDpjb25mY3RsLWctYmxpbmRtZWxvbi1BcHBOYW1lLWRldi50ZXN0Y2hhbm5lbEB0bGEudml2b3guY29tIiwiZXhwIjoxNjAwMzQ5NDAwfQ.u7us5eCxOBtuEZuDg1HapEEgxLedLaliIy7gOMfbeko</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

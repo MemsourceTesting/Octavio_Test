@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Channel identifiers for large scale games</h1>
+        <p style="font-weight: normal;">If either of the following statements are true, then use caution when constructing your channel identifiers:</p>
+        <ul>
+            <li style="font-weight: normal;">You expect your application to exceed 100,000 PCU</li>
+            <li style="font-weight: normal;">You expect to use the multichannel feature</li>
+        </ul>
+        <p>You can split large scale games across multiple physical audio servers ("shards") at the discretion of Vivox Operations. Construct your channel identifiers to use the following format:</p>
+        <p><i>shard</i>-<i>group</i></p>
+        <p>For example, consider the application "Queen of the Death" (QotD), which allocates users according to geographical region, for example,"NA" for "North America". Assume that QotD joins a 3D channel for all participants in a match, and then also joins a 2D channel for members of a squad. In this case, the best practice for QotD is to apply the following criteria:</p>
+        <ul>
+            <li>Use a hash to identify the match</li>
+            <li>Include the region and match identifiers in the "shard" portion of the channel identifier</li>
+            <li>Include the 3D and squad identifiers after the "shard" portion of the channel identifier</li>
+        </ul>
+    </body>
+</html>

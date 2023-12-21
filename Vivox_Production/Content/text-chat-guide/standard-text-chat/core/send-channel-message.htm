@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Send a channel message</h1>
+        <p>You can send a channel message by using the <span style="font-family: monospace;">vx_req_session_send_message</span> request.  All participants in the channel receive the message.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">typedef struct vx_req_session_send_message
+{
+    /**
+    * The common properties for all requests
+    */
+    vx_req_base_t base;
+    /**
+    * Handle returned from successful vx_req_sessiongroup_add_session request
+    */
+    VX_HANDLE session_handle;
+    /**
+    * HTTP Content type of the message.
+    * If an empty string is passed in, this field will default to "text/plain".
+    * This field will be validated, so it must be in a valid format.
+    * For a full description of valid content types, see RFC 2046 (https://www.ietf.org/rfc/rfc2046.txt).
+    */
+    char *message_header;
+    /**
+    * The contents of the message.
+    * \note The message body must not exceed the length specified by the server in its pre-login configuration.
+    * The default max message length is 320 bytes (320 characters UTF-8).
+    */
+    char *message_body;
+    /**
+    * The language (default null, implies "en").
+    */
+    char *language;
+    /**
+    * Namespace of the custom application stanza (optional, default null).
+    */
+    char *application_stanza_namespace;
+    /**
+    * Custom application stanza body (optional, default null).
+    */
+    char *application_stanza_body;
+}
+
+vx_req_session_send_message_t;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>For more information, see <a href="../../../Core/developer-guide/messaging/group-text-messages.htm">Group text messages</a>.</p>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Example: JavaScript</h1>
+        <p>The following code is an example of how to generate access tokens in JavaScript.</p>
+        <p>You can download a file that contains this code: <a href="../../Resources/CodeDownloads/JSTokenGen.zip" download="JSTokenGen.zip">JSTokenGen.zip</a></p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">/*
+* Vivox Token Generation Example - JavaScript
+*
+* NOTE: There are multiple ways to handle SHA-256 in JavaScript
+* Stanford JS Crypto Library - https://crypto.stanford.edu/sjcl/ (used below)
+* Source - http://bitwiseshiftleft.github.io/sjcl/sjcl.js
+* SHA256 from NPM - https://www.npmjs.com/package/sha256
+*
+*/
+
+function vxGenerateToken(key, payload) {
+    // Header is static - base64url encoded {}
+    var base64urlHeader = base64URLEncode("{}"); // Can also be defined as a constant "e30"
+
+    // Encode payload
+    var base64urlPayload = base64URLEncode(payload);
+
+    // Join segments to prepare for signing
+    var segments = [base64urlHeader, base64urlPayload];
+    var toSign = segments.join(".");
+
+    // Sign token with key and SHA-256
+    var hmac = new sjcl.misc.hmac(sjcl.codec.utf8String.toBits(key), sjcl.hash.sha256);
+    signature = sjcl.codec.base64.fromBits(hmac.encrypt(toSign));
+    var base64urlSigned = signature.replace(/\+/g, "-").replace(/\//g, "_").replace(/\=+$/, "");
+
+    segments.push(base64urlSigned);
+
+    return segments.join(".");
+}
+
+function base64URLEncode(value) {
+    return Base64.encode(value).replace(/\+/g, "-").replace(/\//g, "_").replace(/\=+$/, "");
+}
+
+claims = {
+    "iss": "issuer",
+    "exp": 1559359105,
+    "vxa": "join",
+    "f": "sip:.username.@domain.vivox.com",
+    "t": "sip:confctl-g-channelname@domain.vivox.com"
+};
+
+// Example usage
+var token = vxGenerateToken("secret", claims);
+console.log(token);</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

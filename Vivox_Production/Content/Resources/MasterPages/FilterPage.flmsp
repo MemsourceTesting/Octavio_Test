@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head />
+    <body>
+        <MadCap:breadcrumbsProxy />
+        <MadCap:bodyProxy />
+    </body>
+    <script type="text/javascript" src="../Scripts/Hyperlink.js">
+    </script>
+    <script type="text/javascript" src="../prettify/run_prettify.js">
+    </script>
+    <script type="text/javascript" src="../../Skins/Default/Stylesheets/Vivox/scripts.js">
+    </script>
+    <script type="text/javascript" src="../Scripts/dynsections.js">
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=UA-102383952-3">
+    </script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-102383952-3');
+	</script>
+</html>

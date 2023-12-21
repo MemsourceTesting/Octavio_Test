@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Example: Transcription token</h1>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"beef"</span>  to begin a speech-to-text transcription for the channel <span style="font-family: monospace;">"testchannel"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload</p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":542680,
+    "f":"sip:.blindmelon-AppName-dev.beef.@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"trxn",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}
+</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjU0MjY4MCwiZiI6InNpcDouYmxpbmRtZWxvbi1BcHBOYW1lLWRldi5iZWVmLkB0bGEudml2b3guY29tIiwiaXNzIjoiYmxpbmRtZWxvbi1BcHBOYW1lLWRldiIsInZ4YSI6InRyeG4iLCJ0Ijoic2lwOmNvbmZjdGwtZy1ibGluZG1lbG9uLUFwcE5hbWUtZGV2LnRlc3RjaGFubmVsQHRsYS52aXZveC5jb20iLCJleHAiOjE2MDAzNDk0MDB9.-A0w_fcPCZaG5NMksnbSrGSVXNNt25YqlRjcKcLkGnA</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

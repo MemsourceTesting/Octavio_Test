@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Acoustic echo cancellation</h1>
+        <p>When an iOS device plays and records audio at the same time, there is the possibility that a capture device could pick up the audio that is playing. The Vivox SDK includes acoustic echo cancellation (AEC), which helps to prevent this type of audio capture from occurring.</p>
+        <p>By default, the Vivox SDK leverages the platform AEC provided by Apple, which is enabled or disabled by using dynamic voice processing switching (DVPS).</p>
+    </body>
+</html>

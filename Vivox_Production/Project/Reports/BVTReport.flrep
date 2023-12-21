@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultReportFile
+  Tables="broken-bookmarks,broken-links,non-xml-topics,topics-not-in-any-toc,topics-multilinked-in-toc,broken-snippet-links,database-errors"
+  Comment="This template includes all reports related to broken links or undefined items. Once the new report file is created, you can enable or disable any report from any group.">
+  <Stylesheet />
+</CatapultReportFile>

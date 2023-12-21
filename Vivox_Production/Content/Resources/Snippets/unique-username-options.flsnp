@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>If you do not want to use a unique account name per player, or if you do not want to expose the username to the network, then use one of the following options:</p>
+        <ul>
+            <li>
+                <p>A hash of the unique username</p>
+            </li>
+            <li>
+                <p>A universally unique identifier (UUID)</p>
+            </li>
+        </ul>
+    </body>
+</html>

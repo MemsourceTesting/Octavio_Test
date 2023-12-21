@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Audio transcription conditions</h1>
+        <MadCap:snippetBlock src="stt-early-release-enable-note.flsnp" />
+        <p>Speech-to-text transcription follows the audio mute state for participants. If the participant's audio is muted, then audio transcription is not delivered to the app. This includes participants who are muted locally or for all users, and device muting for oneself in an echo channel. A user who mutes themselves still receives transcribed text from other users in the channel.</p>
+        <p>When a player is in a channel with another player who has speech-to-text transcription enabled, their speech is transcribed under the following conditions.</p>
+        <p><b>Note</b>: There is a delay between the completion of speech and when the Vivox SDK receives the transcription.</p>
+        <ul>
+            <li>
+                <p>If a player is within audible range when audio transcription completes, and they remain within audible range until the transcription is sent to the client, then they receive the audio transcription.</p>
+            </li>
+            <li>
+                <p>If a player leaves audible range during transcription, then no transcription is sent.</p>
+            </li>
+            <li>
+                <p>If a player re-enters audible range while they are speaking, then everything since they last entered audible range is transcribed.</p>
+            </li>
+            <li>
+                <p>If a player leaves audible range during the delay between the completion of speech and when the Vivox SDK receives the transcription, then no transcription is sent.</p>
+            </li>
+        </ul>
+    </body>
+</html>

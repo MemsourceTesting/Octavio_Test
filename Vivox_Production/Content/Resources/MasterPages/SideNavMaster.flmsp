@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <script type="text/javascript" src="../prettify/run_prettify.js">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Stylesheets/Vivox/scripts.js">
+        </script>
+    </head>
+    <body>
+        <MadCap:breadcrumbsProxy />
+        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" />
+        <MadCap:bodyProxy />
+    </body>
+    <script type="text/javascript" src="../Scripts/ShowHiddenText.js">
+    </script>
+    <script type="text/javascript" src="../Scripts/AdjustConditionalNumberedLists.js">
+    </script>
+    <script type="text/javascript" src="../Scripts/Hyperlink.js">
+    </script>
+    <script type="text/javascript" src="../Scripts/TestInsertRule.js">
+    </script>
+</html>

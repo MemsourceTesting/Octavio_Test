@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Retrieve account-wide chat history</h1>
+        <p>To retrieve account-wide chat history, you need to sign in and use <span style="font-family: monospace;">vx_req_account_chat_history_query</span> to make a request.</p>
+        <p><span style="font-family: monospace;">vx_req_account_chat_history_query</span> will return 10 messages by default. You can increase the number of messages returned by increasing the max value in the request. The maximum number of messages stored per channel is 5000, with a maximum age of 30 days.</p>
+        <p>You will receive a <span style="font-family: monospace;">vx_evt_account_archive_message</span> event for every message.</p>
+        <p>The following code is an example of how to retrieve 20 messages for a particular user across all of their channels:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">vx_req_account_chat_history_query *req;
+vx_req_account_chat_history_query_create(&amp;req);
+req-&gt;account_handle = vx_strdup("sip:.issuer.playerName@mt1s.vivox.com");
+req-&gt;max = 20;
+vx_issue_request2(&amp;req-&gt;base);</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>After you get these messages, the game must then process two types of event messages:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">vx_evt_account_archive_message</span>
+                </p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">vx_evt_account_archive_query_end_t</span>
+                </p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">void HandleAccountChatHistoryMessage(vx_evt_session_archive_message
+ *evt)
+{
+    // Use information in events to display messages
+    …
+}
+ 
+void HandleAccountChatHistoryEnd(vx_evt_session_archive_query_end_t *resp)
+{
+    if (resp != nullptr &amp;&amp; resp-&gt;return_code == 0) {
+    // Ended abnormally
+    } else {
+        // Ended properly
+    }
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

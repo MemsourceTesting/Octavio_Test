@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Access token overview</h1>
+        <p>Player access to Vivox resources is controlled through Vivox access tokens. Vivox access tokens contain a payload that defines the privileged operation, are signed by the game server by using a token signing key, and are delivered by the client to the Vivox system when the player wants to perform a privileged operation. A Vivox access token is similar to a <MadCap:glossaryTerm glossTerm="Glossary.Term23">JSON Web Token</MadCap:glossaryTerm>, but instead has an empty <a href="access-token-format/access-token-header.htm">access token header</a>.</p>
+        <p style="font-style: normal;">Access tokens have the following characteristics:</p>
+        <ul>
+            <li style="font-style: normal;">You can only use a token once. After you use a token for the privileged operation, it cannot be reused.</li>
+            <li style="font-style: normal;">Tokens expire even if they are never used. You cannot use a token  after the expiration time that is set by the token issuer.</li>
+        </ul>
+        <p>Game clients require access tokens to perform operations in the Vivox system. </p>
+        <ul>
+            <li><b>Game client-generated tokens</b> - use for prototyping or testing purposes</li>
+            <li><b>Secure game server-generated tokens</b> - use for the secure deployment of a production game and to avoid token errors due to user time settings</li>
+        </ul>
+        <p>Note that before either a client or a server can generate a token, you need a token issuer and a token signing key. <MadCap:snippetText src="../Resources/Snippets/vivox-support-portal-kb-links/support-portal-custom-app-credentials.flsnp" /></p>
+        <p style="font-style: normal;">The following diagram displays a typical interaction between a game client, the game server, and the Vivox system: </p>
+        <p style="font-style: normal;text-align: left;">
+            <img src="../Resources/Images/access-token-developer-guide/access-token-overview-diagram.png" class="border" />
+        </p>
+    </body>
+</html>

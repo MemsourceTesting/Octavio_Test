@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">AVAudioSessionModeVoiceChat</h1>
+        <p>To enable platform acoustic echo cancellation (AEC), the iOS device must be in <span style="font-family: monospace;">AVAudioSessionModeVoiceChat</span>. For more information, see the Apple developer documentation.</p>
+        <p><span style="font-family: monospace;">AVAudioSessionModeVoiceChat</span> changes EQ to optimize for voice. Because of this change, any non-voice audio that the iOS app plays might seem quieter. The Voice-Processing I/O unit also mixes the audio to ensure that the voice is the loudest part of the overall audio mix.</p>
+        <p><b>Note</b>: Although it is possible to change the <span style="font-family: monospace;">AVAudioSession</span> mode to default after activating the Voice-Processing I/O unit, Apple recommends using <span style="font-family: monospace;">AVAudioSessionModeVoiceChat</span>. Using the default mode when the Voice-Processing I/O unit is active might cause unpredictable behavior, and various device types (for example, iPad and iPhone) might behave in different ways.</p>
+    </body>
+</html>

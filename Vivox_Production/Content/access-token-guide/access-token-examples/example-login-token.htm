@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Example: Login token</h1>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"jerky"</span> to sign in to the server.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload</p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+   "iss":"blindmelon-AppName-dev",
+   "vxi":933000,
+   "vxa":"login",
+   "exp":1600349400,
+   "f":"sip:.blindmelon-AppName-dev.jerky.@tla.vivox.com"
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJpc3MiOiJibGluZG1lbG9uLUFwcE5hbWUtZGV2IiwidnhhIjoibG9naW4iLCJ2eGkiOjkzMzAwMCwiZXhwIjoxNjAwMzQ5NDAwLCJmIjoic2lwOi5ibGluZG1lbG9uLUFwcE5hbWUtZGV2Lmplcmt5LkB0bGEudml2b3guY29tIn0.5FKsAQz7bRQGGlSZw-KIcCmft7Ic6nT3Ih-TbdYPWwI</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Cannot set iOS device volume to 0 when Voice-Processing I/O unit is active</h1>
+        <p>When using an iOS device and the Voice-Processing I/O unit is active, you cannot set the volume of the iOS device to 0. For more information, see the Apple developer documentation on <span style="font-family: monospace;">AVAudioSessionCategoryPlayAndRecord</span>.</p>
+        <p>A possible workaround for this functionality when you are using Vivox on iOS is to observe changes in <span style="font-family: monospace;">AVAudioSession.outputVolume</span> that are being set by the user and then mute your game audio output based on the observed value. For example implementations of this workaround, see <a href="https://support.unity.com/hc/en-us/articles/4418783207444" target="_blank">How to: Observe the iOS volume level to programmatically mute game audio</a> in the <MadCap:snippetText src="unity-support-knowledge-base.flsnp" />.</p>
+    </body>
+</html>

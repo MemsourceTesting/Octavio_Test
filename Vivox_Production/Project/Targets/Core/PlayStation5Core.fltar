@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  SearchEngine="MadCapSearch"
+  MasterToc="/Project/TOCs/PlayStation5.fltoc"
+  CentralLinkIds="zh-cn_11334,ja-jp_11334,ko-kr_11334"
+  TargetLanguage="en-us,zh-cn_../../TranslatedProjects/CHS/Vivox_Production/Vivox_Production.flprj,ja-jp_../../TranslatedProjects/JPN/Vivox_Production/Vivox_Production.flprj,ko-kr_../../TranslatedProjects/KOR/Vivox_Production/Vivox_Production.flprj"
+  TopNavTocPath="true"
+  MoveOutputContentToRoot="true"
+  EquationsOutputType="PNG"
+  MasterPage="/Content/Resources/MasterPages/FilterPage.flmsp"
+  AbstractLength="0"
+  GenerateAllSkins="false"
+  SyncLingoProject="true"
+  Skin="/Project/Skins/HTML5 - Tripane.flskn"
+  ConditionTagExpression="include[General.Code or General.Core or General.PlayStation5], exclude[General.Android or General.BrowserBased or General.Exclude or General.iOS or General.macOS or General.PlayStation4 or General.Switch or General.Unity or General.UniversalWindowsPlatform or General.Unreal or General.UnrealUpgradeFull or General.UnrealUpgradeLimited or General.Windows or General.XboxOne or General.XboxXS]"
+  MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
+  MasterStylesheetOverride="true"
+  FaviconSkin="/Project/Skins/Vivox Favicon.flskn"
+  TabletBreakpoint="0"
+  MobileBreakpoint="0"
+  RemoveMadCapStyles="true"
+  ExcludeUnreferencedContent="true"
+  DisableAutoSync="false"
+  PartialWordSearch="false"
+  EnableSitemap="false"
+  MinimumWordSize="3"
+  DefaultUrl="/Content/developer-guide-supplement/playstation/playstation-guide-overview.htm">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Elasticsearch
+    Guid="70c0be55-a571-4a3b-883d-e217b96f7561" />
+  <Destinations></Destinations>
+  <MetaTags
+    Enabled="false" />
+  <Variables>
+    <Variable
+      Name="General/playstation-system-name">PlayStation 5</Variable>
+  </Variables>
+</CatapultTarget>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Automatic connection recovery</h1>
+        <p><b>Note</b>: Automatic connection recovery is supported on Android, iOS, macOS, and Windows.</p>
+        <p>An application might temporarily lose internet connectivity when its user moves between internet connection points. For example, a disconnection could occur when a user is roaming between cellular networks, or when a device switches between an LTE mobile data connection and a home wireless network connection.</p>
+        <p>The Vivox SDK provides network connection recovery functionality for connection loss of up to 30 seconds. When connection recovery is enabled for an application, the application can automatically reconnect to a session after a network change in scenarios where the Vivox SDK retains CPU continuity.</p>
+        <p>If a session resume fails after the application attempts to reconnect to the network, a <span style="font-family: monospace;">login_state_logged_out</span> event fires.</p>
+    </body>
+</html>

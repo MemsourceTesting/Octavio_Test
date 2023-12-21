@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Example: Mute_All token</h1>
+        <ul>
+            <li>
+                <p><a href="#Signed">Signed in user muting all users in a channel</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Admin">Admin user muting all users in a channel</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Signed2">Signed in user muting all but one user in a channel (Presentation mode)</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Admin2">Admin user muting all but one user in a channel (Presentation mode)</a>
+                </p>
+            </li>
+        </ul>
+        <p><b>Note:</b> The token format for unmuting all users in a channel is the same as a mute_all token.</p>
+        <h2><a name="Signed"></a>Signed in user muting all users in a channel</h2>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"beef"</span> to mute all users in the channel <span style="font-family: monospace;">"testchannel"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload</p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":19283,
+    "f":"sip:.blindmelon-AppName-dev.beef.@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"mute",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjE5MjgzLCJmIjoic2lwOi5ibGluZG1lbG9uLUFwcE5hbWUtZGV2LmJlZWYuQHRsYS52aXZveC5jb20iLCJpc3MiOiJibGluZG1lbG9uLUFwcE5hbWUtZGV2IiwidnhhIjoibXV0ZSIsInQiOiJzaXA6Y29uZmN0bC1nLWJsaW5kbWVsb24tQXBwTmFtZS1kZXYudGVzdGNoYW5uZWxAdGxhLnZpdm94LmNvbSIsImV4cCI6MTYwMDM0OTQwMH0.fARLW2eX10ZbiIl_5WIg4bhPbYIhn2xfCcUNySfwBMs</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <h2><a name="Admin"></a>Admin user muting all users in a channel</h2>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"blindmelon-AppName-dev-Admin"</span> to mute all users in the channel <span style="font-family: monospace;">"testchannel"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload</p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":825647,
+    "f":"sip:blindmelon-AppName-dev-Admin@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"mute",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}
+</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjgyNTY0NywiZiI6InNpcDpibGluZG1lbG9uLUFwcE5hbWUtZGV2LUFkbWluQHRsYS52aXZveC5jb20iLCJpc3MiOiJibGluZG1lbG9uLUFwcE5hbWUtZGV2IiwidnhhIjoibXV0ZSIsInQiOiJzaXA6Y29uZmN0bC1nLWJsaW5kbWVsb24tQXBwTmFtZS1kZXYudGVzdGNoYW5uZWxAdGxhLnZpdm94LmNvbSIsImV4cCI6MTYwMDM0OTQwMH0.zpyvlBbVAKatuCeELb0Q1PsCb4tg0yacneL_sYHIVaw</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <h2><a name="Signed2"></a>Signed in user muting all but one user in a channel (Presentation mode)</h2>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"beef"</span> to mute all users except for the user <span style="font-family: monospace;">"jerky"</span> in the channel <span style="font-family: monospace;">"testchannel"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p>In this scenario, when creating the mute token, a subject is specified. The subject in this instance (<span style="font-family: monospace;">"jerky"</span>) is the only user in the channel that is not muted, which allows them to speak to the other, now muted, users in the channel without interruption. </p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload </p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":675849,
+    "sub":"sip:.blindmelon-AppName-dev.jerky.@tla.vivox.com",
+    "f":"sip:.blindmelon-AppName-dev.beef.@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"mute",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}
+</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjY3NTg0OSwic3ViIjoic2lwOi5ibGluZG1lbG9uLUFwcE5hbWUtZGV2Lmplcmt5LkB0bGEudml2b3guY29tIiwiZiI6InNpcDouYmxpbmRtZWxvbi1BcHBOYW1lLWRldi5iZWVmLkB0bGEudml2b3guY29tIiwiaXNzIjoiYmxpbmRtZWxvbi1BcHBOYW1lLWRldiIsInZ4YSI6Im11dGUiLCJ0Ijoic2lwOmNvbmZjdGwtZy1ibGluZG1lbG9uLUFwcE5hbWUtZGV2LnRlc3RjaGFubmVsQHRsYS52aXZveC5jb20iLCJleHAiOjE2MDAzNDk0MDB9.wLlqsQ-r0yCeta5Lil6KU51nfAtt4b1KQ2zJb_jHHjw</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <h2><a name="Admin2"></a>Admin user muting all but one user in a channel (Presentation mode)</h2>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"blindmelon-AppName-dev-Admin"</span> to mute all users except for the user <span style="font-family: monospace;">"jerky"</span> in the channel <span style="font-family: monospace;">"testchannel"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p>In this scenario, when creating the mute token, a subject is specified. The subject in this instance (<span style="font-family: monospace;">"jerky"</span>) is the only user in the channel that is not muted, which allows them to speak to the other, now muted, users in the channel without interruption. </p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload </p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":961734,
+    "sub":"sip:.blindmelon-AppName-dev.jerky.@tla.vivox.com",
+    "f":"sip:blindmelon-AppName-dev-Admin@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"mute",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}
+</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjk2MTczNCwic3ViIjoic2lwOi5ibGluZG1lbG9uLUFwcE5hbWUtZGV2Lmplcmt5LkB0bGEudml2b3guY29tIiwiZiI6InNpcDpibGluZG1lbG9uLUFwcE5hbWUtZGV2LUFkbWluQHRsYS52aXZveC5jb20iLCJpc3MiOiJibGluZG1lbG9uLUFwcE5hbWUtZGV2IiwidnhhIjoibXV0ZSIsInQiOiJzaXA6Y29uZmN0bC1nLWJsaW5kbWVsb24tQXBwTmFtZS1kZXYudGVzdGNoYW5uZWxAdGxhLnZpdm94LmNvbSIsImV4cCI6MTYwMDM0OTQwMH0.XWlrqesKd8UnhUwXIJdY1TKPCwh8OdWj5edub7lVyyw</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

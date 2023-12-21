@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Favicon skin"
+  ComponentType="Favicon">
+  <Stylesheet>
+    <Resources>
+      <Resource
+        Name="Vivox Favicon.ico">H4sIAAAAAAAEAM1SMYqEQBDshX2A0cUXiogYiRjIhmLoKwxEfID4Bx9iKCJiKMZGPkHEF4hBnd2wsHC4t95ycD3U0FPVM91DN9FlX4pCu31SeCX62D11hyIM7SrvRLcrfTNd1/FfoWma4Dd3DcOAZVkC9s/mjeMYwzAIoig6VYdpmmiaBner61q4V3MHQYBlWbBtm4B95l6pgWPyPJe8Xdeh73vxmfvpPuuO48if2dI0RZZl4jPH2rM3VFVFGIZY1xXTNMHzPPi+j3mehWONY571rCgKyVeWpZwZVVUJx9pRL7ku13XRti3GcZT+3ecnSRLhWOOYoz/w27ZtCx7zHPFnZvadWf5LEOEtfAHE3gUyfgQAAA==</Resource>
+      <Resource
+        Name="Vivox Favicon_1.ico">H4sIAAAAAAAEAM1SMYqEQBDshX2A0cUXiogYiRjIhmLoKwxEfID4Bx9iKCJiKMZGPkHEF4hBnd2wsHC4t95ycD3U0FPVM91DN9FlX4pCu31SeCX62D11hyIM7SrvRLcrfTNd1/FfoWma4Dd3DcOAZVkC9s/mjeMYwzAIoig6VYdpmmiaBner61q4V3MHQYBlWbBtm4B95l6pgWPyPJe8Xdeh73vxmfvpPuuO48if2dI0RZZl4jPH2rM3VFVFGIZY1xXTNMHzPPi+j3mehWONY571rCgKyVeWpZwZVVUJx9pRL7ku13XRti3GcZT+3ecnSRLhWOOYoz/w27ZtCx7zHPFnZvadWf5LEOEtfAHE3gUyfgQAAA==</Resource>
+    </Resources>
+  </Stylesheet>
+  <Master
+    Image="(none)" />
+  <Browser>
+    <SmallFavicon
+      Image="Vivox Favicon_1.ico"
+      SizePx="16 px" />
+    <MediumFavicon
+      Image="(none)" />
+    <LargeFavicon
+      Image="(none)" />
+  </Browser>
+  <ShortcutIcon
+    Image="(none)" />
+  <Touch>
+    <TouchIcon
+      Image="(none)" />
+  </Touch>
+  <Windows>
+    <MicrosoftSmallTile
+      Image="(none)" />
+    <MicrosoftMediumTile
+      Image="(none)" />
+    <MicrosoftWideTile
+      Image="(none)" />
+    <MicrosoftLargeTile
+      Image="(none)" />
+  </Windows>
+  <Strings />
+</CatapultSkin>

@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Web"
+    conditions="General.BrowserBased"
+    Link="/Content/Web/Web.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Web/DeveloperGuide/Introduction.htm"
+      MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      conditions="General.BrowserBased"
+      StartSection="false">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="General.BrowserBased"
+        StartSection="false"
+        ReplaceMergeNode="false"
+        Link="/Content/Web/WebFirstSteps.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Web/DeveloperGuide/AudienceScope.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="General.BrowserBased"
+        StartSection="false" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Web/DeveloperGuide/PackageContents.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="General.BrowserBased"
+        StartSection="false" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Web/DeveloperGuide/browser-compatibility.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="General.BrowserBased"
+        StartSection="false" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/UsingSampleWebPage.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="General.BrowserBased"
+        StartSection="false">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/WebServerLocalPreparation/WebServerLocalPreparation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/WebServerLocalPreparation/CreatingSingleDirectory.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/WebServerLocalPreparation/CertificatesWebServerOnly.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/WebServerLocalPreparation/BrowserIssuesLocalOnly.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/OpeningSampleWebPage.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased"
+          StartSection="false" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/SampleWebPageSections.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased"
+          StartSection="false" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/ConnectingToVivoxServer.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased"
+          StartSection="false" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/ChannelOperations/ChannelOperations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            conditions="General.BrowserBased"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/ChannelOperations/channel-types.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/ChannelOperations/JoiningChannel.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/ChannelOperations/Connecting-DisconnectingAudio.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/ChannelOperations/Connecting-DisconnectingText.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/MutingUsers/MutingUsers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/MutingUsers/MuteParticipantForMe.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false"></TocEntry>
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/MutingUsers/MuteParticipantInChannel.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          conditions="General.BrowserBased"
+          StartSection="false"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/channel-messaging-chat/channel-messaging-toc.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/channel-messaging-chat/sending-and-receiving-channel-messages.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/channel-messaging-chat/ChannelChatHistory.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/KickParticipantFromChannel/KickParticipantFromChannel.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/KickParticipantFromChannel/LeavingChannel.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased"
+          StartSection="false" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/BuddyListOperations/BuddyListOperations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/BuddyListOperations/AddingBuddies.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/BuddyListOperations/RemovingBuddies.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/BuddyListOperations/HandlingIncomingStatusOpertations.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/BuddyListOperations/PresenceStatusManipulations.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/DirectMessaging/DirectMessaging.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          conditions="General.BrowserBased">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/DirectMessaging/ReceivingDirectTextMessages.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Web/DeveloperGuide/UsingSampleWebPage/DirectMessaging/SendingDirectTextMessages.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+            conditions="General.BrowserBased"
+            StartSection="false" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Web/DeveloperGuide/Troubleshooting.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="General.BrowserBased"
+        StartSection="false" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Web/DeveloperGuide/KnownIssuesLimitations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="General.BrowserBased"
+        StartSection="false" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      PageNumberReset="continue"
+      ComputeToc="false"
+      Link="/Content/access-token-guide/access-token-guide-toc.htm"
+      conditions="General.BrowserBased">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/access-token-guide/access-token-overview.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/access-token-guide/access-token-terminology.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/access-token-guide/requests-that-require-access-tokens.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        Link="/Content/access-token-guide/access-token-identifiers/identifiers-toc.htm"
+        conditions="General.BrowserBased">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-identifiers/usernames.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-identifiers/channel-names.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-identifiers/access-token-issuer.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-identifiers/access-token-signing-keys.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/access-token-guide/access-token-format/access-token-format-overview.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-format/access-token-header.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-format/access-token-payload.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-format/access-token-signature.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-format/supported-values-vxa-claim.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/access-token-guide/access-token-examples/access-token-examples-toc.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-examples/example-login-token.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-examples/example-join-token.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-examples/example-join-muted-token.htm"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-examples/example-kick-token.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-examples/example-drop-all-token.htm"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-examples/example-mute-token.htm"
+          StartSection="false"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/access-token-examples/example-mute-all-token.htm"
+          conditions="General.BrowserBased" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        Link="/Content/access-token-guide/generate-tokens-core.htm"
+        conditions="General.BrowserBased"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/access-token-guide/generate-token-secure-server/generate-token-secure-server-toc.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        Link="/Content/access-token-guide/key-management-best-practices/best-practices-toc.htm"
+        conditions="General.BrowserBased">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/key-management-best-practices/key-rotation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/access-token-guide/key-management-best-practices/recover-from-lost-key.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/access-token-guide/access-token-error-codes.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/server-to-server-api-reference/server-to-server-web-api-overview.htm"
+      PageNumberReset="continue"
+      ComputeToc="false"
+      conditions="General.BrowserBased">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/server-to-server-api-reference/prerequisites.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/server-to-server-api-reference/authentication.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/server-to-server-api-reference/access-tokens.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/server-to-server-api-reference/parameters/common-parameters.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/server-to-server-api-reference/login-api.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/server-to-server-api-reference/control-active-channels-api/control-active-channels-api.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/server-to-server-api-reference/kick-api/kick-api.htm"
+          ReplaceMergeNode="false"
+          conditions="General.BrowserBased" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/server-to-server-api-reference/error-handling.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/server-to-server-api-reference/parameters/fully-qualified-identifiers.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/text-chat-guide/text-chat-guide-overview.htm"
+      PageNumberReset="continue"
+      ComputeToc="false"
+      conditions="General.BrowserBased">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/text-chat-guide/sdksampleapp/sdksampleapp-overview.htm"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/sdksampleapp/run-sdksampleapp.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/sdksampleapp/log-in-as-alice.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/sdksampleapp/log-in-as-bob.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/sdksampleapp/send-directed-message.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/sdksampleapp/send-channel-message.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/text-chat-guide/standard-text-chat/standard-text-chat-overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        PageNumberReset="continue"
+        ComputeToc="false"
+        conditions="General.BrowserBased">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/standard-text-chat/core/send-directed-message.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/standard-text-chat/core/receive-directed-message.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/standard-text-chat/core/send-channel-message.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/text-chat-guide/standard-text-chat/core/receive-channel-message.htm"
+          PageNumberReset="continue"
+          ComputeToc="false"
+          conditions="General.BrowserBased" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

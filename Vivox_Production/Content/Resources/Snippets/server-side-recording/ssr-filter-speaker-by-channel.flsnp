@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Filter a speaker by channel</h1>
+        <p>If a speaker is in multiple channels and you only want to record the one channel they are in, pass the channel to the <span style="font-family: monospace;">filter_uris</span> query.</p>
+        <p>For example, if a speaker is in channelA and channelB, and you only want to record what the user says in channelA, then if you pass channelA to the <span style="font-family: monospace;">filter_uris</span> query, it excludes anything the speaker says in channelB.</p>
+        <p>For an additional example, if you have speakerA, speakerB, and speakerC in a channel, and you only want to record data from speakerA and speakerB, then you can filter those two users by passing them in to the <span style="font-family: monospace;">filter_uris</span> parameter, which excludes speakerC from the recording. The following code displays an example of how to filter for this scenario.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">curl -x POST
+http://{{host}}/ssr/subscribe?auth_token={{auth_token}}&amp;history=5&amp;destination_credentials={"bucket":"bucket-name","access_key_id":"aws-access-id","secret_access_key":"aws-secret-key"}&amp;target_uri=sip:confctl-g-.issuer.channel_name@domain.vivox.com&amp;target_type=channel&amp;ttl=5&amp;filter_uris=["sip:.issuer.speakerA.@domain.vivox.com", "sip:.issuer.speakerB.@domain.vivox.com"]</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

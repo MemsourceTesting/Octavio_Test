@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Speech-to-text audio transcription</h1>
+        <MadCap:snippetBlock src="stt-early-release-enable-note.flsnp" />
+        <p>Speech-to-text audio transcription is an optional paid Vivox service that allows per-user enablement of speech transcription in one or more connected non-positional or positional voice channels. This service supports developers who are pursuing Communications and Video Accessibility Act (CVAA) compliance.</p>
+    </body>
+</html>

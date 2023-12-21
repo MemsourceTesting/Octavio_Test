@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Error handling</h1>
+        <p>If an error occurs when the system makes a web call, an <MadCap:glossaryTerm glossTerm="Glossary.Term2">XML</MadCap:glossaryTerm> document is returned with the <span style="font-family: monospace;">status</span> element set to “ERR”, and the <span style="font-family: monospace;">code</span> and <span style="font-family: monospace;">msg</span> elements set to a code number and error description, respectively.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Example error codes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following list details common error codes:</p>
+                <ul>
+                    <li>200 - Wrong User credentials.</li>
+                    <li>201 - Expired user credentials.</li>
+                    <li>202 - Missing user credentials.</li>
+                    <li>212 - Account not allowed to perform operation.</li>
+                    <li>403 - Account does not exist.</li>
+                    <li>300 - Required parameter(s) missing or invalid. </li>
+                    <li>301 - Unknown mode.</li>
+                    <li>302 - Unable to parse argument.</li>
+                    <li>500 - Internal Server Error.</li>
+                    <li>807 - Channel not found.</li>
+                    <li>718 - Failed changing conference media.</li>
+                    <li>1600 - Login Failed. Unknown Account.</li>
+                    <li>1602 - Login Failed. Account has not been activated.</li>
+                    <li>1603 - Login Failed. Account has been disabled.</li>
+                    <li>1604 - Login Failed. Please contact support.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Example XML error document</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following code displays an example of an XML error document.</p>
+                <MadCap:codeSnippet>
+                    <MadCap:codeSnippetCopyButton />
+                    <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve" style="mc-code-lang: XML;">&lt;response xmlns="http://www.vivox.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="/xsd/error.xsd"&gt;
+    &lt;level0&gt;
+        &lt;status&gt;ERR&lt;/status&gt;
+        &lt;body&gt;
+            &lt;code&gt;200&lt;/code&gt;
+            &lt;msg&gt;Wrong user credentials.&lt;/msg&gt;
+        &lt;/body&gt;
+    &lt;/level0&gt;
+&lt;/response&gt;</MadCap:codeSnippetBody>
+                </MadCap:codeSnippet>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

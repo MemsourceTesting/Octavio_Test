@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Kick a user from a server</h1>
+        <p>The following scenario displays an example of how to kick a user from a server when you call <span style="font-family: monospace;">viv_adm_user_kick.php</span>:</p>
+        <p><b>Note</b>: Kicking a user from a server disconnects the user from the server and every channel they are in.</p>
+        <ul>
+            <li>Domain: <span style="font-family: monospace;">mt1s.vivox.com</span></li>
+            <li>Issuer: <span style="font-family: monospace;">blindmelon-AppName-dev</span></li>
+            <li>Admin user: <span style="font-family: monospace;">blindmelon-AppName-dev-Admin</span></li>
+            <li>User to kick: <span style="font-family: monospace;">jerky</span></li>
+        </ul>
+        <p>Based on this information, call <span style="font-family: monospace;">viv_adm_user_kick.php</span> with the following parameters:</p>
+        <ul>
+            <li><span style="font-family: monospace;">access_token</span> - the <a href="kick-access-token.htm">access token</a> with specified claims for this action</li>
+            <li><span style="font-family: monospace;">auth_token</span> - the token that <span style="font-family: monospace;">viv_signin.php</span> returns for <span style="font-family: monospace;">blindmelon-AppName-dev-Admin</span> (see <a href="../login-api.htm">Login API</a>)</li>
+            <li><span style="font-family: monospace;">chan_uri</span> - <span style="font-family: monospace;">sip:blindmelon-AppName-dev-service@mt1s.vivox.com</span></li>
+            <li><span style="font-family: monospace;">user_uri</span> - <span style="font-family: monospace;">sip:.blindmelon.jerky.@mt1s.vivox.com</span></li>
+        </ul>
+    </body>
+</html>

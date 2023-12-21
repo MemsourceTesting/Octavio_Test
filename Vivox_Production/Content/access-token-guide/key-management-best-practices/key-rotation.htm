@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Key rotation</h1>
+        <p>According to security best practices, it is recommended that you rotate the token signing key on a periodic basis (typically monthly). The Vivox system allows each issuer to have two keys active simultaneously, which you can use to rotate keys with no interruption in service.</p>
+        <p>To perform key rotation, complete the following steps:</p>
+        <ol>
+            <li>
+                <p>Obtain the time to live that is used when generating access tokens.</p>
+                <p>(For demonstration purposes, this example uses "TTL" as this value.)</p>
+            </li>
+            <li>
+                <p>Add your new key by using the included <span style="font-family: monospace;">vivox_admin.py</span> code as follows:</p>
+                <MadCap:codeSnippet>
+                    <MadCap:codeSnippetCopyButton />
+                    <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">python vivox_admin.py add_key -s
+https://assigned_subdomain.www.vivox.com/api2/ -u your_admin_username -p
+your_admin_password -i your_issuer -k your_new_key</MadCap:codeSnippetBody>
+                </MadCap:codeSnippet>
+            </li>
+            <li>
+                <p>Change your game server to begin issuing tokens by using the new key.</p>
+            </li>
+            <li>
+                <p>Wait for a period of 2*TTL seconds.</p>
+            </li>
+            <li>
+                <p>Remove your old key by using the included <span style="font-family: monospace;">vivox_admin.py</span> code as follows:</p>
+                <MadCap:codeSnippet>
+                    <MadCap:codeSnippetCopyButton />
+                    <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">python vivox_admin.py revoke_key -s
+https://assigned_subdomain.www.vivox.com/api2/ -u your_admin_username -p
+your_admin_password -i your_issuer -k your_old_key</MadCap:codeSnippetBody>
+                </MadCap:codeSnippet>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">iOS known limitations</h1>
+        <p>The following sections detail the known limitations of the iOS platform. These limitations are not specific to the Vivox SDK implementation and are documented here for reference purposes. Also, note that this list is not exhaustive.</p>
+        <p>For more information, see the Apple developer documentation.</p>
+    </body>
+</html>

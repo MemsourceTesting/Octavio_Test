@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Channel URI structure</h1>
+        <p>	A channel <MadCap:glossaryTerm glossTerm="Glossary.Term16">URI</MadCap:glossaryTerm> uses the following format:</p>
+        <p><span style="font-family: monospace;">sip:confctl-g-issuer.lobby@mt1s.vivox.com</span>.</p>
+        <p>The following list details each part of the channel URI structure:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">sip</span> - indicates a <MadCap:glossaryTerm glossTerm="Glossary.Term4">SIP</MadCap:glossaryTerm> channel</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">confctl-g</span> - a <MadCap:glossaryTerm glossTerm="Glossary.Term20">Confctl</MadCap:glossaryTerm> reference with a channel type</p>
+                <ul>
+                    <li>
+                        <p><span style="font-family: monospace;">d</span> for a positional channel</p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">e</span> for an echo channel</p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">g</span> for a non-positional channel</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">issuer</span> - the server issuer</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">lobby</span> - the name of the channel</p>
+                <p><b>Note</b>: This uses the same character and length criteria as the account name.</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">@mt1s.vivox.com</span> - the Vivox server that the user is connecting to</p>
+            </li>
+        </ul>
+        <p><b>Note</b>: Ensure that the <span style="font-family: monospace;">chan_uri</span> parameter is a <a href="../parameters/fully-qualified-identifiers.htm">fully qualified identifier</a>.</p>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Request capture device access</h1>
+        <p>To ensure that voice functions as expected, developers who are using the Vivox SDK with applications on the following platforms must request capture device access before joining a channel.</p>
+        <ul>
+            <li>
+                <p>Android </p>
+            </li>
+            <li>
+                <p>iOS</p>
+            </li>
+            <li>
+                <p>macOS</p>
+            </li>
+            <li>
+                <p>Windows 8 and later</p>
+            </li>
+        </ul>
+        <p>Each platform has various ways to request capture device access. For example, you can use runtime permissions to ask a user if they want to give an application access to a capture device. For information about making runtime permission requests, see the platform-specific documentation that is maintained by each platform manufacturer.</p>
+        <p><b>Note</b>: If an application does not request capture device access, then problems could occur, such as capture device or all channel audio not working until the channel has been left and rejoined.</p>
+    </body>
+</html>

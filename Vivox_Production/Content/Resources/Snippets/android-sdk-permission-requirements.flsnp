@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Android SDK permission requirements</h1>
+        <p>The following permission requirements apply when working with the Vivox Android SDK:</p>
+        <ul>
+            <li>
+                <p>Required</p>
+                <ul>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.INTERNET</span> - Allows communication with Vivox servers</p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.RECORD_AUDIO</span> - Allows microphone access</p>
+                        <p>For more information, see the Android developer documentation on <a href="https://developer.android.com/training/permissions/requesting" target="_blank">requesting app permissions</a>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Recommended</p>
+                <p><b>Note</b>: Not giving these permissions might prevent some Vivox SDK features from working properly.</p>
+                <ul>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.MODIFY_AUDIO_SETTINGS</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.ACCESS_NETWORK_STATE</span> - Allows access to network information</p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.ACCESS_WIFI_STATE</span> - Allows access to Wi-Fi information</p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.BLUETOOTH</span> - Allows access to Bluetooth devices on Android versions earlier than 12</p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">android.permission.BLUETOOTH_CONNECT</span> - Allows access to Bluetooth devices on Android version 12 and later</p>
+                        <p><b>Note</b>: On Android 12 (Android SDK version 31) and later, you need to request the <span style="font-family: monospace;">android.permission.BLUETOOTH_CONNECT</span> permission at runtime. For more information, see the Android developer documentation on <a href="https://developer.android.com/guide/topics/connectivity/bluetooth/permissions" target="_blank">Bluetooth permissions</a>.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Send a channel message</h1>
+        <p>You can send a message to a channel by using <span style="font-family: monospace;">IChannelSession.BeginSendText(string message, AsyncCallback callback)</span> on a reference to the channel session to target, with a string message to send and an <span style="font-family: monospace;">AsyncCallback</span> that runs <span style="font-family: monospace;">channelSession.EndSendText</span>.</p>
+        <p>The following code snippet displays an example implementation for sending a message to a channel:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">channelSession.BeginSendText(messageToSend, ar =&gt;
+{
+    try
+    {
+        channelSession.EndSendText(ar);
+    }
+    catch (System.Exception e)
+    {
+        Debug.Log($"EndSendText() threw {e}");
+        return;
+    }
+});</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>To provide more information, you can also use <span style="font-family: monospace;">IAsyncResult BeginSendText(string language, string message, string applicationStanzaNamespace, string applicationStanzaBody, AsyncCallback callback);</span>.</p>
+    </body>
+</html>

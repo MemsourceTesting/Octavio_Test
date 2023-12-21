@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Vivox provides the following core capabilities:</p>
+        <ul>
+            <li>
+                <p>Buddy and presence services</p>
+            </li>
+            <li>
+                <p>Directed voice and text communication services</p>
+            </li>
+            <li>
+                <p>Group voice and text communication services</p>
+            </li>
+        </ul>
+        <p>Game developers can integrate these capabilities directly into game clients and companion applications by using the Vivox SDK.</p>
+        <p>Optionally, game developers can provide additional capabilities by integrating their game server with Vivox servers through the <a href="../../server-to-server-api-reference/server-to-server-web-api-overview.htm">Vivox Server to Server Web API</a>, which is a simple XML over HTTP protocol that you can access by using a variety of server technologies.</p>
+    </body>
+</html>

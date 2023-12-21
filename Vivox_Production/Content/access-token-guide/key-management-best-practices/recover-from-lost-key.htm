@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Recover from a lost key</h1>
+        <p>If the token signing key is lost or compromised (which is highly unlikely in a production system, but is possible in a development system), you can clear all of the keys for a specific issuer by using the included Python module as follows: </p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">python vivox_admin.py revoke_keys -s
+https://assigned_subdomain.www.vivox.com/api2/ -u your_admin_username -p
+your_admin_password -i your_issuer</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

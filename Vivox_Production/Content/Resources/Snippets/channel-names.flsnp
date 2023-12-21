@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Channel name criteria</h1>
+        <p>When you create a channel name, the following criteria apply:</p>
+        <ul>
+            <li>Maximum of 200 characters</li>
+            <li>Use only the following characters:</li>
+            <MadCap:snippetBlock src="valid-characters.flsnp" />
+        </ul>
+        <p><b>Note</b>: Channel names can have mixed case for clarity. However, do not use different case versions of the same channel. For example, do not use "MyChannel" and "mychannel" at the same time, or audio connection issues can occur.</p>
+    </body>
+</html>

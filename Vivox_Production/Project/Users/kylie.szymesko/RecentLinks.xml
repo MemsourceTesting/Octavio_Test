@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="\\mac\Home\Documents\GitHub\vivox-docs\Vivox_Production\Content\text-chat-guide\text-chat-guide-overview.htm" />
+    </Dialog>
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="\\mac\Home\Documents\GitHub\vivox-docs\Vivox_Production\Content\Resources\Images\core-integration-guide\core-login-workflow.png" />
+    </Dialog>
+</RecentLinks>

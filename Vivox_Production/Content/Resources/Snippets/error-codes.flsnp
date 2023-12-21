@@ -1,0 +1,1002 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Vivox SDK error codes</h1>
+        <p>The following table lists the error codes that the Vivox SDK can return and recommendations for how to handle these errors.</p>
+        <table style="mc-table-style: url('../TableStyles/Basic.css');margin-left: auto;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="background-color: #a9a9a9;text-align: center;font-weight: bold;">Error</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #a9a9a9;text-align: center;font-weight: bold;">Error code</td>
+                    <td class="BodyD-Column1-Body1" style="background-color: #a9a9a9;text-align: center;font-weight: bold;">Notes</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNoMessageAvailable</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>-1</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorSuccess</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>0</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorTargetObjectDoesNotExist</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1001</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInternalError</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1004</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Internal Vivox error.</p>
+                        <p>Get Vivox logs and send to Vivox for analysis.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidArgument</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1008</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                        <p>A parameter in a request is either using the wrong type (for example, using a bool when it should be an int) or is missing.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNotInitialized</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1012</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNotImplemented</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1017</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidState</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1019</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Often a programming error, but sometimes occurs when a login or voice session terminates due to loss of network at the same time that a request is issued.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorFileOpenFailed</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1043</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error or packaging error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorRtpTimeout</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1058</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Unable to pass RTP.</p>
+                        <p>User retry, or exponential backoff retry.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorAlreadyInitialized</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1085</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorServerRtpTimeout</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>1095</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorAsyncOperationCanceled</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5001</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorCaptureDeviceInUse</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5002</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Indicates an attempt to open a second audio session on a second simultaneous session group.</p>
+                        <p>Usually indicative of a client programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorConnectionTerminated</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5003</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Connection for Vivox lost, user retry, or exponential backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorFileOpenFailed</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5004</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error or packaging error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorHandleReserved</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5005</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorHandleTaken</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5006</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInternalError</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5007</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Internal Vivox error.</p>
+                        <p>Get Vivox logs and send to Vivox for analysis.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidArgument</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5008</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidFormat</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5009</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidOperation</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5010</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidState</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5011</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Often a programming error, but sometimes occurs when a login or voice session terminates due to loss of network at the same time that a request is issued.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidValueTypeXmlQuery</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5012</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Internal Vivox error.</p>
+                        <p>Get Vivox logs and send to Vivox for analysis.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNoMatchingXmlAttributeFound</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5013</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Internal Vivox error.</p>
+                        <p>Get Vivox logs and send to Vivox for analysis.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNoMatchingXmlNodeFound</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5014</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Internal Vivox error.</p>
+                        <p>Get Vivox logs and send to Vivox for analysis.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNoMemory</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5015</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Usually a corrupted heap.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNoMoreData</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5016</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNotSupported</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5018</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorPortNotAvailable</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5019</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Unable to find a port for audio.</p>
+                        <p>Usually indicative of having too many calls active at once as a result of a programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorRtpTimeout</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5020</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Unable to pass RTP.</p>
+                        <p>User retry or exponential backoff retry.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorUnableToOpenCaptureDevice</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5021</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorXmppBackEndRequired</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5023</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Client is configured to use the wrong Vivox backend, or the backend is set up incorrectly.</p>
+                        <p>Contact Vivox.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorPreloginDownloadFailed</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5024</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Unable to reach a Vivox web server.</p>
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNotLoggedIn</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5025</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorPresenceMustBeEnabled</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5026</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorConnectorLimitExceeded</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5027</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorTargetObjectNotRelated</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5028</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorTargetObjectDoesNotExist</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5029</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorMaxLoginsPerUserExceeded</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5030</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorRequestCanceled</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5031</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorBuddyDoesNotExist</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5032</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorChannelUriRequired</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5033</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorTargetObjectAlreadyExists</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5034</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Occurs when a developer tries to force a player to join a channel that the player is already connected to, while declaring a different session group.</p>
+                        <p>This is because a player cannot connect to two channels with the same URI (same name, same audio/text status, same issuer, and same domain), even if they use a separate session group for each.</p>
+                        <p>This error occurs regardless of whether a developer uses a different session group to try and join the player to the same channel again.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidCaptureDeviceForRequestedOperation</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5035</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidCaptureDeviceSpecifier</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5036</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidRenderDeviceSpecifier</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5037</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorDeviceLimitReached</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5038</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorInvalidEventType</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5039</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNotInitialized</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5040</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorAlreadyInitialized</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5041</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                        <p>Attempted to initialize a client that was already initialized.</p>
+                        <p>You might need to reopen your Unity project to fix this error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorNotImplemented</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5042</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorTimeout</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5043</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNoAuthentificationStanzaReceived</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5044</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxFailedToConnectToXmppServer</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5045</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxSSLNegotiationToXmppServerFailed</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5046</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>If this error only occurs on one device, check that the device is up to date on all certificates.</p>
+                        <p>If this error occurs on all devices, contact Vivox immediately.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorUserOffLineOrDoesNotExist</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5047</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorCaptureDeviceInvalidated</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5048</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorMaxEtherChannelLimitReached</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5049</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorHostUnknown</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5050</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Server value could not be resolved.</p>
+                        <p>Check that the value is correct. Otherwise, retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorChannelUriTooLong</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5051</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorUserUriTooLong</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5052</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorUserBlocked</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5102</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Occurs when a direct message is sent to a user who is cross-muted (blocked).</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxErrorMessageTextTooLong</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>5103</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Received when a text message exceeds the maximum length in bytes.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkHttpInvalidUrl</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10003</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkNameResolutionFailed</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10006</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Either a programming error or a networking issue.</p>
+                        <p>Check the account management server URL. If pervasive, contact Vivox. Otherwise, retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkUnableToConnectToServer</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10007</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkHttpTimeout</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10028</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkHttpInvalidServerResponse</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10052</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Contact Vivox.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkHttpConnectionReset</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10056</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkHttpInvalidCertificate</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10077</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkHttpGeneralConnectionFailure</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10100</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Retry with backoff.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxNetworkReconnectFailure</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>10101</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Received when the Vivox SDK fails to reconnect after several attempts.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenAlreadyUsed</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20120</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenExpired</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20121</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenInvalidSignature</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20122</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenClaimsMismatch</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20123</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenMalformed</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20124</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenInternalError</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20125</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Contact Vivox.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenServiceUnavailable</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20127</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Contact Vivox.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">VxAccessTokenIssuerMismatch</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>20128</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Programming error.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1"> <p><span style="font-family: monospace; font-size: 12pt;">VxErrorTitleDisabled</span></p></td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>20129</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>Received when the Vivox SDK free-tier has been exceeded and payment information has not been provided within 30 days.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

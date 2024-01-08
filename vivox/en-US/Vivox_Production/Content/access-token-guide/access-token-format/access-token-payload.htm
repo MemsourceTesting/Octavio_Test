@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Access token payload</h1>
+        <p>The payload is a base64url-encoded <MadCap:glossaryTerm glossTerm="Glossary.Term14">JSON</MadCap:glossaryTerm> object that contains the claims asserted by the token. You can list claims in the payload in any order.</p>
+        <p>The following table details the claims that you can use in a token. For more information on which parameters are required for each token, see <a href="../access-token-examples/access-token-examples-toc.htm">Access token examples</a>.</p>
+        <p><b>Note</b>: Ensure that you only include the parameters from the example. Claims that contain the wrong parameters return "invalid signature" or "malformed payload" errors on the API calls.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-weight: bold;text-align: center;background-color: #a9a9a9;">Claim</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: bold;text-align: center;background-color: #a9a9a9;">Example value</td>
+                    <td class="BodyD-Column1-Body1" style="font-weight: bold;text-align: center;background-color: #a9a9a9;">Description </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">vxi</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">1</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Guarantee token uniqueness.</p>
+                        <p>If all other claims are identical, this must be different or the token could be rejected as already used.</p>
+                        <p><b>Note</b>: We recommend that you use an unsigned integer that is increased by 1 for every token that is generated.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">sub</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">sip:.blindmelon-AppName-dev.jerky.@tla.vivox.com</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>The subject.</p>
+                        <p>A user <MadCap:glossaryTerm glossTerm="Glossary.Term4">SIP</MadCap:glossaryTerm> <MadCap:glossaryTerm glossTerm="Glossary.Term16">URI</MadCap:glossaryTerm> that is used for mute and kick actions.</p>
+                        <p>This is the user who is muted or unmuted, or the user who is kicked.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">f</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">sip:.blindmelon-AppName-dev.beef.@tla.vivox.com</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>From.</p>
+                        <p>This is a user SIP URI that is used in all actions.</p>
+                        <p>This is the user who performs actions such as signing in, joining the channel, or muting another user.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">iss</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">blindmelon-AppName-dev</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>An application-specific issuer.</p>
+                        <p>The issuer is provided when you create an application on the Vivox Developer Portal.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">vxa</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">kick</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>A Vivox action.</p>
+                        <p>For more information, see <a href="supported-values-vxa-claim.htm">Supported values for the Vivox action claim</a>.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">t</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>To.</p>
+                        <p>This is a channel SIP URI that is used in join, mute, kick, and transcription actions.</p>
+                        <p>This is the channel where the action takes place.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p><span style="font-family: monospace;">exp</span>
+                        </p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p><span style="font-family: monospace;">1600349400</span>
+                        </p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>The expiration time as epoch seconds.</p>
+                        <p>This value is usually the current time plus 90 seconds.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

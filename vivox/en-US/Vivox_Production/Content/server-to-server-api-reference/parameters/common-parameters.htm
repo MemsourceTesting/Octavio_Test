@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Common parameters</h1>
+        <p>The following table details the parameters that are common to a majority of the Vivox Server to Server Web APIs.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-weight: bold;background-color: #a9a9a9;text-align: center;">Parameter</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: bold;background-color: #a9a9a9;text-align: center;">Description</td>
+                    <td class="BodyD-Column1-Body1" style="font-weight: bold;background-color: #a9a9a9;text-align: center;">Notes</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">userid</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The Vivox username of the requester of the Vivox operation.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Found in the VIVOX API INFO section on the Developer Portal.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">pwd</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The password of the user identified by the <span style="font-family: monospace;">userid</span> parameter.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Found in the VIVOX API INFO section on the Developer Portal.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">auth_token</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>An explicit authorization token (cookie).</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Found in the response from a successful <span style="font-family: monospace;">viv_signin.php</span> call.</p>
+                        <p><b>Note</b>: The <a href="../control-active-channels-api/control-active-channels-api.htm">Control active channels API</a> and the <a href="../kick-api/kick-api.htm">Kick API</a> can each use the <span style="font-family: monospace;">auth_token</span> parameter in place of the <span style="font-family: monospace;">userid</span> and <span style="font-family: monospace;">pwd</span> parameters. For more information, see <a href="../login-api.htm">Login API</a>.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">access_token</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The access token with proper claims for this action.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>
+                            <MadCap:snippetText src="../../Resources/Snippets/access-token-guide-general-link.flsnp" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">user_uri</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The <MadCap:glossaryTerm glossTerm="Glossary.Term4">SIP</MadCap:glossaryTerm> <MadCap:glossaryTerm glossTerm="Glossary.Term16">URI</MadCap:glossaryTerm> of the user that is the target of the operation.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>This value must be URL-encoded when calling the API.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p><span style="font-family: monospace;">chan_uri</span>
+                        </p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>The SIP URI of the channel that is the target of the operation.</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>This value must be URL-encoded when calling the API.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>Note</b>: Ensure that the <span style="font-family: monospace;">user_uri</span> and <span style="font-family: monospace;">chan_uri</span> parameters are <a href="fully-qualified-identifiers.htm">fully qualified identifiers</a>.</p>
+    </body>
+</html>

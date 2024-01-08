@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Access token signature</h1>
+        <p>The signature is the base64url-encoded <MadCap:glossaryTerm glossTerm="Glossary.Term21">HMAC</MadCap:glossaryTerm> of the first two parts:</p>
+        <p><span style="font-family: monospace;">base64UrlEncode(HMACSHA256(base64UrlEncode(header) + '.' + base64UrlEncode(payload), key))</span>
+        </p>
+        <p>The encoded header and encoded payload are joined with a period, undergoes HMAC with the token signing key, and then the entirety is encoded.</p>
+    </body>
+</html>

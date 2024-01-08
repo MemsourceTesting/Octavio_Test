@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Access token terminology</h1>
+        <table style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;background-color: #a9a9a9;font-weight: bold;">Term</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;background-color: #a9a9a9;font-weight: bold;">Description</td>
+                </tr>
+                <tr class="Body-Body1" style="height: 110px;">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Base64url encoding<br /></p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Base64 encoding with all trailing '=' removed, '+' changed to '-', and '/' changed to '_'.</p>
+                        <p>For more information, see the <MadCap:glossaryTerm glossTerm="Glossary.Term22">IETF</MadCap:glossaryTerm> documentation on RFC 7515.<br /></p>
+                        <p>The following example is an implementation of base64url encoding in PHP: </p>
+                        <MadCap:codeSnippet>
+                            <MadCap:codeSnippetCopyButton />
+                            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">function base64url_encoded($str)
+{
+    return rtrim(strtr(base64_encoded($str), '+/', '-_'), '=')
+}</MadCap:codeSnippetBody>
+                        </MadCap:codeSnippet>
+                        <p>The following example is an implementation of base64url encoding in Python:</p>
+                        <MadCap:codeSnippet>
+                            <MadCap:codeSnippetCopyButton />
+                            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">import base64
+def base64url_encode(s):
+"""Return a base64url-encoded str"""
+return base64.urlsafe_b64encode(s).rstrip('=')</MadCap:codeSnippetBody>
+                        </MadCap:codeSnippet>
+                        <p>For an example implementation of base64url encoding in C#, see the IETF documentation on RFC 7515.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>URL and filename safe string</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>A string composed of characters found in the URL and filename safe Base64 alphabet.</p>
+                        <p>For more information, see the IETF documentation on RFC 4648.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

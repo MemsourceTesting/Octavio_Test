@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>When customizing distance values, consider the following guidelines:</p>
+        <ul style="margin-left: 6pt;">
+            <li>
+                <p>You can represent the <span style="font-family: monospace;">AudibleDistance</span> and <span style="font-family: monospace;">ConversationalDistance</span> in any units, but the two units must always match. The values can be different.</p>
+                <p><b>Note</b>: You must use the same units when reporting your actor’s position by using the <span style="font-family: monospace;">Set3DPosition</span> method.</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">ConversationalDistance</span> is the distance from the listener at which a speaker’s voice is heard at its original volume. This must be an integer in the range 0 &lt;= <span style="font-family: monospace;">ConversationalDistance</span> &lt;= <span style="font-family: monospace;">AudibleDistance</span>. Consider this to be the expected close-by conversational distance.</p>
+            </li>
+            <li>
+                <p>The <span style="font-family: monospace;">ConversationalDistance</span> sounds the most realistic when it is half the height of a typical speaking entity in your game.</p>
+                <p>If your players are shorter or taller than typical adult humans, considering adjusting this value to match.</p>
+            </li>
+            <li>
+                <p>When using the default <span style="font-family: monospace;">AudioFadeModel</span> value, if you want voice chat to naturally fade to near zero loudness at the edge of the <span style="font-family: monospace;">AudibleDistance</span> so it does not sound like it is being abruptly cut off, then set the <span style="font-family: monospace;">AudibleDistance</span> to a minimum of:</p>
+                <p>32 × <i>ConversationalDistance</i> ÷ <i>AudioFadeIntensityByDistance</i>.</p>
+                <p>If you want a lower max <span style="font-family: monospace;">AudibleDistance</span> (for example, to limit the range of received texts), then you can increase <span style="font-family: monospace;">AudioFadeIntensityByDistance</span> accordingly.</p>
+                <p>Depending on the amount of ambient game noise or music, you might want to further adjust these values to ensure that voice chat is heard only at the distances you want.</p>
+            </li>
+            <li>
+                <p>When using the <span style="font-family: monospace;">ExponentialByDistance AudioFadeModel</span>, we recommend that you keep the <span style="font-family: monospace;">ConversationalDistance</span> value at 1 or greater.</p>
+            </li>
+            <li>
+                <p>When using the <span style="font-family: monospace;">ExponentialByDistance AudioFadeModel</span>, we recommend that you adjust the value of the <span style="font-family: monospace;">AudioFadeIntensityByDistance</span> property based on the following formula:</p>
+                <p><i>AudioFadeIntensityByDistance</i>  = 3 ÷  (1 + 1.75 × log<sub>10</sub>(<i>ConversationalDistance</i>))</p>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Key update API</h1>
+        <p>Use the key update API to automate the process of adding or revoking an application API key.</p>
+        <p><b>Note</b>: These actions are manually performed in the Vivox Developer Portal on an application's details page.</p>
+        <p>The key update API consists of the following REST endpoints:</p>
+        <ul>
+            <li><span style="font-family: monospace;">developer-api.vivox.com/api/v1/applications/remote-api/key/add</span>
+            </li>
+            <li><span style="font-family: monospace;">developer-api.vivox.com/api/v1/applications/remote-api/key/revoke</span>
+            </li>
+        </ul>
+        <p>To enable these endpoints, complete the following steps:</p>
+        <ol>
+            <li>
+                <p>In the Vivox Developer Portal, in the left navigation pane, select the arrow next to your organization's name and select <b>Settings</b>.</p>
+            </li>
+            <li>
+                <p>On the Organization Settings page, in the Remote API section, enable the <b>Enable Remote API</b> checkbox.</p>
+                <p>This generates a unique username and password that you use to call the two endpoints.</p>
+            </li>
+            <li>
+                <p>Select <b>Update Organization</b>.</p>
+            </li>
+        </ol>
+        <p>You can then call these endpoints by using a tool such as cURL, Advanced REST Client (ARC), or Postman.</p>
+        <MadCap:miniTocProxy style="mc-toc-depth: 5;" />
+    </body>
+</html>

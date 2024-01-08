@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Send a directed message</h1>
+        <p>When you send a <a href="../../Core/developer-guide/messaging/directed-text.htm">directed message</a> (<span style="font-family: monospace;">account_send_message</span> in the Vivox SDK), you need to know the URI of the participant, which starts with "<span style="font-family: monospace;">sip:</span>" and ends with "<span style="font-family: monospace;">@mt1s.vivox.com</span>".</p>
+        <p>The following code displays an example of the user Alice sending a directed message to the user Bob: </p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">[SDKSampleApp]: message -u sip:.xyzzy.bob.@mt1s.vivox.com -m "hey bob"
+* Sending directed message 'hey bob' to user sip:.xyzzy.bob.@mt1s.vivox.com
+* Issuing req_account_send_message with cookie=3</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Bob sees the message as a <span style="font-family: monospace;">user_to_user_message</span> event:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">* evt_user_to_user_message: .xyzzy.bob. sip:.xyzzy.sa_c78d1595.@mt1s.vivox.com - hey bob</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

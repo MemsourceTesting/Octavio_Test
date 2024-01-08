@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">XMPP representation  - Delete a message in a channel</h1>
+        <p><b>Delete request</b>
+        </p>
+        <p>Example delete request:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">&lt;iq type='set' id='...' from='...' to='...'&gt;
+   &lt;query xmlns='urn:xmpp:mam:4'&gt;
+       &lt;x xmlns='jabber:x:data' type='submit'&gt;
+           &lt;field var='FORM_TYPE' type='hidden'&gt;
+               &lt;value&gt;urn:xmpp:mam:4&lt;/value&gt;
+           &lt;/field&gt;
+           &lt;field var='message-id'&gt;
+               &lt;value&gt;...&lt;/value&gt;
+           &lt;/field&gt;
+       &lt;/x&gt;
+   &lt;/query&gt;
+&lt;/iq&gt;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p><b>Delete response</b>
+        </p>
+        <p>Example delete response:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">&lt;iq from="someRoomSIP@cats.vivox.com"
+    id="..."
+    to="alice@cats.vivox.com"
+    type="result"&gt;
+    &lt;message-deleted xmlns="urn:vivox:message-deleted" id="..." /&gt;
+&lt;/iq&gt;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p><b>Deleted event</b>
+        </p>
+        <p>Deleted event notification is then propagated back to every participant in the channel.</p>
+        <p>Example of propagating a deleted message event:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">&lt;message type=”event” from=”...” to=”...”&gt;
+   &lt;event urn=”urn:vivox:message-deleted”&gt;
+       &lt;delete to=”alice@cats.vivox.com” message-id=”...”&gt;
+          &lt;delete-time&gt;1656521027&lt;/delete-time&gt;
+       &lt;/delete&gt;
+   &lt;/event&gt;
+&lt;/message&gt;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

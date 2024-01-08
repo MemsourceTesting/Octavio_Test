@@ -1,0 +1,372 @@
+﻿/*<meta />*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+html.left-layout body
+{
+	background: #000;
+}
+
+html.left-layout body #header
+{
+	position: absolute;
+	width: 400px;
+	z-index: 3;
+}
+
+html.left-layout body #header.nav-closed
+{
+	display: none;
+}
+
+html.left-layout body #header .homeLink
+{
+	position: absolute;
+	top: 92%;
+	left: 5px;
+	width: 354px;
+	height: 32px;
+	transform: translateY(-50%);
+	background: url('../Images/logo-black@2x.png') no-repeat top left;
+	background-size: 104px 32px;
+	z-index: 2;
+}
+
+html.left-layout body #header .homeLink img,
+html.left-layout body #header .homeLink h1
+{
+	display: none;
+}
+
+html.left-layout body #header #header-title
+{
+	position: absolute;
+	height: 32px;
+	width: 250px;
+	top: 50%;
+	left: 129px;
+	transform: translateY(-50%);
+	color: #000;
+	border: 1px solid #000;
+	font-family: Montserrat, sans-serif;
+	letter-spacing: 2.2px;
+	text-transform: uppercase;
+	font-size: 11px;
+	text-align: center;
+	line-height: 32px;
+	z-index: 1;
+}
+
+html.left-layout body #header .search-bar
+{
+	top:-90px;
+	left: 50px;
+	transform: translate(-50%, 60%);
+	right: auto;
+	display: flex;
+	border-color: silver;
+}
+
+html.left-layout body #header .search-bar #search-field
+{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	flex-grow: auto;
+	float: none;
+	height: 28px;
+}
+
+html.left-layout body #header .search-bar .search-submit-wrapper
+{
+	content: '\f002';
+	font: 14px/1 FontAwesome;
+	background: #f5f5f5;
+	position: relative;
+	flex: 1;
+	float: none;
+}
+
+html.left-layout body #header .search-bar .search-submit-wrapper .search-submit
+{
+	height: 28px;
+}
+
+html.left-layout body #header .search-bar .search-submit:before
+{
+	color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 28px;
+}
+
+html.left-layout body #navigation
+{
+	z-index: 2;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-nav
+{
+	display: none;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel
+{
+	background: #fff;
+	top: 120px;
+	padding: 25px;
+	padding-top: 45px;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content
+{
+	position: static;
+	padding: 0;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel #toc.tabs-panel-content
+{
+	max-height: 100%;
+	overflow-y: auto;
+	border-top: 1px solid #f5f5f5;
+	padding-top: 25px;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content ul.tree
+{
+	white-space: normal;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content ul.tree.inner
+{
+	padding-left: 10px;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node > div
+{
+	font-size: 12px;
+	background: none;
+	position: relative;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node > div a
+{
+	color: #1e88e5;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node.tree-node-selected > div a
+{
+	color: black;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node > div:after
+{
+	position: absolute;
+	font-family: 'Font Awesome 5 Pro';
+	left: 0;
+	top: 0;
+	color: #000;
+	font-weight: 900;
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node.tree-node-collapsed > div:after
+{
+	font: 14px/1 FontAwesome;
+	content: '\f07b';
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node.tree-node-selected > div:after,
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node.tree-node-expanded > div:after
+{
+	font: 14px/1 FontAwesome;
+	content: '\f07c';
+}
+
+html.left-layout body #navigation .tabs .tab.active .tabs-panel .tabs-panel-content .tree-node.tree-node-leaf > div:after
+{
+	font: 14px/1 FontAwesome;
+	content: '\f15c';
+	font-weight: 300;
+	left: 2px;
+}
+
+html.left-layout #navigationResizeBar
+{
+	left: 380px;
+}
+
+html.left-layout #navigationResizeBar #show-hide-navigation
+{
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	width: 15px;
+	margin-top: 0;
+	height: 30px;
+	top: calc(50% + 37.5px);
+}
+
+html.left-layout #navigationResizeBar #show-hide-navigation:before
+{
+	border: none;
+	color: #000;
+	margin-top: 0;
+	margin-left: 0;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	line-height: 30px;
+	position: absolute;
+}
+
+html.left-layout #navigationResizeBar #show-hide-navigation:after
+{
+	visibility: hidden;
+}
+
+html.left-layout #navigationResizeBar.nav-closed #show-hide-navigation
+{
+	left: 25px;
+	transform: translateX(-25%);
+}
+
+html.left-layout #navigationResizeBar.nav-closed #show-hide-navigation:before
+{
+	/*content: "\f105";*/
+}
+
+html.left-layout #body
+{
+	position: static;
+	z-index: 1;
+}
+
+html.left-layout #contentBody
+{
+	z-index: 1;
+	left: 400px;
+	border-radius: 0;
+	background: #f8f8f8;
+}
+
+html.left-layout #contentBody.nav-closed
+{
+	left: 0;
+}
+
+html.left-layout #contentBody .toolbar-buttons
+{
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	height: 150px;
+	padding-top: 62.5px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+html.left-layout #contentBody .toolbar-buttons button
+{
+	box-shadow: none;
+	border: none;
+	position: relative;
+}
+
+html.left-layout #contentBody .toolbar-buttons button:after
+{
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 400;
+	font-size: 14px;
+	color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+html.left-layout #contentBody .toolbar-buttons .button-group-container-left
+{
+	margin-left: 0;
+}
+
+html.left-layout #contentBody .toolbar-buttons .button-group-container-left button
+{
+	margin: 0px 6px;
+}
+
+html.left-layout #contentBody .toolbar-buttons .button-group-container-left .button-separator
+{
+	display: none;
+}
+
+html.left-layout #contentBody .toolbar-buttons .button-group-container-right
+{
+	margin-right: 0;
+}
+
+html.left-layout #contentBody .toolbar-buttons .button-group-container-right button:last-child
+{
+	margin-right: 0;
+}
+
+html.left-layout #contentBody .toolbar-buttons .select-language-button
+{
+	background: #000000;
+	position: fixed;
+	top: 15px;
+	right: 50px;
+}
+
+html.left-layout #contentBody .toolbar-buttons .select-language-button p {
+	color: #a9a9a9;
+	position: fixed;
+	top: 6px;
+	right: 9px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+html.left-layout #contentBody #contentBodyInner
+{
+	top: 100px;
+	left: 0px;
+	right: 0px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.31);
+	border: none;
+	padding: 25px;
+}
+
+html.left-layout #contentBody #contentBodyInner iframe.content
+{
+	position: static;
+	overflow-x: hidden;
+	overflow-y:auto;
+	max-width:100%;
+}
+
+html.left-layout #searchPane
+{
+	padding: 25px;
+	margin: 0;
+}
+
+html.left-layout #searchPane h1#results-heading
+{
+	font-weight: normal;
+	font-size: 26px;
+}
+
+html.left-layout #searchPane #resultList .title a
+{
+	color: #1e88e5;
+}

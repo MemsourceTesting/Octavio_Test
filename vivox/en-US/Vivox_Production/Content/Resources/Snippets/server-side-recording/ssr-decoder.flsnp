@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Server-side recording decoder</h1>
+        <p>Use the server-side recording (SSR) decoder service to generate .wav files from the audio data that is captured by SSR and then uploaded to the cloud as .tar files.</p>
+        <p>After the .wav files are decoded, they are compressed into .zip files and uploaded back to the cloud in a subfolder of where the .tar files were found. By default, decoded subscriptions result in a single .wav file for each participant in the recorded conversation, and all files are the same duration. Other options are detailed in the SSR API documentation.</p>
+    </body>
+</html>

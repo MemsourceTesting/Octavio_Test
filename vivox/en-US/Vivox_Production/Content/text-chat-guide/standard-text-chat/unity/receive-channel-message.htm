@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Receive a channel message</h1>
+        <p>To receive a channel message, bind a method to <span style="font-family: monospace;">IChannelSession.MessageLog.AfterItemAdded</span>.</p>
+        <p>The following code snippet displays an example binding that debugs the message’s sender and intended message:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">channelSession.MessageLog.AfterItemAdded += (sender, args) =&gt;
+{
+    Debug.Log(args.Value.Sender + ": " + args.Value.Message);
+};</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

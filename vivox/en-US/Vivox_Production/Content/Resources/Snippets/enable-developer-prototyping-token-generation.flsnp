@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>To enable development and prototyping token generation, manually add or automatically pull your Vivox Token key into your project.</p>
+        <p><b>Note</b>: Do not use development and prototyping tokens in a production environment.</p>
+        <ol>
+            <li>
+                <p> Open your Unity project.</p>
+            </li>
+            <li>
+                <p>Select <b>Edit &gt; Project Settings</b>. Select the <b>Vivox</b> tab, and then perform either of the following actions:</p>
+                <ul>
+                    <li>
+                        <p>Manually enter the Vivox credentials.</p>
+                        <p>These are found on the Unity Dashboard, in the <b>Vivox</b> section, on your project’s <b>Credentials</b> page.</p>
+                    </li>
+                    <li>
+                        <p>For a project that is already associated with the Unity Dashboard, update <b>Environment</b> to <span style="font-family: monospace;">Automatic</span>.</p>
+                        <p>This automatically pulls Vivox credentials into your project.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

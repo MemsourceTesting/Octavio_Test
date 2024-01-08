@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Send a directed message</h1>
+        <p>You can send a <a href="../../../Core/developer-guide/messaging/directed-text.htm">directed message</a> by using the <span style="font-family: monospace;">vx_req_account_send_message</span> request.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">typedef struct vx_req_account_send_message
+{
+    /**
+    * The common properties for all requests.
+    */
+    vx_req_base_t base;
+    /**
+    * The handle returned from successful vx_req_sessiongroup_add_session request.
+    */
+    VX_HANDLE account_handle;
+    /**
+    * The destination URI.
+    */
+    char *user_uri;
+    /**
+    * HTTP Content type of the message.
+    * If an empty string is passed in, this field will default to "text/plain".
+    * For other valid content types, see RFC 2046 (https://www.ietf.org/rfc/rfc2046.txt).
+    */
+    char *message_header;
+    /**
+    * HTTP Content type of the message.
+    * If an empty string is passed in, this field will default to "text/plain".
+    * This field will be validated, so it must be in a valid format.
+    * For a full description of valid content types, see RFC 2046 (https://www.ietf.org/rfc/rfc2046.txt).
+    */
+    char *message_body;
+    /**
+    * The language (default null, implies "en").
+    */
+    char *language;
+    /**
+    * The namespace of the custom application stanza (optional, default null).
+    */
+    char *application_stanza_namespace;
+    /**
+    * The custom application stanza body (optional, default null).
+    */
+    char *application_stanza_body;
+}
+
+vx_req_account_send_message_t;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>For more information on using directed text in the SDKSampleApp, see <a href="../../sdksampleapp/send-directed-message.htm">Send a directed message</a>.</p>
+    </body>
+</html>

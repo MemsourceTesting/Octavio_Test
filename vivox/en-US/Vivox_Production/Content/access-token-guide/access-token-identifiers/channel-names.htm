@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Channel names</h1>
+        <p>When you create a channel name, the following criteria apply:</p>
+        <ul>
+            <li>Maximum of 200 characters</li>
+            <li>Use only the following characters: </li>
+            <MadCap:snippetBlock src="../../Resources/Snippets/valid-characters.flsnp" />
+        </ul>
+        <p>The recommended best practice is to URL-encode the channel name by using only uppercase hex digit characters.  Lowercase characters are allowed in the channel name, but not when used as the hex digit characters.</p>
+        <p>Channel names must start with a <span style="font-family: monospace;"><MadCap:glossaryTerm glossTerm="Glossary.Term20">confctl</MadCap:glossaryTerm></span> prefix and channel type, followed by your <a href="access-token-issuer.htm">issuer</a>, followed by a period '.'.</p>
+        <p>For example, if your issuer name is "<span style="font-family: monospace;">crux</span>", then a valid channel name is <span style="font-family: monospace;">confctl-g-crux.0verl0rd-channel</span>.</p>
+        <p><b>Note:</b> For the Vivox Unity SDK and the Vivox Unreal SDK, the naming displayed in this example only applies during access token generation. When you construct a <span style="font-family: monospace;">ChannelId</span>, you are expected to use only the "<span style="font-family: monospace;">0verl0rd-channel</span>" part of the channel name and not "<span style="font-family: monospace;">confctl-g-crux.0verl0rd-channel</span>" for the name argument. The <span style="font-family: monospace;">ChannelId</span> function <span style="font-family: monospace;">ToString()</span> returns a full channel URI that is suitable for token generation, which includes the channel type, issuer, dot, and other URI components.</p>
+    </body>
+</html>

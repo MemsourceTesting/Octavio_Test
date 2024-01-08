@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Automatically end a server-side recording subscription</h1>
+        <p>Server-side recording has a time-to-live (TTL) feature that ends a channel subscription or a speakers filtered by channel subscription when all users have left the channel.</p>
+        <p>If a TTL is set, and you reach the TTL before the channel ends, then the subscription will end at the TTL time and not at the time when the channel ends.</p>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Send a channel message</h1>
+        <p>To send a channel message, you must first join the channel. Channel names are URIs that are formatted by using the issuer string.</p>
+        <p>In this example scenario, join "<span style="font-family: monospace;">sip:confctl-g-xyzzy.test@mt1s.vivox.com</span>", which is a g-type (general) channel that is controlled by issuer "<span style="font-family: monospace;">xyzzy</span>".</p>
+        <p>The user Alice joins a channel, as detailed in the following code:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">[SDKSampleApp]: addsession -c sip:confctl-g-xyzzy.test@mt1s.vivox.com
+* Adding channel sip:confctl-g-xyzzy.test@mt1s.vivox.com (muted=no) (audio=yes) (text=yes) to session group sg_sip:confctl-g-xyzzy.test@mt1s.vivox.com with handle sip:confctl-g-xyzzy.test@mt1s.vivox.com
+* Issuing req_sessiongroup_add_session with cookie=4
+* Request req_sessiongroup_add_session with cookie=4 completed.
+* evt_sessiongroup_added: sg_sip:confctl-g-xyzzy.test@mt1s.vivox.com [.xyzzy.alice.]
+* evt_session_added: sip:confctl-g-xyzzy.test@mt1s.vivox.com [sg_sip:confctl-g-xyzzy.test@mt1s.vivox.com]
+* evt_text_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_text_connecting
+* evt_media_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_media_connecting 'Success' (0)
+* evt_text_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_text_connected
+* evt_participant_added: sip:confctl-g-xyzzy.test@mt1s.vivox.com sip:.xyzzy.alice.@mt1s.vivox.com
+* evt_media_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_media_connected 'Success' (0)</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p> Alice then sends a channel message, as detailed in the following code: </p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">[SDKSampleApp]: message -m "bob are you in channel?"
+* Sending message 'bob are you in channel?' to session handle sip:confctl-g-xyzzy.test@mt1s.vivox.com
+* Issuing req_session_send_message with cookie=5
+* Request req_session_send_message with cookie=5 completed.</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>The other user Bob joins the same channel, as detailed in the following code:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">[SDKSampleApp]: addsession -c sip:confctl-g-xyzzy.test@mt1s.vivox.com
+* Adding channel sip:confctl-g-xyzzy.test@mt1s.vivox.com (muted=no) (audio=yes) (text=yes) to session groupsg_sip:confctl-g-xyzzy.test@mt1s.vivox.com with handle sip:confctl-g-xyzzy.test@mt1s.vivox.com
+* Issuing req_sessiongroup_add_session with cookie=3
+* Request req_sessiongroup_add_session with cookie=3 completed.
+* evt_sessiongroup_added: sg_sip:confctl-g-xyzzy.test@mt1s.vivox.com [.xyzzy.bob.]
+* evt_session_added: sip:confctl-g-xyzzy.test@mt1s.vivox.com [sg_sip:confctl-g-xyzzy.test@mt1s.vivox.com]
+* evt_text_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_text_connecting
+* evt_media_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_media_connecting 'Success' (0)
+* evt_message: sip:confctl-g-xyzzy.test@mt1s.vivox.com sip:.xyzzy.alice.@mt1s.vivox.com bob are you in channel?
+* evt_participant_added: sip:confctl-g-xyzzy.test@mt1s.vivox.com sip:.xyzzy.alice.@mt1s.vivox.com
+* evt_text_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_text_connected
+* evt_participant_added: sip:confctl-g-xyzzy.test@mt1s.vivox.com sip:.xyzzy.bob.@mt1s.vivox.com
+* evt_media_stream_updated: sip:confctl-g-xyzzy.test@mt1s.vivox.com session_media_connected 'Success' (0)</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Although Bob joined after Alice, because the channel message history policy has been enabled on this server, Bob sees the message (message event) "<span style="font-family: monospace;">bob are you there?</span>". </p>
+    </body>
+</html>

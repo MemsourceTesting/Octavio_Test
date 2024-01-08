@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Text chat developer guide</h1>
+        <p>Vivox provides a text chat service:</p>
+        <ul>
+            <li>
+                <p><b>Text chat</b> - channel-based and directed text chat.</p>
+                <ul>
+                    <li>
+                        <p>Chat messages can contain any language or content up to service-defined size and rate limits.</p>
+                    </li>
+                    <li>
+                        <p>Chat messages are transported over TLS. No chat messages are saved or archived.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>The following additional features can be enabled:</p>
+        <ul>
+            <li>
+                <p><a href="chat-history/adaptive-chat-filter.htm">Adaptive Chat filter</a>                 </p>
+            </li>
+            <li>
+                <p><a href="chat-history/chat-history.htm">Chat history</a> - Beta release, Core SDK&#160;only.</p>
+            </li>
+            <li>
+                <p><a href="chat-history/text-evidence-management.htm">Text evidence management</a> - Beta release.</p>
+            </li>
+            <li>
+                <p><a href="chat-history/edit-delete/edit-delete-messages.htm">Edit and delete messages</a> - Beta release, Core SDK&#160;only.</p>
+            </li>
+            <li>
+                <p><a href="chat-history/offline-direct-messages.htm">Offline direct messages</a> - Beta release, Core SDK only.</p>
+            </li>
+            <li>
+                <p><a href="chat-history/anti-flooding.htm">Anti-flooding</a> - Beta release.</p>
+            </li>
+            <li>
+                <p><a href="chat-history/large-text-channels.htm">Large text channel support</a> - Beta release.</p>
+            </li>
+        </ul>
+        <p>The server can customize a maximum byte count for text messages in its pre-login configuration. By default, the maximum is 320 bytes with UTF-8 encoding. A text message that exceeds the maximum length in bytes is rejected with a <span style="font-family: monospace;">VxErrorMessageTextTooLong</span> error.<MadCap:conditionalText MadCap:conditions="General.Core"> For more information about UTF-8, see <a href="../Core/developer-guide/client-sdk-basics/character-encoding.htm">Character encoding</a>.</MadCap:conditionalText></p>
+        <p>Text chat requires a Unicode-supported system to work properly. The Unity Editor has full Unicode support in versions 2017.1 and later. </p>
+        <p>The following table details text chat policy: </p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="background-color: #a9a9a9;font-weight: bold;"><span style="font-weight: bold;">Service</span> </td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #a9a9a9;font-weight: bold;"><span style="font-weight: bold;">Policy option</span>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #a9a9a9;"><b>Default</b>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="background-color: #a9a9a9;"><b>Description</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>Standard text chat</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p><span style="font-family: monospace;">rate_limit</span>
+                        </p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>1000 bytes per second </p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>The maximum rate at which a player can send data over text chat.</p>
+                        <p>This is configured server-side by Vivox.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

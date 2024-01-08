@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Add an application API key</h1>
+        <p>When you have enabled the <b>Enable Remote API</b> checkbox, you can automate the process for adding an application API key by calling the REST endpoint located at <span style="font-family: monospace;">developer-api.vivox.com/api/v1/applications/remote-api/key/add</span> with a tool such as cURL, Advanced REST Client (ARC), or Postman.</p>
+        <p><b>Note</b>: You can have a maximum of two API keys at a time.</p>
+        <p>The following code displays an example of how to add the “somenewkey” application API key by using cURL:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">curl "https://developer-api.vivox.com/api/v1/applications/remote-api/key/add" -X POST -d
+"{\"remoteApiUsername\":\"remote-api-username-from-org-settings-page\",\"remoteApiPassword\":\"remote-api-password-from-org-settings-page\",\"issuer\":\"issuer-from-app-details-page\",\"key\":\"somenewkey\"}"</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>A response in the following format indicates that you successfully added the key:</p>
+        <p style="font-family: monospace;">{"statusCode":200,"data":"some-new-key"}</p>
+    </body>
+</html>

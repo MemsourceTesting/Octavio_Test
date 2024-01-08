@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Generate a token on the client</h1>
+        <p><b>Important:</b> Allowing token generation on the client during production is a security risk and can cause unexpected token expiration errors for your users.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/enable-developer-prototyping-token-generation.flsnp" />
+        <p>Development and prototyping token generation functions are routed through a function that is overridden with the game's server-side token generation code  before going to production. For more information, see <a href="override-development-key-generation.htm">Override development key generation</a>.</p>
+        <p>To generate your access token, call the <a href="../ReferenceManual/Unity/interface_vivox_unity_1_1_i_login_session.html#ae9508b1f2b062e821e66ed9a36100027">GetLoginToken()</a> member function of your <span style="font-family: monospace;">ILoginSession</span> instance or the <a href="../ReferenceManual/Unity/interface_vivox_unity_1_1_i_channel_session.html#a9476a680d05533874cebeacfc9f2a05e">GetConnectToken()</a> member function of your <span style="font-family: monospace;">IChannelSession</span> instance with the parameter for the token time to live in seconds.</p>
+        <p>The following examples display access tokens for login and join, respectively:</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Vivox Unity 5.15 and earlier</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:codeSnippet>
+                    <MadCap:codeSnippetCopyButton />
+                    <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">TimeSpan _expirationTimeSpan = TimeSpan.FromSeconds(90);
+
+// Login (This assumes an already initialized Client object);
+var _loginSession = client.GetLoginSession(/* AccountID to login */);
+_loginSession.GetLoginToken(_expirationTimeSpan);
+
+// Join (This assumes an already signed in ILoginSession object);
+var _channelSession = _loginSession.GetChannelSession(/* ChannelID to join */);
+_channelSession.GetConnectToken(_expirationTimeSpan);</MadCap:codeSnippetBody>
+                </MadCap:codeSnippet>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Vivox Unity 15.1.150000 and later</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:codeSnippet>
+                    <MadCap:codeSnippetCopyButton />
+                    <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">TimeSpan _expirationTimeSpan = TimeSpan.FromSeconds(90);
+
+// Login (This assumes an already initialized Client object);
+var _loginSession = client.GetLoginSession(/* Account to login */);
+_loginSession.GetLoginToken(_expirationTimeSpan);
+
+// Join (This assumes an already signed in ILoginSession object);
+var _channelSession = _loginSession.GetChannelSession(/* Channel to join */);
+_channelSession.GetConnectToken(_expirationTimeSpan);</MadCap:codeSnippetBody>
+                </MadCap:codeSnippet>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

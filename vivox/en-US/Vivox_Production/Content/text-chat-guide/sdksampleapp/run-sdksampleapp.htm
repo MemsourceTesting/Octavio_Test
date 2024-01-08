@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Run the SDKSampleApp</h1>
+        <p>Run the SDKSampleApp by using a command line similar to the following example. Replace "<span style="font-family: monospace;">xyzzy</span>" and "<span style="font-family: monospace;">collosal</span>" with your issuer and key.</p>
+        <p><b>Note</b>: The "<span style="font-family: monospace;">-m</span>" command line option puts the SDKSampleApp into multitenant mode, which causes generated user names and channel names to be prefixed with the issuer. </p>
+        <p>In this example, the lines starting with " * " are requests, responses, and events.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">SDKSampleApp --server=https://mt1s.www.vivox.com/api2 --realm=mt1s.vivox.com --issuer=xyzzy --key=collosal -m
+[SDKSampleApp]: connect
+* Connecting to http://mt1s.www.vivox.com/api2 with connector handle http://mt1s.www.vivox.com/api2...
+* Issuing req_connector_create with cookie=1
+* Request req_connector_create with cookie=1 completed.
+[SDKSampleApp]: login
+* Logging .xyzzy.sa_c78d1595. in with connector handle http://mt1s.www.vivox.com/api2 and account handle .xyzzy.sa_c78d1595.
+* Issuing req_account_anonymous_login with cookie=2
+* evt_account_login_state_change: .xyzzy.sa_c78d1595. login_state_logging_in
+* Request req_account_anonymous_login with cookie=2 completed.
+* evt_account_login_state_change: .xyzzy.sa_c78d1595. login_state_logged_in</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>The login command for this case generates the username <span style="font-family: monospace;">.xyzzy.sa_c78d1595</span>, which consists of the issuer and a random string that starts with "<span style="font-family: monospace;">sa_</span>" (for "sample app").</p>
+    </body>
+</html>

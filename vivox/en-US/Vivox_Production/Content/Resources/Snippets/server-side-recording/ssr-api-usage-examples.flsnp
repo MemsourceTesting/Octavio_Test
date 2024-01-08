@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Server-side recording API usage examples</h1>
+        <p><b>Note</b>: All server-side recording requests that use the <span style="font-family: monospace;">/subscribe</span> API require a token from <span style="font-family: monospace;">/api2/viv_signin.php</span>. <MadCap:snippetText src="../access-token-guide-general-link.flsnp" /></p>
+    </body>
+</html>

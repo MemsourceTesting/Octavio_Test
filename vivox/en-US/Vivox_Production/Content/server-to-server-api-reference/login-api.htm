@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Login API</h1>
+        <p>The game server uses <span style="font-family: monospace;">/api2/viv_signin.php</span> to sign in to the Vivox service and obtain an <span style="font-family: monospace;">auth_token</span>.</p>
+        <ul>
+            <li>
+                <p>A successful <span style="font-family: monospace;">viv_signin.php</span> call returns an <span style="font-family: monospace;">auth_token</span> in the response.</p>
+            </li>
+            <li>
+                <p>The <span style="font-family: monospace;">auth_token</span> authenticates subsequence web requests.</p>
+            </li>
+        </ul>
+        <p>Use the following parameters to perform a sign in action:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">userid</span> - The Vivox username of the user to sign in.</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">pwd</span> - The password associated with the <span style="font-family: monospace;">userid</span>.</p>
+            </li>
+        </ul>
+        <p>The following example displays the URL structure to use when you call <span style="font-family: monospace;">viv_signin.php</span>:</p>
+        <p><span style="font-family: monospace;">https://mt1s.www.vivox.com/api2/viv_signin.php?userid=Vivox-RuneRun-dev-Admin&amp;pwd=aKDnh2FIyHeyzwBd</span>
+        </p>
+        <p>The following code displays the response for this example.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve" style="mc-code-lang: XML;">&lt;response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.vivox.com" xsi:schemaLocation="/xsd/response.xsd"&gt;
+    &lt;level0&gt;
+        &lt;status&gt;OK&lt;/status&gt;
+        &lt;body&gt;
+            &lt;status&gt;Ok&lt;/status&gt;
+            &lt;sip_qval&gt;1&lt;/sip_qval&gt;
+            &lt;loginname&gt;Vivox-RuneRun-dev-Admin&lt;/loginname&gt;
+            &lt;displayname/&gt;
+            &lt;account_id&gt;161&lt;/account_id&gt;
+            &lt;auth_token&gt;
+                Vivox-RuneRun-dev-Admin:1540215742:3b0182741a3ebd92487a640d9e16d50e:10.5.255.168
+            &lt;/auth_token&gt;
+            &lt;sip_acct&gt;sip:Vivox-RuneRun-dev-Admin@mt1s.vivox.com&lt;/sip_acct&gt;
+            &lt;sip_uri&gt;sip:Vivox-RuneRun-dev-Admin@mt1s.vivox.com&lt;/sip_uri&gt;
+            &lt;sip_displayname/&gt;
+        &lt;/body&gt;
+    &lt;/level0&gt;
+&lt;/response&gt;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

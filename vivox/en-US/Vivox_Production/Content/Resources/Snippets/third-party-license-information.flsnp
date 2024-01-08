@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Third-party license information</h1>
+        <p>The Vivox SDK uses various open-source packages. The following table lists the open-source software that is distributed with the Vivox SDK.</p>
+        <table style="margin-left: 0; margin-right: auto;">
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th style="background-color: #a9a9a9;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">Name</th>
+                    <th style="background-color: #a9a9a9;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">Version</th>
+                    <th style="background-color: #a9a9a9;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">License</th>
+                    <th style="background-color: #a9a9a9;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">Kind</th>
+                    <th style="background-color: #a9a9a9;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">Reference URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>DirectX Tool Kit (VS 2015 Win32)</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://www.nuget.org/packages/directxtk_desktop_2015" target="_blank">https://www.nuget.org/packages/directxtk_desktop_2015</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>DirectX Tool Kit (VS 2015 Win32)</p>
+                    </td>
+                    <td>
+                        <p>2018.7.3.1</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://www.nuget.org/packages/directxtk_desktop_2015" target="_blank">https://www.nuget.org/packages/directxtk_desktop_2015</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>DirectX Tool Kit for DirectX 12 (VS 2015 Win32)</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>
+                        <p>Snippet</p>
+                    </td>
+                    <td>
+                        <p><a href="https://www.nuget.org/packages/directxtk12_desktop_2015" target="_blank">https://www.nuget.org/packages/directxtk12_desktop_2015</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Expat XML Parser</p>
+                    </td>
+                    <td>
+                        <p>2.1.1</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://www.nuget.org/packages/expat" target="_blank">https://www.nuget.org/packages/expat</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Expat XML Parser - BSD license</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>BSD 3-clause "New" or "Revised" License</p>
+                    </td>
+                    <td>
+                        <p>File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://www.nuget.org/packages/expat" target="_blank">https://www.nuget.org/packages/expat</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>flite</p>
+                    </td>
+                    <td>
+                        <p>2.1</p>
+                    </td>
+                    <td>
+                        <p>Language Technologies Institute Carnegie Mellon University License (BSD-like)</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <p><a href="https://github.com/festvox/flite/" target="_blank">https://github.com/festvox/flite/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>getopt.c by Gregory Pietsch</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>License for getopt.c by Gregory Pietsch</p>
+                    </td>
+                    <td>
+                        <p>Snippet</p>
+                    </td>
+                    <td>
+                        <p><a href="https://github.com/eblot/newlib/blob/master/newlib/libc/stdlib/getopt.c" target="_blank">https://github.com/eblot/newlib/blob/master/newlib/libc/stdlib/getopt.c</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>gradle</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>Apache License 2.0</p>
+                    </td>
+                    <td>
+                        <p>File + Dynamic Library</p>
+                    </td>
+                    <td>
+                        <p><a href="https://github.com/gradle/gradle/" target="_blank">https://github.com/gradle/gradle/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>JSON for Modern C++</p>
+                    </td>
+                    <td>
+                        <p>3.7.3</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <p><a href="https://github.com/nlohmann/json" target="_blank">https://github.com/nlohmann/json</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Kiss FFT</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>BSD 3-clause "New" or "Revised" License</p>
+                    </td>
+                    <td>
+                        <p>Snippet</p>
+                    </td>
+                    <td>
+                        <p><a href="https://sourceforge.net/projects/kissfft/" target="_blank">https://sourceforge.net/projects/kissfft/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Libb64</p>
+                    </td>
+                    <td>
+                        <p>1.2</p>
+                    </td>
+                    <td>
+                        <p>Creative Commons Public Domain Dedication License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://sourceforge.net/projects/libb64/" target="_blank">https://sourceforge.net/projects/libb64/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>libogg</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>BSD 3-clause "New" or "Revised" License</p>
+                    </td>
+                    <td>
+                        <p>Snippet</p>
+                    </td>
+                    <td>
+                        <p><a href="https://xiph.org/ogg/" target="_blank">https://xiph.org/ogg/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>libstrophe</p>
+                    </td>
+                    <td>
+                        <p>0.9.1</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://github.com/strophe/libstrophe/" target="_blank">https://github.com/strophe/libstrophe/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>MD5 - Command Line Message Digest Utility</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>MD5 CommandLine License (Public Domain)</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="http://www.fourmilab.ch/md5/" target="_blank">http://www.fourmilab.ch/md5/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Opus</p>
+                    </td>
+                    <td>
+                        <p>1.1.3</p>
+                    </td>
+                    <td>
+                        <p>BSD 3-clause "New" or "Revised" License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://opus-codec.org/" target="_blank">https://opus-codec.org/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Opus</p>
+                    </td>
+                    <td>
+                        <p>1.3.1</p>
+                    </td>
+                    <td>
+                        <p>BSD 3-clause "New" or "Revised" License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://opus-codec.org/" target="_blank">https://opus-codec.org/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>PortAudio-audio I/O library</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="http://www.portaudio.com/" target="_blank">http://www.portaudio.com/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>rapidjson</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>MIT License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://github.com/Tencent/rapidjson" target="_blank">https://github.com/Tencent/rapidjson</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>RSA Data Security-MD5 Message</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>RSA Message-Digest License</p>
+                    </td>
+                    <td>
+                        <p>Snippet</p>
+                    </td>
+                    <td>
+                        <p><a href="http://www.efgh.com/software/md5.htm" target="_blank">http://www.efgh.com/software/md5.htm</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>sha1</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>Public Domain</p>
+                    </td>
+                    <td>
+                        <p>File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://github.com/clibs/sha1" target="_blank">https://github.com/clibs/sha1</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Speex</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>BSD 3-clause "New" or "Revised" License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://www.speex.org/" target="_blank">https://www.speex.org/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Speex</p>
+                    </td>
+                    <td>
+                        <p>1.2rc1</p>
+                    </td>
+                    <td>
+                        <p>BSD 3-clause "New" or "Revised" License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://www.speex.org/" target="_blank">https://www.speex.org/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>STUN Client and Server library</p>
+                    </td>
+                    <td>
+                        <p>Unspecified</p>
+                    </td>
+                    <td>
+                        <p>Vovida Software License v1.0</p>
+                    </td>
+                    <td>
+                        <p>Snippet</p>
+                    </td>
+                    <td>
+                        <p><a href="https://sourceforge.net/projects/stun/" target="_blank">https://sourceforge.net/projects/stun/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Tiny XML</p>
+                    </td>
+                    <td>
+                        <p>2.5.3</p>
+                    </td>
+                    <td>
+                        <p>zlib License</p>
+                    </td>
+                    <td>
+                        <p>Snippet + File</p>
+                    </td>
+                    <td>
+                        <p><a href="https://sourceforge.net/projects/tinyxml/" target="_blank">https://sourceforge.net/projects/tinyxml/</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>tlsf</p>
+                    </td>
+                    <td>
+                        <p>v3.1</p>
+                    </td>
+                    <td>
+                        <p>BSD</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <p><a href="https://github.com/mattconte/tlsf" target="_blank">https://github.com/mattconte/tlsf</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>We use Google Cloud Speech-To-Text as our service provider for audio transcription. For a list of supported speech-to-text languages, see the Google Cloud documentation on <a href="https://cloud.google.com/speech-to-text/docs/languages" target="_blank">speech-to-text language support</a>.</p>
+    </body>
+</html>

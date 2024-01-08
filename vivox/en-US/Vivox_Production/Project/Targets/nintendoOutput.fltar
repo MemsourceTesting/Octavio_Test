@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[General.Code or General.Core or General.Exclude or General.Switch or General.Unity or General.Unreal] exclude[General.Android or General.BrowserBased or General.iOS or General.macOS or General.PlayStation4 or General.UniversalWindowsPlatform or General.Windows or General.XboxOne] "
+  Skin="/Project/Skins/HTML5 - Tripane.flskn"
+  MoveOutputContentToRoot="true"
+  MasterPage="/Content/Resources/MasterPages/FilterPage.flmsp"
+  TopNavTocPath="true"
+  RemoveMadCapStyles="true"
+  PartialWordSearch="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

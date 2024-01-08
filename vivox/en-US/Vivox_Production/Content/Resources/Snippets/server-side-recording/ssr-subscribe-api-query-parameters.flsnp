@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Subscribe API query parameters</h1>
+        <p>The server-side recording <span style="font-family: monospace;">/ssr/subscribe</span> API uses the following query parameters.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">auth_token</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Required for all <span style="font-family: monospace;">/subscribe</span> requests.</p>
+                    </li>
+                    <li>
+                        <p>Generated from <span style="font-family: monospace;">/api/viv_signin.php</span>.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../access-token-guide-general-link.flsnp" />
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">destination_credentials</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Required for all <span style="font-family: monospace;">/subscribe</span> requests.</p>
+                    </li>
+                    <li>
+                        <p>Generated from Amazon S3.</p>
+                    </li>
+                    <li>
+                        <p>Requires write access.</p>
+                    </li>
+                    <li>
+                        <p>Uses the following format:</p>
+                        <p><span style="font-family: monospace;">{"bucket":"name-of-bucket","access_key_id":"aws-access-id","secret_access_key":"aws-secret-key"}</span>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">target_uri</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Required for all <span style="font-family: monospace;">/subscribe</span> requests.</p>
+                    </li>
+                    <li>
+                        <p>The SIP URI of the channel or speaker you want to record.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">target_type</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Required for all <span style="font-family: monospace;">/subscribe</span> requests.</p>
+                    </li>
+                    <li>
+                        <p>If you pass a SIP URI for a channel, set <span style="font-family: monospace;">target_type</span> to <span style="font-family: monospace;">channel</span>.</p>
+                    </li>
+                    <li>
+                        <p>If you pass a SIP URI for a speaker, set <span style="font-family: monospace;">target_type</span> to <span style="font-family: monospace;">speaker</span>.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">filter_uris</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>A comma-separated list of optional URIs that is used to filter the subscription.</p>
+                    </li>
+                    <li>
+                        <p>For a channel subscription, this is a list of user URIs in the channel that you want to capture audio for.</p>
+                        <p><b>Note</b> If a user is not in the list, then no audio is captured from the channel for that user.</p>
+                    </li>
+                    <li>
+                        <p>For a user subscription, this is a list of channels the user is in that you want to capture audio for.</p>
+                        <p><b>Note</b>: If the user is in a channel that is not in this list, then no audio is captured from that channel for the user.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">history</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>The amount of time to collect in minutes  from when you subscribe to n number of minutes into the past.</p>
+                    </li>
+                    <li>
+                        <p>The default setting is 5 minutes.</p>
+                    </li>
+                    <li>
+                        <p><b>Example</b>: If you make a request at 15:00 and ask for 5 minutes of history, then you get data from all users who spoke from 14:56 to 15:00.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">ttl</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>The amount of time to collect in minutes from when you subscribe to n number of minutes into the future (the time to live).</p>
+                    </li>
+                    <li>
+                        <p>The default setting is 5 minutes.</p>
+                    </li>
+                    <li>
+                        <p><b>Example</b>: If you make a request at 15:00 and set a <span style="font-family: monospace;">ttl</span> of 30 minutes, then you get data from all users who spoke from 15:00 to 15:29.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

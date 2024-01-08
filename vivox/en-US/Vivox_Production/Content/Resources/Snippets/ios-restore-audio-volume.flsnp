@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Restore audio volume</h1>
+        <p>If the device is in a state in which the game audio is at the wrong volume when the Vivox SDK is using the microphone, you can restore the correct game audio volume by reconfiguring the <span style="font-family: monospace;">AVAudioSession</span> with:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">AVAudioSessionCategoryPlayAndRecord</span>
+                </p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">AVAudioSessionModeVoiceChat</span>
+                </p>
+            </li>
+        </ul>
+        <p><b>Note</b>: There is a brief interruption to the device audio during the restoration process.</p>
+    </body>
+</html>

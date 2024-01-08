@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Positional channels</h1>
+        <p>When working with positional channels (also referred to as 3D channels), a player’s position and facing direction matter. This is in contrast to non-positional channels, which act more like radio communication.</p>
+        <MadCap:snippetBlock src="note-working-with-positional-and-non-positional-channels.flsnp" />
+        <p>You can create positional channels with different properties to allow for a range of audio spaces. For example, you might have a scenario where acoustically realistic sounding audio is needed for outdoor spaces, or a scenario where shorter-range, quickly dampening audio is more appropriate to account for tight inner corridors or for how voice carries in heavy rain. Positional channels can also add a "cocktail party" effect to the audio, which provides ambient crowd noise. Any style allows for voice chat to naturally fade in and out to near zero loudness as players approach or walk away from each other.</p>
+        <p>Vivox audio processing mixes all of the audio for every player, including volume attenuation over a distance and channel fading, which is based on the direction that the character or camera is facing.  Channel participant added or removed events are based on players entering or exiting your max range, which ensures that you always know which players are close enough to hear.</p>
+    </body>
+</html>

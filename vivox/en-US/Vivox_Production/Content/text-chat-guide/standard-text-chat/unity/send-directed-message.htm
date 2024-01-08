@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Send a directed message</h1>
+        <p>You can send a directed message by using <span style="font-family: monospace;">ILoginSession.BeginSendDirectedMessage(AccountId userId, string message, AsyncCallback callback)</span>. This function creates and begins to send a directed message that contains a string message from the referenced <span style="font-family: monospace;">ILoginSession</span> to the target <span style="font-family: monospace;">AccountId userId</span>, and calls <span style="font-family: monospace;">AsyncCallback</span> on completion. Ensure that you use <span style="font-family: monospace;">EndSendMessage</span> on the <span style="font-family: monospace;">ILoginSession</span> within the <span style="font-family: monospace;">AsyncCallback</span> callback to finish sending the directed message and to check if the message send is successful.</p>
+        <p>The following code snippet displays an example integration for <span style="font-family: monospace;">BeginSendDirectedMessage</span>.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">var req  = senderLoginSession.BeginSendDirectedMessage(targetAccount, message, ar =&gt;
+{
+    vx_resp_account_send_message_t response;
+    try
+    {
+        senderLoginSession.EndSendDirectedMessage(ar);
+    }
+    catch (System.Exception e)
+    {
+        Assert.Fail($"SendDirectedMessage threw {e}");
+    }
+});</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p><span style="font-family: monospace;">BeginSendDirectedMessage</span> also has an overload to allow for more specific information, which is available as <span style="font-family: monospace;">IAsyncResult BeginSendDirectedMessage(AccountId userId, string language, string message, string applicationStanzaNamespace, string applicationStanzaBody, AsyncCallback callback)</span>.</p>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Kick API</h1>
+        <p>The game server uses <span style="font-family: monospace;">/api2/viv_adm_user_kick.php</span> to drop (also known as "kick") a specific user from a channel or a server.</p>
+        <p><b>Note</b>: Kicking a user from a server disconnects the user from the server and every channel they are in.</p>
+        <p>Use the following parameters to perform a kick action:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">access_token</span> - the <a href="kick-access-token.htm">access token</a> with specified claims for this action</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">auth_token</span> - the token that <span style="font-family: monospace;">viv_signin.php</span> returns</p>
+                <p><b>Note</b>: The Kick API can use the <span style="font-family: monospace;">auth_token</span> parameter in place of the <span style="font-family: monospace;">userid</span> and <span style="font-family: monospace;">pwd</span> parameters. For more information, see <a href="../login-api.htm">Login API</a>.</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">chan_uri</span> - the <MadCap:glossaryTerm glossTerm="Glossary.Term16">URI</MadCap:glossaryTerm> of the service from which the user is being kicked: either a <a href="../uri/channel-uri.htm">channel URI</a> or a special service URI (the issuer plus <span style="font-family: monospace;">"-service"</span>)</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">user_uri</span> - the URI of the user who is being kicked</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">mode</span> - use <span style="font-family: monospace;">kick</span> for this action</p>
+            </li>
+        </ul>
+        <MadCap:miniTocProxy style="mc-toc-depth: 1;" />
+    </body>
+</html>

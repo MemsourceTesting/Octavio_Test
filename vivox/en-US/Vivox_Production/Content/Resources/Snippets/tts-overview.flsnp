@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Text-to-speech</h1>
+        <p>Text-to-speech (TTS) is a feature in the Vivox SDK that is intended to support developers who are pursuing Communications and Video Accessibility Act (CVAA) compliance.</p>
+        <p><b>Note</b>: TTS is only available in US English, and is only supported for one logged in user.</p>
+        <p>TTS provides a voice channel participant with the ability to convert text messages into synthesized speech that is then transmitted into the voice channel. This allows a user to participate in voice chat even when they might not be able to speak or speak clearly. TTS also provides a user with the ability to convert text chat or game-screen text into synthesized speech for local playback.</p>
+        <p>You can play a synthesized phrase locally through the user’s output audio device, transmit it and play it back for remote participants, or simultaneously play it locally and transmit it to remote participants.</p>
+    </body>
+</html>

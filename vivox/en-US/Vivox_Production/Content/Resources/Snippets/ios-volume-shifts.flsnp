@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Volume shifts</h1>
+        <p>iOS increases the volume of ducked game audio unexpectedly and without notification when certain device events occur. An example of this scenario is when you dismiss the AirPods battery dialog.</p>
+        <p>The following steps detail how to reproduce this behavior:</p>
+        <ol>
+            <li>
+                <p>Connect the AirPods.</p>
+            </li>
+            <li>
+                <p>Configure the <span style="font-family: monospace;">AVAudioSession</span> with:</p>
+                <ul>
+                    <li>
+                        <p><span style="font-family: monospace;">AVAudioSessionCategoryPlayAndRecord</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span style="font-family: monospace;">AVAudioSessionModeVoiceChat</span>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Open the capture device with <span style="font-family: monospace;">VoiceProcessingIO</span> enabled. To do this, use either:</p>
+                <ul>
+                    <li>
+                        <p>A CoreAudio Audio Unit with the <span style="font-family: monospace;">kAudioUnitSubType_VoiceProcessingIO</span> subtype</p>
+                    </li>
+                    <li>
+                        <p>An <span style="font-family: monospace;">AVAudioEngine</span> input node and call <span style="font-family: monospace;">setVoiceProcessingEnabled(true)</span></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Play audio from an <span style="font-family: monospace;">AVAudioPlayer</span>.</p>
+            </li>
+            <li>
+                <p>Open the AirPods case.</p>
+            </li>
+            <li>
+                <p>Dismiss the AirPods battery dialog.</p>
+                <p>Note that the audio player volume increases significantly.</p>
+            </li>
+        </ol>
+    </body>
+</html>

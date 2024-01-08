@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">In-game audio device selection</h1>
+        <p>The Vivox SDK automatically uses the system default audio input and output devices. However, you can override this behavior and provide users with a choice of which audio device to use for group voice chat independent of the audio devices that are used for the game.</p>
+        <p>To perform this override, build a user interface for the game that displays a list of available devices to users that they can select a device from. Build this user interface with the following requests, where audio output devices are called render devices, and audio input devices are called capture devices:</p>
+    </body>
+</html>

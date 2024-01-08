@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Supported values for the Vivox action claim</h1>
+        <p>The following table details the Vivox action (vxa) claims in the Vivox SDK.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" MadCap:conditions="" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="background-color: #a9a9a9;font-weight: bold;text-align: center;">vxa claim</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #a9a9a9;font-weight: bold;text-align: center;">Description</td>
+                    <td class="BodyD-Column1-Body1" style="background-color: #a9a9a9;font-weight: bold;text-align: center;">Vivox SDK requests and Server APIs</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">join</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Channel join.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p><span style="font-family: monospace;">vx_req_sessiongroup_add_session</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">vx_req_session_create</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_multi_chan_cmd.php?mode=add</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">join_muted</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Channel join listen-only and moderator muted.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p><span style="font-family: monospace;">vx_req_sessiongroup_add_session</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">vx_req_session_create</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_multi_chan_cmd.php?mode=add</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" MadCap:conditions="">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">kick</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Kick user from a channel.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p><span style="font-family: monospace;">vx_req_channel_kick_user</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_chan_cmd.php?mode=kick</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_chan_cmd.php?mode=drop_all</span>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">login</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Sign in.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p><span style="font-family: monospace;">vx_req_account_anonymous_login</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_signin.php</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" MadCap:conditions="">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span style="font-family: monospace;">mute</span>
+                        </p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Mute or unmute a user in a channel.</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p><span style="font-family: monospace;">vx_req_channel_mute_user</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_chan_cmd.php?mode=mute</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_chan_cmd.php?mode=unmute</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">vx_req_channel_mute_all_users</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_chan_cmd.php?mode=mute_all</span>
+                            <br style="font-family: monospace;" />
+                        </p>
+                        <p><span style="font-family: monospace;">https://.../api2/viv_chan_cmd.php?mode=unmute_all</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p><span style="font-family: monospace;">trxn</span>
+                        </p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>Enable or disable speech-to-text transcription.</p>
+                        <p>If the Vivox domain that you are using is not enabled for speech-to-text transcription, attempting to enable transcription results in an error.</p>
+                        <MadCap:snippetBlock src="../../Resources/Snippets/speech-to-text/stt-early-release-enable-note.flsnp" />
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p><span style="font-family: monospace;">vx_req_session_transcription_control</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

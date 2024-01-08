@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Decode API query parameters</h1>
+        <p>The server-side recording <span style="font-family: monospace;">/ssr/decode</span> API uses the following request parameters.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">auth_token</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Required for all <span style="font-family: monospace;">/decode</span> requests.</p>
+                    </li>
+                    <li>
+                        <p>Generated from <span style="font-family: monospace;">/api/viv_signin.php</span>.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:snippetText src="../access-token-guide-general-link.flsnp" />
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">destination_credentials</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Required for all <span style="font-family: monospace;">/decode</span> requests.</p>
+                    </li>
+                    <li>
+                        <p>Generated from Amazon S3.</p>
+                    </li>
+                    <li>
+                        <p>Requires read and write access.</p>
+                    </li>
+                    <li>
+                        <p>Uses the following format:</p>
+                        <p><span style="font-family: monospace;">{"access_key_id":"aws-access-id","secret_access_key":"aws-secret-key"}</span>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">s3_uri</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Required for all <span style="font-family: monospace;">/decode</span> requests.</p>
+                    </li>
+                    <li>
+                        <p>Generated from the <span style="font-family: monospace;">/ssr/subscribe</span> response (<span style="font-family: monospace;">upload_destination</span>).</p>
+                    </li>
+                    <li>
+                        <p>Uses the following format:</p>
+                        <p><span style="font-family: monospace;">s3://bucket-name/uuid/</span>
+                        </p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><span style="font-family: monospace;">decode_options</span>
+                </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>
+                        <p>Indicates the form that you want your final subscriptions uploaded in.</p>
+                    </li>
+                    <li>
+                        <p>Uses the following options:</p>
+                        <ul>
+                            <li>
+                                <p><span style="font-family: monospace;">concat</span> - Returns 1 wav file per user</p>
+                            </li>
+                            <li>
+                                <p><span style="font-family: monospace;">poly</span> - Returns 1 multi-tracked wav file with a user on each track</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

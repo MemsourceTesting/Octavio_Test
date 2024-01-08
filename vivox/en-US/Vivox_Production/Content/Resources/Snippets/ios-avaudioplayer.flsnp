@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">AVAudioPlayer volume inconsistencies</h1>
+        <p>If your app uses <span style="font-family: monospace;">AVAudioPlayer</span>, you must call <span style="font-family: monospace;">prepareToPlay()</span> before the Vivox SDK uses the microphone. If <span style="font-family: monospace;">prepareToPlay()</span> is called while the Vivox SDK is using the microphone, the audio for that instance of the <span style="font-family: monospace;">AVAudioPlayer</span> will be at a lower volume. For more information, see the Apple developer documentation on <span style="font-family: monospace;">prepareToPlay()</span>.</p>
+    </body>
+</html>

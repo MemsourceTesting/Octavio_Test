@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    BackgroundColor="#000000"
+    Name="Exclude"
+    Comment="" />
+  <ConditionTag
+    Name="Code"
+    Comment=""
+    BackgroundColor="#ff0000" />
+  <ConditionTag
+    BackgroundColor="#353557"
+    Name="Unity"
+    Comment=""
+    OriginalName="Unity" />
+  <ConditionTag
+    BackgroundColor="#de1ce0"
+    Name="Unreal"
+    Comment=""
+    OriginalName="Unreal" />
+  <ConditionTag
+    BackgroundColor="#e62cde"
+    Name="Android"
+    Comment=""
+    OriginalName="Android" />
+  <ConditionTag
+    BackgroundColor="#00edff"
+    Name="iOS"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="PlayStation4"
+    Comment=""
+    OriginalName="PlayStation4" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="XboxOne"
+    Comment=""
+    OriginalName="XboxOne" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="macOS"
+    Comment=""
+    OriginalName="macOS" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="UniversalWindowsPlatform"
+    Comment=""
+    OriginalName="UniversalWindowsPlatform" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Windows"
+    Comment=""
+    OriginalName="Windows" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="BrowserBased"
+    Comment=""
+    OriginalName="BrowserBased" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="Core"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#a9a9a9"
+    Name="Switch"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffd700"
+    Name="UnrealUpgradeLimited"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#b8860b"
+    Name="UnrealUpgradeFull"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#4682b4"
+    Name="PlayStation5"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8fbc8b"
+    Name="XboxXS"
+    Comment="" />
+</CatapultConditionTagSet>

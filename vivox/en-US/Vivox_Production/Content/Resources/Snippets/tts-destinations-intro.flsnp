@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Text-to-speech destinations</h1>
+        <p>Text-to-speech (TTS) messages are injected to destinations. Destinations determine two factors: output and mechanism.</p>
+        <ul>
+            <li>
+                <p>Output is where the synthesized speech plays to and decides who hears the TTS message. Each destination uses one of the following outputs:</p>
+                <ul>
+                    <li>
+                        <p><b>Local Playback</b> - messages injected here play back locally on the user’s default render device (for example, loudspeakers or headphones).</p>
+                    </li>
+                    <li>
+                        <p><b>Remote Transmission</b> - messages injected here are sent to remote participants in connected sessions according to transmission policies (the same sessions that basic voice transmits to).</p>
+                    </li>
+                    <li>
+                        <p><b>Local and Remote</b> - messages injected here are simultaneously injected to Local Playback and Remote Transmission.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Mechanism is how new messages are handled when there is an ongoing message playing. Each destination uses one of the following injection mechanisms:</p>
+                <ul>
+                    <li>
+                        <p><b>Simple</b> - destinations using this mechanism mix together new messages and ongoing messages to play them concurrently.</p>
+                    </li>
+                    <li>
+                        <p><b>Queue</b> - destinations using this mechanism queue new messages in the order they are sent. When the ongoing message finishes playing, this mechanism auto-triggers the message that is next in line.</p>
+                    </li>
+                    <li>
+                        <p><b>Replace</b> - destinations using this mechanism cancel any ongoing message and then replaces it with the new message.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>You can inject synthesized speech into the following destinations:</p>
+        <p><b>Note:</b> Most destinations are independent and do not affect the behavior of any other destinations. However, the two queued destinations involving remote transmission share a queue.</p>
+    </body>
+</html>

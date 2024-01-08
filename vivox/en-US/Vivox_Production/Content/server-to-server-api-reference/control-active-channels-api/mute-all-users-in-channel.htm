@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Mute all users in a channel</h1>
+        <p>Use the following parameters to mute all users in a channel when you call <span style="font-family: monospace;">viv_chan_cmd.php</span>:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">access_token</span> - the access token with specified claims for this action</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">auth_token</span> - the token that <span style="font-family: monospace;">viv_signin.php</span> returns<br /></p>
+                <p><b>Note</b>: The Control active channels API can use the <span style="font-family: monospace;">auth_token</span> parameter in place of the <span style="font-family: monospace;">userid</span> and <span style="font-family: monospace;">pwd</span> parameters. For more information, see <a href="../login-api.htm">Login API</a>.</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">chan_uri</span> - the channel's <MadCap:glossaryTerm glossTerm="Glossary.Term16">URI</MadCap:glossaryTerm></p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">mode</span> - use <span style="font-family: monospace;">mute_all</span> for this action</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">scope</span> - optionally specify audio, text, or both. The default is audio.</p>
+            </li>
+        </ul>
+        <p>The following example displays how to mute all users in a channel when using an <span style="font-family: monospace;">auth_token</span>.</p>
+        <ul>
+            <li>
+                <p>Domain: <span style="font-family: monospace;">mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>Issuer: <span style="font-family: monospace;">blindmelon-AppName-dev</span></p>
+            </li>
+            <li>
+                <p>Admin user: <span style="font-family: monospace;">blindmelon-AppName-dev-Admin</span></p>
+            </li>
+            <li>
+                <p>Channel that contains the users to mute: <span style="font-family: monospace;">sip:confctl-g-blindmelon-AppName-dev.the-channel@mt1s.vivox.com</span></p>
+            </li>
+        </ul>
+        <p>Construct a mute all users token with the following parameters:</p>
+        <p><b>Note</b>: This process requires a Vivox access token. <MadCap:snippetText src="../../Resources/Snippets/access-token-guide-general-link.flsnp" /></p>
+        <ul>
+            <li>
+                <p>vxi: <span style="font-family: monospace;">1</span></p>
+            </li>
+            <li>
+                <p>f: <span style="font-family: monospace;">sip:blindmelon-AppName-dev-Admin@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>iss: <span style="font-family: monospace;">blindmelon-AppName-dev</span></p>
+            </li>
+            <li>
+                <p>vxa: <span style="font-family: monospace;">mute</span></p>
+            </li>
+            <li>
+                <p>t: <span style="font-family: monospace;">sip:confctl-g-blindmelon-AppName-dev.the-channel@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>exp: <span style="font-family: monospace;">1600349400</span></p>
+            </li>
+        </ul>
+        <p><b>Important</b>: The Vivox access token does not assign a subject when creating the mute all users token. However, a subject is not required for the mute all users in a channel command. When you create the Vivox access token, if you assign a subject, the subject is specified as the presenter and a request is made to mute everyone in the channel except for the presenter.</p>
+        <p>The following example displays an access token that uses these parameters:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjEsImYiOiJzaXA6YmxpbmRtZWxvbi1BcHBOYW1lLWRldi1BZG1pbkBtdDFzLnZpdm94LmNvbSIsImlzcyI6ImJsaW5kbWVsb24tQXBwTmFtZS1kZXYiLCJ2eGEiOiJtdXRlIiwidCI6InNpcDpjb25mY3RsLWctYmxpbmRtZWxvbi1BcHBOYW1lLWRldi50aGUtY2hhbm5lbEBtdDFzLnZpdm94LmNvbSIsImV4cCI6MTYwMDM0OTQwMH0.KIk1eaT7dUv-eLhcpZg4SJbEJoHIePzlLmULg2YuCIQ</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Call <span style="font-family: monospace;">/api2/viv_chan_cmd.php</span> with the following parameters:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">access_token</span> - the token used in the preceding example</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">auth_token</span> - the token that <span style="font-family: monospace;">viv_signin.php</span> returns for <span style="font-family: monospace;">blindmelon-AppName-dev-Admin</span></p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">chan_uri</span> - <span style="font-family: monospace;">sip:confctl-g-blindmelon.the-channel@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">mode</span> - <span style="font-family: monospace;">mute_all</span></p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">https://mt1s.www.vivox.com/api2/viv_chan_cmd.php?mode=mute_all&amp;access_token=e30.eyJ2eGkiOjEsImYiOiJzaXA6YmxpbmRtZWxvbi1BcHBOYW1lLWRldi1BZG1pbkBtdDFzLnZpdm94LmNvbSIsImlzcyI6ImJsaW5kbWVsb24tQXBwTmFtZS1kZXYiLCJ2eGEiOiJtdXRlIiwidCI6InNpcDpjb25mY3RsLWctYmxpbmRtZWxvbi1BcHBOYW1lLWRldi50aGUtY2hhbm5lbEBtdDFzLnZpdm94LmNvbSIsImV4cCI6MTYwMDM0OTQwMH0.KIk1eaT7dUv-eLhcpZg4SJbEJoHIePzlLmULg2YuCIQ&amp;auth_token=blindmelon-AppName-dev-Admin:1278945699:220a34213b4273a1eab1ac18b5fe67b6:TesterAlias:1&amp;chan_uri=sip:confctl-g-blindmelon.the-channel@mt1s.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

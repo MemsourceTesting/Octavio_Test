@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Evidence report HTTP request</h1>
+        <p>Before requesting an evidence report you will need to acquire your <span style="font-family: monospace;">auth_token</span>. The <span style="font-family: monospace;">auth_token</span> is generated after a successful user authentication using  <span style="font-family: monospace;">api/viv_signin.php</span>.</p>
+        <p>The following shows an example of requesting this auth token:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">curl -v "https://mt1s.www.vivox.com/api2/viv_signin.php?userid=userid&amp;pwd=userPassword”</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>The following shows an example of requesting an evidence report between john and doe:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">curl -v "https://mt1s.www.vivox.com/evidence/report?
+auth_token=blindmelon-admin:1670856702:a1df7a2abebbc707056f9795751d3ec6:10.254.12.34&amp;user_uri=sip:blindmelon-admin@mt1s.vivox.com&amp;sender_uri=sip:.blindmelon-john.@mt1s.vivox.com&amp;target_uri=sip:.blindmelon-doe.@mt1s.vivox.com" </MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

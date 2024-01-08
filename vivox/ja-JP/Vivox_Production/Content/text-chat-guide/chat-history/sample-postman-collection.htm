@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Sample Postman collection</h1>
+        <p>You can copy this Text Evidence Management JSON file and import it to Postman as a new collection. Fill in the placeholders with the parameters outlined in <a href="evidence-report-api.htm">Evidence report API</a>.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+	"info": {
+		"_postman_id": "fe07cef1-8492-4dd4-88ab-fe03cac59f60",
+		"name": "Text Evidence Management",
+		"description": "This collection contains sample requests for the Vivox Text Evidence Management API. Fill the placeholders with custom data to use the API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25270591"
+	},
+	"item": [
+		{
+			"name": "Get Auth Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Environment_URL}}/api2/viv_signin.php?userid=&lt;add userid&gt;&amp;pwd=&lt;add_password&gt;",
+					"host": [
+						"{{Environment_URL}}"
+					],
+					"path": [
+						"api2",
+						"viv_signin.php"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "&lt;add userid&gt;"
+						},
+						{
+							"key": "pwd",
+							"value": "&lt;add_password&gt;"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Evidence Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Environment_URL}}/evidence/report?auth_token=&lt;add auth_token&gt;&amp;user_uri=&lt;add user_uri&gt;&amp;sender_uri=&lt;add sender_uri&gt;&amp;target_uri=&lt;add target_uri&gt;",
+					"host": [
+						"{{Environment_URL}}"
+					],
+					"path": [
+						"evidence",
+						"report"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "&lt;add auth_token&gt;"
+						},
+						{
+							"key": "user_uri",
+							"value": "&lt;add user_uri&gt;"
+						},
+						{
+							"key": "sender_uri",
+							"value": "&lt;add sender_uri&gt;"
+						},
+						{
+							"key": "target_uri",
+							"value": "&lt;add target_uri&gt;"
+						},
+						{
+							"key": "num_messages",
+							"value": "&lt;optional&gt;",
+							"disabled": true
+						},
+						{
+							"key": "start_ts",
+							"value": "&lt;optional unix timestamp&gt;",
+							"disabled": true
+						},
+						{
+							"key": "end_ts",
+							"value": "&lt;optional unix timestamp&gt;",
+							"disabled": true
+						},
+						{
+							"key": "as_file",
+							"value": "&lt;optional boolen&gt;",
+							"disabled": true
+						},
+						{
+							"key": "file_type",
+							"value": "&lt;optional file type&gt;",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

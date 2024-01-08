@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Google Play data safety section for Vivox</h1>
+        <p>Starting April 2022, Android developers publishing on the Google Play store must define what data their apps collect, including the data collected by integrated third-party SDKs. For your convenience, this topic provides information on Vivox data collection practices.</p>
+        <p><b>Important</b>: The following data disclosures are only for the Vivox SDK. You are also responsible for providing any additional disclosures for your app, including other Unity SDKs and/or third-party SDKs used in your app.</p>
+        <p>For more information on Google's data safety disclosure policies, including terminology definitions, please see the <a href="https://support.google.com/googleplay/android-developer/answer/10787469" target="_blank">Google documentation</a>.</p>
+        <h2>Data collection survey</h2>
+        <table border="1" width="100%">
+            <col span="1" style="width: 70%;" />
+            <col span="1" style="width: 30%;" />
+            <tr>
+                <td>Does the SDK collect or share any of the required user data types?</td>
+                <td>Yes*</td>
+            </tr>
+            <tr>
+                <td>Is all of the data collected by the SDK encrypted in transit?</td>
+                <td>Yes**</td>
+            </tr>
+            <tr>
+                <td>Does the SDK provide a way for users to request that their data is deleted?</td>
+                <td>No***</td>
+            </tr>
+        </table>
+        <p>* Voice data is collected only in the context of server-side recording (SSR), and is used for performance monitoring and product improvement purposes. Today, data is processed ephemerally. This stands to change in coming months when we will begin storing it for analysis and model training. Today, users (where SSR is deployed) have no choice but to allow the integrating developer to collect their audio data. The SDK also collects performance data, which users cannot opt out of.</p>
+        <p>** Voice data is not encrypted, but the signaling is. Voice data is encoded (not encrypted), and gets decoded by the SDK/client side. The purpose of this is for app functionality and analytics.</p>
+        <p>*** We do not store user data, and thus have little to remove in the event of such requests.</p>
+        <h2>Data types</h2>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Location</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s approximate location?
+                </td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>App functionality and analytics</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s precise location?
+                </td>
+                    <td>No</td>
+                    <td>Not applicable (N/A)</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Personal information</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s name?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s email address?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s personal identifiers?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s address?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s phone number?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s race and ethnicity?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s political or religious beliefs?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s sexual orientation or gender identity?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect any of the user’s other personal information?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Financial info</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s purchase history?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s credit info?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s credit card, debit card, or bank account number?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect any of the user’s other financial info?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Health and fitness</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s health information?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s fitness information?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Messages</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s emails?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s SMS or MMS messages?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect any of the user’s other in-app messages?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Photos and videos</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s photos?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s videos?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Audio files</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s voice or sound recordings?
+                </td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes ******</td>
+                    <td>Yes</td>
+                    <td>App functionality, fraud prevention, security, and compliance (for SSR)</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s music files?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect any of the user’s other audio files?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>****** No if using server-side recording (SSR), otherwise yes.</p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Files and docs</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s files and or documents?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Calendar</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s calendar events?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Contacts</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect the user’s contacts?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>App activity</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect data on page views and taps in the app?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect in-app search history?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect data on installed apps?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect data on any other user-generated content?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect data on any other app activity?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Web browsing</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect data on the user’s web browsing history?
+                </td>
+                    <td>No</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>App info and performance</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect crash logs?</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>App functionality</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect app diagnostics?</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>App functionality</td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect any other app performance data?</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>App functionality</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <colgroup>
+                    <col span="1" style="width: 40%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 10%;" />
+                    <col span="1" style="width: 20%;" />
+                </colgroup>
+                <tr>
+                    <td><b>Device or other identifiers</b>
+                    </td>
+                    <td><b>Collected</b>
+                    </td>
+                    <td><b>Shared</b>
+                    </td>
+                    <td><b>Ephemeral</b>
+                    </td>
+                    <td><b>Required</b>
+                    </td>
+                    <td><b>Purpose</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Does the SDK collect data on the user’s device or other identifiers?</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>App functionality</td>
+                </tr>
+            </table>
+        </p>
+    </body>
+</html>

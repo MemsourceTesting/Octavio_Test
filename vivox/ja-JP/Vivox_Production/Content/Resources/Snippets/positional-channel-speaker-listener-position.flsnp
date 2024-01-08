@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>You can set the position of the avatar's mouth independently of the avatar's ears. These are respectively referred to as the speaker position and the listener position, and they share coordinates in most scenarios. Because the positions are independent, this allows for effects like an "audio zoom," where a character who is using something like a shotgun microphone could be configured to hear voice as though they were closer to the target, but they are still only speaking to those immediately around them. In addition to position, the listener can also have its orientation set to accurately render audio panning. However, the speaker cannot have its orientation set; spoken voices are treated as omni-directional audio “point sources” and are unaffected by the speaker’s orientation.</p>
+        <p>After you set up and join a positional channel with any configured 3D properties, you then report your actor's position and orientation to the Vivox SDK.</p>
+        <p>The following code displays an example of how to set a user's position in a positional channel:</p>
+    </body>
+</html>

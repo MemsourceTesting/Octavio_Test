@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Generate a token on the client</h1>
+        <p><b>Important:</b> Use the following access token generation methods during initial development and prototyping. Do not include this method of generation in production builds of your game. Allowing token generation on the client during production is both a security risk and can cause unexpected token expiration errors for your users.</p>
+        <p>The following APIs are available to generate insecure access tokens from the client for use during early development:</p>
+        <ul>
+            <li><a href="../ReferenceManual/Unreal/class_i_channel_session.html#a4fe9385f479d04705df8ba8b69c7560c">IChannelSession::GetConnectToken()</a>
+            </li>
+            <li><a href="../ReferenceManual/Unreal/class_i_channel_session.html#adcd4729bff9cb2be6e483c696122de89">IChannelSession::GetTranscriptionToken()</a>
+            </li>
+            <li><a href="../ReferenceManual/Unreal/class_i_login_session.html#ad62a3ef410fc40cc6c0ba7b6dfe767ab">ILoginSession::GetLoginToken()</a>
+            </li>
+            <li><a href="../ReferenceManual/Unreal/class_i_participant_properties.html#aaadc3a285ad1181e0b36fe906b8ffb32">IParticipantProperties::GetMuteForAllToken()</a>
+            </li>
+        </ul>
+        <p>Each API takes the following parameters:</p>
+        <ul>
+            <li>The token signing key</li>
+            <li>The token time to live in seconds</li>
+        </ul>
+        <p>The following examples display access tokens for login and join, respectively: </p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">const TCHAR *kKey = TEXT("demo-key");
+const FTimespan kExpiration = FTimespan::FromSeconds(90);
+
+// Login (This assumes an already initialized Client object)
+ILoginSession &amp;loginSession(client.GetLoginSession(/* Account to login */));
+loginSession.GetLoginToken(kKey, kExpiration);
+
+// Join (This assumes an already signed in ILoginSession object)
+IChannelSession &amp;channelSession(loginSession.GetChannelSession(/* ChannelId to join*/));
+channelSession.GetConnectToken(kKey, kExpiration);
+
+// Mute (This assumes an already signed in ILoginSession object joined to a Connected IChannelSession)
+IChannelSession &amp;channelSession(loginSession.GetChannelSession(/* ChannelId to mute in*/));
+IParticipant &amp;participant(channelSession.Participants()[ParticipantKey]);
+participant.GetMuteForAllToken(kKey, kExpiration);
+
+// Transcription (This assumes an already signed in ILoginSession object joined to a Connected IChannelSession)
+IChannelSession &amp;channelSession(loginSession.GetChannelSession(/* ChannelId to begin transcribing*/));
+channelSession.GetTranscriptionToken(kKey, kExpiration);</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Positional channels use a right-hand coordinate system. When the player avatar is standing facing directly forward, the following criteria applies:</p>
+        <ul>
+            <li>The positive X-axis is to the avatar's right.</li>
+            <li>The positive Y-axis runs from the avatar's feet upward through their head.</li>
+            <li>The positive Z-axis runs from the avatar's chest out through their back.</li>
+        </ul>
+        <p>When a player joins a positional channel, the player avatar is placed at a null position until they move to a position.</p>
+    </body>
+</html>

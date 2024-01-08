@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Generate a token on the client</h1>
+        <p><b>Important:</b> Use the following access token generation methods during initial development and prototyping. Do not include this method of generation in production builds of your game. Allowing token generation on the client during production is both a security risk and can cause unexpected token expiration errors for your users.</p>
+        <p>To generate your access token, call <span style="font-family: monospace;">vx_debug_generate_token()</span> with the following parameters:</p>
+        <ul>
+            <li>The issuer</li>
+            <li>The expiration time in epoch seconds since January 1, 1970 UTC</li>
+            <li>The action (for example, "mute")</li>
+            <li>A serial number (a simple static incrementing counter is adequate - this allows for the generation of more than one request in the same second for the same set of claims)</li>
+            <li>An optional subject (the target for kick and mute actions, null otherwise)</li>
+            <li>The from URI (always the signing in or signed in user URI - required for all actions)</li>
+            <li>The to URI (null for the login action, and the channel URI for join, kick, and mute)</li>
+            <li>A pointer to a buffer holding the token signing key</li>
+            <li>The length of the token signing key</li>
+        </ul>
+        <p>The following examples display access tokens for login, join, join_muted, kick, and mute, respectively:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">static long long serialNumber = 0;
+// Login
+request-&gt;access_token = vx_debug_generate_token("issuer", time(NULL) + 120, "login", serialNumber++, NULL, "sip:.issuer.me.@mt1s.vivox.com", NULL, (const unsigned char *)key, (int)strlen(key));
+
+// Join
+request-&gt;access_token = vx_debug_generate_token("issuer", time(NULL) + 120, "join", serialNumber++, NULL, "sip:.issuer.me.@mt1s.vivox.com", "sip:confctl-g-issuer.lobby@mt1s.vivox.com", (const unsigned char *)key, (int)strlen(key));
+
+// Join Muted
+request-&gt;access_token = vx_debug_generate_token("issuer", time(NULL) + 120, "join_muted", serialNumber++, NULL, "sip:.issuer.me.@mt1s.vivox.com", "sip:confctl-g-issuer.lobby@mt1s.vivox.com", (const unsigned char *)key, (int)strlen(key));
+
+// Kick
+request-&gt;access_token = vx_debug_generate_token("issuer", time(NULL) + 120, "kick", serialNumber++, "sip:.issuer.them.@mt1s.vivox.com", "sip:.issuer.me.@mt1s.vivox.com", "sip:confctl-g-issuer.lobby@mt1s.vivox.com", (const unsigned char *)key, (int)strlen(key));
+
+// Mute
+request-&gt;access_token = vx_debug_generate_token("issuer", time(NULL) + 120, "mute", serialNumber++, "sip:.issuer.them.@mt1s.vivox.com", "sip:.issuer.me.@mt1s.vivox.com", "sip:confctl-g-issuer.lobby@mt1s.vivox.com", (const unsigned char *)key, (int)strlen(key));
+
+// Transcription
+request-&gt;access_token = vx_debug_generate_token("issuer", time(NULL) + 120, "trxn", serialNumber++, NULL, "sip:.issuer.me.@mt1s.vivox.com", "sip:confctl-g-issuer.lobby@mt1s.vivox.com", (const unsigned char *)key, (int)strlen(key));</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

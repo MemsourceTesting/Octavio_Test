@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Required permissions for Amazon S3 buckets</h1>
+        <p>The following list details the required permissions for Amazon S3 buckets when using server-side recording (SSR).</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">PutObject</span> - Allows SSR to put recordings into a customer bucket</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">GetBucketLocation</span> - Allows SSR to get the AWS region that a bucket is in</p>
+            </li>
+        </ul>
+    </body>
+</html>

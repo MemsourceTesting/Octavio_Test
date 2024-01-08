@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Usernames</h1>
+        <p>When you create a username, the following criteria apply:</p>
+        <ul>
+            <li>Maximum of 127 bytes</li>
+            <li>Start and end with a period '.'</li>
+            <li>Use only the following characters:</li>
+            <MadCap:snippetBlock src="../../Resources/Snippets/valid-characters.flsnp" />
+        </ul>
+        <p>The recommended best practice is to URL-encode the username by using only uppercase hex digit characters.  Lowercase characters are allowed in the username, but not when used as the hex digit characters.</p>
+        <p style="font-style: normal;">For example, if your issuer name is "<span style="font-family: monospace;">crux</span>", then a valid username is <span style="font-family: monospace;">.crux.0verl0rd.</span></p>
+        <p>You should also:</p>
+        <ul>
+            <li>
+                <p>Create a one-to-one mapping between an Account and a player.</p>
+            </li>
+            <li>
+                <p>Use the same Account for the same player every time they play the game.</p>
+            </li>
+        </ul>
+        <p>It’s recommended that you re-use player account names and create one-to-one mapping between and account and a player to facilitate the use of Vivox features such as cross-mute and blocking. It will also become a requirement for using future safety features designed for reducing toxicity and fostering more positive communities.</p>
+        <p><b>Note:</b> For the Vivox Unity SDK and the Vivox Unreal SDK, the naming displayed in this example only applies during access token generation. When you construct an <span style="font-family: monospace;">AccountId</span>, you are expected to use only the "<span style="font-family: monospace;">0verl0rd</span>" part of the username and not "<span style="font-family: monospace;">.crux.0verl0rd.</span>" for the name argument. The <span style="font-family: monospace;">AccountId</span> function <span style="font-family: monospace;">ToString()</span> returns a full user URI that is suitable for token generation, which includes the dots, issuer, and other URI components.</p>
+        <p>If you do not want to use a unique account name per player, or if you do not want to expose the username to the network, then use one of the following options:</p>
+        <ul>
+            <li>
+                <p>A hash of the unique username.</p>
+            </li>
+            <li>
+                <p>A universally unique identifier (UUID).</p>
+            </li>
+        </ul>
+    </body>
+</html>

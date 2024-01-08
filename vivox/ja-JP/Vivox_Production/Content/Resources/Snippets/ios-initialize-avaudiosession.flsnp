@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Initialize the AVAudioSession on app startup</h1>
+        <p>We strongly recommend that you set the <span style="font-family: monospace;">AVAudioSession</span> to <span style="font-family: monospace;">AVAudioSessionCategoryPlayback</span>, <span style="font-family: monospace;">AVAudioSessionCategoryAmbient</span>, or to another non-recording category on app startup.</p>
+    </body>
+</html>

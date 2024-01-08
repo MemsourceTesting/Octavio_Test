@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Adaptive chat filter</h1>
+        <p>The chat filter censors words in a message based on a blocklist. This feature is currently server-enabled and needs to be enabled on your account before you can use it. For more information on how to enable this feature, contact your sales representative.</p>
+        <h2>Chat filter language handling per message</h2>
+        <p>The chat filter handles messages based on the user’s set language. The chat filter expects the language to be set in each request on a per-message basis. This means that if a preferred language is set, the Vivox SDK must specify which language to use on the respective channel class or interface that sends messages to ensure that the proper chat filter is used.</p>
+        <p>The following is a code example for setting the language of a direct message. The same approach can be used on channel-based messages.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">vx_req_account_send_msg *req;
+vx_req_account_send_msg_create(&amp;req);
+req-&gt;connector_handle = vx_strdup("c1");
+req-&gt;account_handle = vx_strdup(".issuer-w-dev.mytestaccountname.");
+req-&gt;language = vx_strdup(“en-us”);
+req-&gt;user_uri = vx_strdup("sip:theotheruser@vd1.vivox.com");
+req-&gt;message_body = vx_strdup("Hey there buddy!");
+vx_issue_request2(&amp;req-&gt;base);</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <h2>Speech-to-text</h2>
+        <p> Messages produced through<a href="../../Core/developer-guide/speech-to-text/stt-overview.htm">Speech-to-text</a> can be filtered. Words are filtered out when the speech is converted to text. To enable this feature, contact your Vivox representative.</p>
+    </body>
+</html>

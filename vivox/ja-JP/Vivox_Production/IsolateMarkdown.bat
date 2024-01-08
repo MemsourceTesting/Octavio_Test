@@ -1,0 +1,1 @@
+del Content\*.md /s /f /q

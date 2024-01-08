@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Unmute a user in a channel </h1>
+        <p>Use the following parameters to unmute a user in a channel when you call <span style="font-family: monospace;">viv_chan_cmd.php</span>:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">access_token</span> - the access token with specified claims for this action</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">auth_token</span> - the token that <span style="font-family: monospace;">viv_signin.php</span> returns<br /></p>
+                <p><b>Note</b>: The Control active channels API can use the <span style="font-family: monospace;">auth_token</span> parameter in place of the <span style="font-family: monospace;">userid</span> and <span style="font-family: monospace;">pwd</span> parameters. For more information, see <a href="../login-api.htm">Login API</a>.</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">user_uri</span> - the user's <MadCap:glossaryTerm glossTerm="Glossary.Term16">URI</MadCap:glossaryTerm></p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">chan_uri</span> - the channel's URI</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">mode</span> - use <span style="font-family: monospace;">unmute</span> for this action</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">scope</span> - optionally specify audio, text, or both. The default is audio.</p>
+            </li>
+        </ul>
+        <p>The following example displays how to unmute a user in a channel when using an <span style="font-family: monospace;">auth_token</span>.</p>
+        <ul>
+            <li>
+                <p>Domain: <span style="font-family: monospace;">mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>Issuer: <span style="font-family: monospace;">blindmelon-AppName-dev</span></p>
+            </li>
+            <li>
+                <p>Admin user: <span style="font-family: monospace;">blindmelon-AppName-dev-Admin</span></p>
+            </li>
+            <li>
+                <p>User to unmute: <span style="font-family: monospace;">sip:.blindmelon-AppName-dev.jerky.@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>Channel that contains the user to unmute: <span style="font-family: monospace;">sip:confctl-g-blindmelon-AppName-dev.the-channel@mt1s.vivox.com</span></p>
+            </li>
+        </ul>
+        <p>Construct an unmute token with the following parameters:</p>
+        <p><b>Note</b>: This process requires a Vivox access token. <MadCap:snippetText src="../../Resources/Snippets/access-token-guide-general-link.flsnp" /></p>
+        <ul>
+            <li>
+                <p>vxi: <span style="font-family: monospace;">3</span></p>
+            </li>
+            <li>
+                <p>sub: <span style="font-family: monospace;">sip:.blindmelon-AppName-dev.jerky.@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>f: <span style="font-family: monospace;">sip:blindmelon-AppName-dev-Admin@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>iss: <span style="font-family: monospace;">blindmelon-AppName-dev</span></p>
+            </li>
+            <li>
+                <p>vxa: <span style="font-family: monospace;">mute</span></p>
+            </li>
+            <li>
+                <p>t: <span style="font-family: monospace;">sip:confctl-g-blindmelon-AppName-dev.the-channel@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p>exp: <span style="font-family: monospace;">1600349400</span></p>
+            </li>
+        </ul>
+        <p>The following example displays an access token that uses these parameters:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjMsInN1YiI6InNpcDouYmxpbmRtZWxvbi1BcHBOYW1lLWRldi5qZXJreS5AbXQxcy52aXZveC5jb20iLCJmIjoic2lwOmJsaW5kbWVsb24tQXBwTmFtZS1kZXYtQWRtaW5AbXQxcy52aXZveC5jb20iLCJpc3MiOiJibGluZG1lbG9uLUFwcE5hbWUtZGV2IiwidnhhIjoibXV0ZSIsInQiOiJzaXA6Y29uZmN0bC1nLWJsaW5kbWVsb24tQXBwTmFtZS1kZXYudGhlLWNoYW5uZWxAbXQxcy52aXZveC5jb20iLCJleHAiOjE2MDAzNDk0MDB9.ufa-NQxsObktQbVrBqvK27epuNrixNhMjRS7EmcpB-E</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Call <span style="font-family: monospace;">/api2/viv_chan_cmd.php</span> with the following parameters:</p>
+        <ul>
+            <li>
+                <p><span style="font-family: monospace;">access_token</span> - the token used in the preceding example</p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">auth_token</span> - the token that <span style="font-family: monospace;">viv_signin.php</span> returns for <span style="font-family: monospace;">blindmelon-AppName-dev-Admin</span></p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">chan_uri</span> - <span style="font-family: monospace;">sip:confctl-g-blindmelon.the-channel@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">user_uri</span> - <span style="font-family: monospace;">sip:.blindmelon.jerky.@mt1s.vivox.com</span></p>
+            </li>
+            <li>
+                <p><span style="font-family: monospace;">mode</span> - <span style="font-family: monospace;">unmute</span></p>
+            </li>
+        </ul>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">https://mt1s.www.vivox.com/api2/viv_chan_cmd.php?mode=unmute&amp;access_token=e30.eyJ2eGkiOjMsInN1YiI6InNpcDouYmxpbmRtZWxvbi1BcHBOYW1lLWRldi5qZXJreS5AbXQxcy52aXZveC5jb20iLCJmIjoic2lwOmJsaW5kbWVsb24tQXBwTmFtZS1kZXYtQWRtaW5AbXQxcy52aXZveC5jb20iLCJpc3MiOiJibGluZG1lbG9uLUFwcE5hbWUtZGV2IiwidnhhIjoibXV0ZSIsInQiOiJzaXA6Y29uZmN0bC1nLWJsaW5kbWVsb24tQXBwTmFtZS1kZXYudGhlLWNoYW5uZWxAbXQxcy52aXZveC5jb20iLCJleHAiOjE2MDAzNDk0MDB9.ufa-NQxsObktQbVrBqvK27epuNrixNhMjRS7EmcpB-E&amp;auth_token=blindmelon-AppName-dev-Admin:1278945699:220a34213b4273a1eab1ac18b5fe67b6:TesterAlias:1&amp;chan_uri=sip:confctl-g-blindmelon.the-channel@mt1s.vivox.com&amp;user_uri=sip:.blindmelon.jerky.@mt1s.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

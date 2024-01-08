@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Channel types</h1>
+        <p>Vivox uses the following types of channels:</p>
+        <ul>
+            <li><a href="#Echo">Echo channels</a>
+            </li>
+            <li><a href="#Non-posi">Non-positional channels</a>
+            </li>
+            <li><a href="#Position">Positional channels</a>
+            </li>
+        </ul>
+        <p>The channel type is indicated by the character in the middle of a given channel's <MadCap:glossaryTerm glossTerm="Glossary.Term4">SIP</MadCap:glossaryTerm> address. For more information, see <a href="../../server-to-server-api-reference/uri/channel-uri.htm">Channel URI structure</a>.</p>
+        <MadCap:snippetBlock src="note-working-with-positional-and-non-positional-channels.flsnp" />
+        <h2><a name="Echo"></a>Echo channels</h2>
+        <p style="font-weight: normal;">Echo channels include an <span style="font-family: monospace;">-e-</span> in their SIP address, which is displayed in the following example:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton>
+            </MadCap:codeSnippetCopyButton>
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">sip:confctl-e-issuer.channel-name@domain.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Developers can use these channels to give users a place to test their microphones, or as a general way to test connectivity to the Vivox voice servers.</p>
+        <h2><a name="Non-posi"></a>Non-positional channels</h2>
+        <p style="font-weight: normal;">Non-positional channels, also referred to as 2D channels, include a <span style="font-family: monospace;">-g-</span> in their SIP address, which is displayed in the following example:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton>
+            </MadCap:codeSnippetCopyButton>
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">sip:confctl-g-issuer.channel-name@domain.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Developers can use these channels to allow for level-wide audio and text channels that players can connect to.</p>
+        <p>Examples of scenarios where non-positional channels are often used include teams and squads in first-person shooters, and party chat in MMOs.</p>
+        <p>Non-positional channels are typically the most used channel types in a Vivox implementation.</p>
+        <h2><a name="Position"></a>Positional channels</h2>
+        <p style="font-weight: normal;">Positional channels, also referred to as 3D channels, include a <span style="font-family: monospace;">-d-</span> in their SIP address, which is displayed in the following example:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton>
+            </MadCap:codeSnippetCopyButton>
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">sip:confctl-d-issuer.channel-name@domain.vivox.com</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Developers can use these channels to provide voice chat that is a part of a world, with player voices attenuating and panning to make it seem like they are speaking from where they are positioned in the game world.</p>
+        <p> <b>Note</b>: You can join only one positional channel at a time.</p>
+    </body>
+</html>

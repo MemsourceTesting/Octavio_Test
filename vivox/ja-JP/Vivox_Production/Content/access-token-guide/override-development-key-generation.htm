@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Override development key generation</h1>
+        <p><b>Prerequisite</b>: This topic assumes you have already <a href="generate-tokens-unity.htm">created a token generation service</a>.</p>
+        <p>Do not include development and testing codes, such as those generated in <span style="font-family: monospace;">VxTokenGen.cs</span>, in any final shipped build. Instead, write a new class that inherits from <span style="font-family: monospace;">VxTokenGen.cs</span> and overrides the existing functions. This sends the relevant information for each key out to the new secure token generation server.</p>
+        <p>Configure this new class to override the <span style="font-family: monospace;">GetToken()</span> method within <span style="font-family: monospace;">VxTokenGen.cs</span>. The following code displays an example of this class:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">```
+public class MyTokenGenOverride : VxTokenGen
+{
+    public override string GetToken(string issuer = null, TimeSpan? expiration = null, string userUri = null, string action = null, string tokenKey = null, string conferenceUri = null, string fromUserUri = null)
+    {
+        //Server Token Generation calls go here
+    }
+}
+
+public void SetTokenOverride()
+{
+    Client.tokenGen = new MyTokenGenOverride();
+}
+```</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>Afterward, use this class to replace the value of the <span style="font-family: monospace;">Client.tokenGen</span> variable. All further calls through <span style="font-family: monospace;">GetLoginToken</span>, <span style="font-family: monospace;">GetJoinToken</span>, <span style="font-family: monospace;">GetMuteForAllToken</span>, and <span style="font-family: monospace;">GetTranscriptionToken</span> will route their <span style="font-family: monospace;">UserUri</span> and other assorted parameters through to the server generation code.</p>
+    </body>
+</html>

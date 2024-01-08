@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Receive a directed message</h1>
+        <p>To receive a directed message, bind a method to the <span style="font-family: monospace;">ILoginSession.DirectedMessages.AfterItemAdded</span> event.</p>
+        <p>The following code snippet displays an example of this action:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">UserLoginSession.DirectedMessages.AfterItemAdded += (sender, args) =&gt;
+{
+    Debug.Log(args.Value.Sender +“: ” + args.Value.Message);
+};</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

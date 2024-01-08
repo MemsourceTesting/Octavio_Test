@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Server-side recording</h1>
+        <MadCap:snippetBlock src="ssr-early-release-enable-note.flsnp" />
+        <p>Server-side recording (SSR) is an optional paid Vivox service that can help you to manage the health and safety of the voice communications in your player community.</p>
+        <p>SSR provides customer service representatives with a workflow for capturing and reviewing conversations that occur on the Vivox platform where potentially unwanted behavior is either reported or detected.</p>
+    </body>
+</html>

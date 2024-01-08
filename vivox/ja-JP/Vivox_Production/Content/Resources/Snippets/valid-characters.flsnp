@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table style="mc-table-style: url('../TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1" style="background-color: #ffffff;font-weight: normal;text-align: left;font-size: 10pt;">
+                        <p>Alphanumerics </p>
+                    </th>
+                    <th class="HeadE-Column1-Header1" style="background-color: #ffffff;font-weight: normal;text-align: left;font-size: 10pt;">
+                        <p>0-9, A-Z, a-z</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1" style="background-color: #ffffff;font-weight: normal;text-align: left;font-size: 10pt;">
+                        <p>0x30-0x39, 0x41-0x5A, 0x61-0x7A</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Exclamation mark</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' ! '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x21</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Open parenthesis</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' ( '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x28</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Close parenthesis</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' ) '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x29</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Plus</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' + '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x2B</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Minus</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' - '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x2D</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Period</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' . '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x2E</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Equals</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' = '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x3D</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Underscore</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' _ '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x5F</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Tilde </p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' ~ '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x7E</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Percent</p>
+                    </td>
+                    <td style="text-align: left;" class="BodyE-Column1-Body1">
+                        <p>' % '</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0x7F<br /></p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyA-Column1-Body1" colspan="3">
+                        <p colspan="3"><b>Note</b>: You can only use the percent sign for URL encoding. Follow the percent sign by two uppercase hex characters.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Example: C++</h1>
+        <p>The following code is an example of how to generate access tokens in C++.</p>
+        <p>You can download a file that contains this code: <a href="../../Resources/CodeDownloads/CPPTokenGen.zip" download="CPPTokenGen.zip">CPPTokenGen.zip</a></p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">/* 
+* Vivox Token Generation Example - C++
+* Note: This example uses C++11, and is written to not use external libraries to demonstrate the token generation process.
+* However, because HMACSHA256 is required, this example uses OpenSSL 1.1.0+.
+* 
+*/
+#include &lt;openssl/sha.h&gt;
+#include &lt;openssl/evp.h&gt;
+#include &lt;openssl/hmac.h&gt;
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+#include &lt;sstream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+typedef unsigned char uchar;
+static const string b = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_+/";
+/*
+* You can use Base64URL encoding or Base64 and URL encoding libraries in place of this implementation
+* Note: Any trailing ='s must be removed from the encoded string.
+*/
+static string base64_encode(const string &amp;in)
+{
+    string out;
+
+    int val = 0, valb = -6;
+    for (const char c : in) {
+        val = (val &lt;&lt; 8) + static_cast&lt;unsigned char&gt;(c);
+        valb += 8;
+        while (valb &gt;= 0) {
+            out.push_back(b[(val &gt;&gt; valb) &amp; 0x3F]);
+            valb -= 6;
+        }
+    }
+
+    if (valb &gt;- 6) out.push_back(b[((val &lt;&lt; 8) &gt;&gt; (valb + 8))&amp; 0x3F]);
+
+    return out;
+}
+
+#if (OPENSSL_VERSION_NUMBER &lt; 0x10100000L) || defined(LIBRESSL_VERSION_NUMBER)
+static HMAC_CTX *HMAC_CTX_new(void)
+{
+    HMAC_CTX *ctx = static_cast&lt;HMAC_CTX *&gt;(OPENSSL_malloc(sizeof(*ctx)));
+    if (ctx != nullptr) {
+        HMAC_CTX_init(ctx);
+    }
+
+    return ctx;
+}
+
+static void HMAC_CTX_free(HMAC_CTX *ctx)
+{
+    if (ctx != nullptr) {
+        HMAC_CTX_cleanup(ctx);
+        OPENSSL_free(ctx);
+    }
+}
+#endif
+
+/*
+* Uses OpenSSL 1.1.0+ to encode data with a secret using HMAC SHA-256
+*/
+string hmac(string key, string msg)
+{
+    unsigned char hash[32];
+
+    HMAC_CTX *hmac = HMAC_CTX_new();
+    HMAC_Init_ex(hmac, &amp;key[0], static_cast&lt;int&gt;(key.length()), EVP_sha256(), nullptr);
+    HMAC_Update(hmac, reinterpret_cast&lt;const unsigned char *&gt;(&amp;msg[0]), msg.length());
+    unsigned int len = 32;
+    HMAC_Final(hmac, hash, &amp;len);
+    HMAC_CTX_free(hmac);
+
+    stringstream ss;
+    ss &lt;&lt; setfill('0');
+    for (unsigned int i = 0; i &lt; len; i++) {
+        ss &lt;&lt; hash[i];
+    }
+
+    return ss.str();
+}
+
+static string vx_generate_token(const string &amp;key, const string &amp;issuer, int exp, const string &amp;vxa, int vxi, const string &amp;f, const string &amp;t)
+{
+    // Header is static - base64url encoded {}
+    string header = base64_encode("{}");  // Can also be defined as a constant "e30"
+
+    // Create payload and base64 encode
+    stringstream ss;
+    ss &lt;&lt; "{ \"iss\": \"" &lt;&lt; issuer &lt;&lt; "\",";
+    ss &lt;&lt; "\"exp\": " &lt;&lt; exp &lt;&lt; ",";
+    ss &lt;&lt; "\"vxa\": \"" &lt;&lt; vxa &lt;&lt; "\",";
+    ss &lt;&lt; "\"vxi\": " &lt;&lt; vxi &lt;&lt; ",";
+    ss &lt;&lt; "\"t\": \"" &lt;&lt; t &lt;&lt; "\",";
+    ss &lt;&lt; "\"f\": \"" &lt;&lt; f &lt;&lt; "\" }";
+    string payload = base64_encode(ss.str());
+
+    // Join segments to prepare for signing
+    string to_sign = header + "." + payload;
+
+    // Sign token with key and HMACSHA256, then base64 encode
+    string signed_payload = base64_encode(hmac(key, to_sign));
+
+    // Combine header and payload with signature
+    return to_sign + "." + signed_payload;
+}
+
+int main()
+{
+    string token = vx_generate_token("secret", "issuer", 1559359105, "join", 123456, "sip:.username.@domain.vivox.com", "sip:confctl-g-channelname@domain.vivox.com");
+    cout &lt;&lt; token &lt;&lt; endl;
+
+    return 0;
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

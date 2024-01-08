@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">In-game control of audio levels</h1>
+        <p>You can use the Vivox SDK to allow in-game control for audio input and output levels.</p>
+        <p>The following list details examples of scenarios in which you would want to implement in-game control of audio levels:</p>
+        <ul>
+            <li>A user wants game sounds and voice output to have different volume levels.</li>
+            <li>One user is playing music in the background, and another user wants to reduce the audio volume that is playing.</li>
+        </ul>
+        <p>Volume settings adjust the apparent loudness of a device or participant. Volume settings have a settable range between -50 to 50 on a logarithmic scale, with +0db (no change) being at 0. Because it is a logarithmic scale, the usable range is generally between -10 and 25, with 25 tending to result in over modulation on a capture device and possible user discomfort on a headset. Note that any increase in the volume above the default value can introduce some amount of distortion, although this is less noticeable at lower levels.</p>
+        <p><b>Note:</b> We do not recommend that you allow users to increase their capture device volume above 25.</p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Anti-flooding</h1>
+        <p><b>Note:</b>&#160;This feature is in Open Beta. </p>
+        <p>Set rate limiting by configuring the pre-login parameter <span style="font-family: monospace;">MaxTextMessageRate</span>. Setting it to 0 disables the feature.</p>
+        <p>Rate limiting is enforced by the Vivox SDK. If a user tries to send messages at a rate higher than allowed, a <span style="font-family: monospace;">VxErrorMessageTextRateExceeded</span> error is returned.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">vx_req_account_send_msg *req;
+vx_req_account_send_msg_create(&amp;req);
+req-&gt;connector_handle = vx_strdup("c1");
+req-&gt;account_handle = vx_strdup(".issuer-w-dev.mytestaccountname.");
+req-&gt;language = vx_strdup(“en-us”);
+req-&gt;user_uri = vx_strdup("sip:theotheruser@vd1.vivox.com");
+req-&gt;message_body = vx_strdup("Hey there buddy!");
+int status = vx_issue_request2(&amp;req-&gt;base); // If rate limiting is surpassed, status = VxErrorMessageTextRateExceeded</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

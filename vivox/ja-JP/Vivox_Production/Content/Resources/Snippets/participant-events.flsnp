@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Participant events</h1>
+        <p>The Vivox SDK posts information about individual participants in a channel that is visible to all other participants. This includes the following information: </p>
+        <ul>
+            <li>When a user joins a channel </li>
+            <li>When a user leaves a channel</li>
+            <li>When there is an important change in user state, such as whether the user is speaking or typing</li>
+        </ul>
+        <p>Handling participant events is optional. If there is no visualization of user state (for example, displaying who has voice enabled), then the game can ignore these events.</p>
+        <p>To provide a visualization of user state information, a game must handle the following messages:</p>
+    </body>
+</html>

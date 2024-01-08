@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Directed text</h1>
+        <p>Vivox provides directed text by using a similar process to what is used for group text. You can add players to existing text  sessions, and you can send text messages directly to any user who is signed in, independent of being in a channel with them.</p>
+        <p>Use directed text for short user-to-user messages (sometimes called whispers or private/direct messages), or to implement invite to channel capabilities.</p>
+    </body>
+</html>

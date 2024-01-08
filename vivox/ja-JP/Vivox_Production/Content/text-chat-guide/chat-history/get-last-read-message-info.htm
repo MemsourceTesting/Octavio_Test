@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Get last read message information from a given channel</h1>
+        <p>To get the last read message information, you need to sign in and connect to at least one channel. You can then use <span style="font-family: monospace;">vx_req_account_chat_history_get_last_read</span> to make a request. This will return:</p>
+        <ul>
+            <li>
+                <p>The last read message ID</p>
+            </li>
+            <li>
+                <p>The time stamp of when that message was read</p>
+            </li>
+            <li>
+                <p>The number of messages that are unread in the specified channel</p>
+            </li>
+        </ul>
+        <p><b>Note:</b> Last read information is updated when a user disconnects from a specified channel.</p>
+        <p>The following code is an example of how to get the last read information from a channel. This assumes that you have already successfully added a session.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">vx_req_account_chat_history_get_last_read *req;
+vx_req_account_chat_history_get_last_read_create(&amp;req);
+req-&gt;account_handle = vx_strdup("sip:.issuer.playerName@mt1s.vivox.com");
+req-&gt;session_handle = vx_strdup("mychannel");
+vx_issue_request2(&amp;req-&gt;base);</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>After you receive this information, the game then must process the <span style="font-family: monospace;">vx_resp_account_chat_history_get_last_read_t</span> response:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">void HandleAccountGetLastReadResponse(vx_resp_account_chat_history_get_last_read_t *resp)
+{
+    // Handles the response, uses the number of unread messages to fetch history
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>&#160;</p>
+    </body>
+</html>

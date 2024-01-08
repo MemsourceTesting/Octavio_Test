@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/NewStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1 class="Title">Apple privacy survey for Vivox</h1>
+        <p>Starting December 8, 2020, iOS publishers must define what data their apps collect, including the data collected by integrated third-party SDKs such as Vivox. For your convenience, Vivox provides information on its data collection practices below.</p>
+        <p><b>Important</b>: The data disclosures below are for the Vivox SDK only. You are also responsible for providing any additional disclosures for your app, including other third-party SDKs used in your app.</p>
+        <p>For more information on Apple's data collection disclosure policies, including terminology definitions, please see the <a href="https://developer.apple.com/app-store/app-privacy-details/" target="_blank">Apple documentation</a>.</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Contact info data</p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Collected?</p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Linked to user?</p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Purpose</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Name</b>
+                        </p>
+                        <p>For example, first or last name.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Email Address</b>
+                        </p>
+                        <p>Including, but not limited to a hashed email address.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Phone Number</b>
+                        </p>
+                        <p>Including, but not limited to a hashed phone number.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Physical Address</b>
+                        </p>
+                        <p>Such as home address, physical address, or mailing address.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Other User Contact Info</b>
+                        </p>
+                        <p>Any other information that can be used to contact the user outside the app.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 649px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 142px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 86px;" class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Health and Fitness data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Health</b>
+                        </p>
+                        <p>Health and medical data, including but not limited to from the Clinical Health Records API, HealthKit API, MovementDisorderAPIs, or health-related human subject research or any other user-provided health or medical data.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p><b>Fitness</b>
+                        </p>
+                        <p>Fitness and exercise data, including but not limited to the Motion and Fitness API. </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 649px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 143px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 112px;" class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Financial data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Payment Info</b>
+                        </p>
+                        <p>Such as form of payment, payment card number, or bank account number.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Credit Info</b>
+                        </p>
+                        <p>Such as a credit score. </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Other Financial Info</b>
+                        </p>
+                        <p>Such as salary, income, assets, debts, or any other financial information. </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 648px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 125px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 143px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Location data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Precise Location</b>
+                        </p>
+                        <p>Information that describes the location of a user or device with</p>
+                        <p>the same or greater resolution as a latitude and longitude with three or more decimal places.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p><b>Coarse Location</b>
+                        </p>
+                        <p>Information that describes the location of a user or device with lower resolution than a latitude and longitude with three or more decimal places, such as approximate location services.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 648px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 144px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Sensitive data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Sensitive Info</b>
+                        </p>
+                        <p>Such as racial or ethnic data, sexual orientation, pregnancy or childbirth information, disability, religious or philosophical beliefs, trade union membership, political opinion, genetic information, or biometric data.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Contact data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Contacts</b>
+                        </p>
+                        <p>Such as a list of contacts in the user’s phone, address book, or social graph.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 641px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 150px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 120px;" class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>User content</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Emails or Text Messages</b>
+                        </p>
+                        <p>Including subject line, sender, recipients, and contents of the email or message.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Photos or Videos</b>
+                        </p>
+                        <p>The user's photos or videos.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Audio Data</b>
+                        </p>
+                        <p>The user's voice or sound recordings.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Customer Support</b>
+                        </p>
+                        <p>Data generated by the user during a customer support request.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Other User Content</b>
+                        </p>
+                        <p>Any other user-generated content.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 642px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 150px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" style="width: 85px;" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Browsing data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Browsing History</b>
+                        </p>
+                        <p>Information about the content the user has viewed that is not part of the app, such as websites.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 641px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Search data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Search History</b>
+                        </p>
+                        <p>Information about searches performed in the app.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 642px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Identifier data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>User ID</b>
+                        </p>
+                        <p>Such as screen name, handle, account ID, assigned user ID, customer number, or other user- or account-level ID that can be used to identify a particular user or account.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p><b>Device ID</b>
+                        </p>
+                        <p>Such as the device's advertising identifier, or other device-level ID.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 642px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Identifier data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>User ID</b>
+                        </p>
+                        <p>Such as screen name, handle, account ID, assigned user ID, customer number, or other user- or account-level ID that can be used to identify a particular user or account.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p><b>Device ID</b>
+                        </p>
+                        <p>Such as the device's advertising identifier, or other device-level ID.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 645px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Usage data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Product Interaction</b>
+                        </p>
+                        <p>Such as app launches, taps, clicks, scrolling information, music listening data, video views, saved place in a game, video, or song, or other information about how the user interacts with the app.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Advertising Data</b>
+                        </p>
+                        <p>Such as information about the advertisements the user has seen.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Other Usage Data</b>
+                        </p>
+                        <p>Any other data about user activity in the app.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 646px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Diagnostic data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p><b>Crash Data</b>
+                        </p>
+                        <p>Such as crash logs.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Performance Data</b>
+                        </p>
+                        <p>Such as launch time, hang rate, or energy use.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Other Diagnostic Data</b>
+                        </p>
+                        <p>Any other data collected for the purposes of measuring technical diagnostics related to the app.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>May collect data*</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not linked to user</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Analytics</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>* Vivox transmits analytics data containing Vivox API calls and their outcomes. Vivox SDKs determine if analytics are collected and transmitted based on a cohort determination algorithm that is driven by a hash of the <a href="https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor" target="_blank">identifierForVendor</a> iOS API call.</p>
+        <table style="mc-table-style: url('../TableStyles/NewStyle.css');" class="TableStyle-NewStyle" cellspacing="0">
+            <col style="width: 647px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <col style="width: 155px;" class="TableStyle-NewStyle-Column-Column1" />
+            <col class="TableStyle-NewStyle-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-NewStyle-Body-Body1">
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Other data</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Collected?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyE-Column1-Body1">
+                        <p><b>Linked to user?</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyD-Column1-Body1">
+                        <p><b>Purpose</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-NewStyle-Body-Body2">
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p><b>Other Data Types</b>
+                        </p>
+                        <p>Any other data types not mentioned.</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyB-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                    <td class="TableStyle-NewStyle-BodyA-Column1-Body2">
+                        <p>Not applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

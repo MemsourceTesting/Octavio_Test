@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
+  MasterToc="/Project/TOCs/Switch.fltoc"
+  MasterStylesheetOverride="true"
+  Skin="/Project/Skins/HTML5 - Tripane.flskn"
+  TabletBreakpoint="0"
+  MobileBreakpoint="0"
+  FaviconSkin="/Project/Skins/Vivox Favicon.flskn"
+  MoveOutputContentToRoot="true"
+  ExcludeUnreferencedContent="true"
+  TopNavTocPath="true"
+  RemoveMadCapStyles="true"
+  ConditionTagExpression="include[General.Code or General.Core or General.Switch], exclude[General.Android or General.BrowserBased or General.Exclude or General.iOS or General.macOS or General.PlayStation4 or General.PlayStation5 or General.Unity or General.UniversalWindowsPlatform or General.Unreal or General.UnrealUpgradeFull or General.UnrealUpgradeLimited or General.Windows or General.XboxOne or General.XboxXS]"
+  EquationsOutputType="PNG"
+  DefaultUrl="/Content/developer-guide-supplement/switch/switch-guide-overview.htm"
+  MasterPage="/Content/Resources/MasterPages/FilterPage.flmsp"
+  CentralLinkIds="zh-cn_11334,ja-jp_11334,ko-kr_11334"
+  TargetLanguage="en-us,zh-cn_../../TranslatedProjects/CHS/Vivox_Production/Vivox_Production.flprj,ja-jp_../../TranslatedProjects/JPN/Vivox_Production/Vivox_Production.flprj,ko-kr_../../TranslatedProjects/KOR/Vivox_Production/Vivox_Production.flprj"
+  SyncLingoProject="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <MetaTags
+    Enabled="false" />
+</CatapultTarget>

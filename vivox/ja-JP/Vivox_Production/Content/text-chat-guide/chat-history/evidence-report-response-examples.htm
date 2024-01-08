@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Evidence report HTTP response examples</h1>
+        <p>The following shows an example of an evidence report response in JSON format:</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{"msg": "[{\"next_cursor\":null},{\"429467155290530049\":[{\"timestamp\":\"1677606075353633\",\"body\":\"Message 1: Edit 3\"},{\"timestamp\":1677606130,\"body\":\"Message 1: Edit 2\"},{\"timestamp\":1677606108,\"body\":\"Message 1: Edit 1\"},{\"timestamp\":1677606089,\"body\":\"Message 1\"}]},{\"429467175550510337\":[{\"timestamp\":\"1677606154494181\",\"body\":\"Message 2: Edit 2\"},{\"timestamp\":1677606198,\"body\":\"Message 2: Edit 1\"},{\"timestamp\":1677606174,\"body\":\"Message 2\"}]},{\"429467188710371585\":[{\"timestamp\":\"1677606205899889\",\"body\":\"\"},{\"timestamp\":1677606228,\"body\":\"Message 3: Edit 1\"},{\"timestamp\":1677606223,\"body\":\"Message 3\"}]}]", "code": 200}
+</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p><b>Note:</b> The messages will display in sequential order with the most recent version at the top and the original message last in the versions set. In this example, message 3 shows an example of a message that was edited and then deleted. A deleted message version appears with an empty body.</p>
+    </body>
+</html>

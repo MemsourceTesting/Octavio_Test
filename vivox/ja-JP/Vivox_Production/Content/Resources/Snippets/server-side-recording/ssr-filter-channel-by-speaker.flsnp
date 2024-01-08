@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Filter a channel by speaker</h1>
+        <p>To subscribe to a channel and only record certain users, filter a channel subscription by passing a list of speakers in to the channel you want to subscribe to.</p>
+        <p>For example, if you have speakerA, speakerB, and speakerC in a channel, and you only want data from speakerA and speakerB, then you can filter those two users by passing them in to the <span style="font-family: monospace;">filter_uris</span> parameter, which excludes speakerC from the recording. The following code displays an example of how to filter for this scenario.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">curl -x POST
+http://{{host}}/ssr/subscribe?auth_token={{auth_token}}&amp;history=5&amp;destination_credentials={"bucket":"bucket-name","access_key_id":"aws-access-id","secret_access_key":"aws-secret-key"}&amp;target_uri=sip:confctl-g-.issuer.channel_name@domain.vivox.com&amp;target_type=channel&amp;ttl=5&amp;filter_uris=["sip:.issuer.speakerA.@domain.vivox.com", "sip:.issuer.speakerB.@domain.vivox.com"]</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

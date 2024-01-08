@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Authentication</h1>
+        <p>To access the Vivox Server to Server <MadCap:glossaryTerm glossTerm="Glossary.Term1">Web API</MadCap:glossaryTerm>, you must:</p>
+        <ul>
+            <li>
+                <p>Use the HTTP/S protocol</p>
+            </li>
+            <li>
+                <p>Be an authenticated user</p>
+            </li>
+        </ul>
+        <p>A request is considered to be made by an authenticated user when using either of the following methods:</p>
+        <ul>
+            <li>
+                <p>The request has a valid Vivox account (<span style="font-family: monospace;">userid</span>) and password (<span style="font-family: monospace;">pwd</span>) pair as parameters with the URL.</p>
+            </li>
+            <li>
+                <p>The request has a valid session authentication token passed as the <span style="font-family: monospace;">auth_token</span> parameter to the request.</p>
+                <p><b>Note</b>: The <span style="font-family: monospace;">auth_token</span> value is returned in the response from a successful <span style="font-family: monospace;">viv_signin.php</span> call. See <a href="login-api.htm">Login API</a>.</p>
+            </li>
+        </ul>
+    </body>
+</html>

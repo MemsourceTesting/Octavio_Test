@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Troubleshooting an application API key</h1>
+        <p>The following list details the errors that could occur when adding or revoking an application API key by using a tool such as cURL, ARC, or Postman.</p>
+        <ul>
+            <li>Remote API Disabled - You have not enabled the remote API on your Organization Settings page.</li>
+            <li>Invalid Credentials - Your remote API username or remote API password is incorrect. Go to your Organization Settings page and ensure that the remote API is enabled and that you have correctly copied the credentials that are listed on the page.</li>
+            <li>Issuer not found - The issuer that you have specified does not match an issuer that is used by your organization’s applications.</li>
+            <li>Can’t add new key during cooldown period. Try again later. - When you add an application API key, there is a time limit of 3600 seconds (1 hour) before you can add another key. Wait for an hour to elapse, and then try again to add another key.<br /><b>Note</b>: If you require a reduced time period between adding application API keys, contact your sales representative to discuss the options for adjusting this value.</li>
+            <li>Key already exists for issuer - The key that you are trying to add already exists for the specified issuer.</li>
+            <li>Can’t revoke only key - You have only one API key, and you cannot have fewer than one key at a time.</li>
+            <li>Too many keys - You can have a maximum of two API keys at a time. Revoke a key and then try again to add a key.</li>
+        </ul>
+    </body>
+</html>

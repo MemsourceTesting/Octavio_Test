@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Vivox provides group text and voice communications through channels. Users can communicate with each other by joining the same channel.</p>
+        <p>Channels support the following functionality:</p>
+        <ul>
+            <li>Voice</li>
+            <li>Voice rendered with 3D effects (positional/directional audio)</li>
+            <li>Text</li>
+            <li>Muting a user for oneself</li>
+            <li>Muting a user for all users in the channel</li>
+            <li>Forced removal of a user from a channel (“kick”)</li>
+        </ul>
+        <p>Channels have the following characteristics:</p>
+        <ul>
+            <li>Channels are identified by channel IDs.</li>
+            <li>Channel IDs are assigned by the game.</li>
+            <li>Channels are platform agnostic - game clients running on different platforms interoperate with each other.</li>
+            <li>Channels are created on demand, and inactive channels consume no Vivox resources.</li>
+        </ul>
+        <p>Users have the following characteristics:</p>
+        <ul>
+            <li>Users are identified by user IDs.</li>
+            <li>User IDs are assigned by the game and must be unique to each user.</li>
+            <li>Users that are not logged in to the system consume no Vivox resources.</li>
+            <li>Users can subscribe to the presence of other users. Presence is a status and message that a user can optionally share with other users, regardless of whether either user is in a channel.</li>
+        </ul>
+        <p>To expose Vivox capabilities to players, a game developer must perform the following actions:</p>
+        <ul>
+            <li>
+                <p>Determine how to map player IDs to Vivox user IDs.</p>
+                <ul>
+                    <li>
+                        <p>Ensure that there is one Vivox user per game player.</p>
+                    </li>
+                    <li>
+                        <p>Typically, games use the player ID as a portion of the Vivox user ID, because the player ID is already unique to the player.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Determine how to map game audio and text-enabled object identifiers to Vivox channel IDs.</p>
+                <ul>
+                    <li>
+                        <p>Typically, games use the game object identifier as a portion of the Vivox channel ID.</p>
+                    </li>
+                    <li>
+                        <p>Audio or text-enabled game objects include the following examples:</p>
+                        <ul style="list-style-type: circle;">
+                            <li>
+                                <p>Guild channels</p>
+                            </li>
+                            <li>
+                                <p>Team channels for team versus team match play</p>
+                            </li>
+                            <li>
+                                <p>Lobby channels</p>
+                            </li>
+                            <li>
+                                <p>Private conversations between two players</p>
+                            </li>
+                            <li>
+                                <p>Physical regions in a game world that map to 3D audio spaces</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Determine the client platforms that are supported by a game.</p>
+            </li>
+            <li>
+                <p>Integrate the game client with the Vivox Core SDK to ensure that the following actions occur:</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>When a player logs in to a game, the corresponding user is logged in to the Vivox system.</p>
+                    </li>
+                    <li>
+                        <p>When a player activates a game object (for example, joining a guild channel or entering a particular region in a game), the player is placed into the corresponding Vivox channel.</p>
+                    </li>
+                    <li>
+                        <p>When a player wants to see the presence information of another player, the game client creates a subscription relationship between the corresponding Vivox users.</p>
+                    </li>
+                    <li>
+                        <p>When text messages are available in a channel, display those text messages in the game.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Modify the game server to deliver Vivox access tokens to game clients (if a game developer wants to secure access to the Vivox voice system).</p>
+                <ul>
+                    <li>
+                        <p>A Vivox access token is a <MadCap:glossaryTerm glossTerm="Glossary.Term23">JSON Web Token</MadCap:glossaryTerm> that grants the holder of that token a one-time permission to execute a particular Vivox operation.<br /></p>
+                    </li>
+                    <li>
+                        <p>The following operations are controlled by access tokens:</p>
+                        <ul style="list-style-type: circle;">
+                            <li>
+                                <p>Signing in to Vivox as a specific user</p>
+                            </li>
+                            <li>
+                                <p>Joining a specific Vivox channel as a specific user</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Optionally modify the game server to communicate directly with the Vivox Voice Server by using the <a href="../../server-to-server-api-reference/server-to-server-web-api-overview.htm">Vivox Server to Server Web API</a>, which allows you to perform the following actions:</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        <p>Drop or kick a user or all users from a channel</p>
+                    </li>
+                    <li>
+                        <p>Mute or unmute a user or all users for everyone in a channel</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

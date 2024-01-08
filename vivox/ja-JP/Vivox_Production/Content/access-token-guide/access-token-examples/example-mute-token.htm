@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Example: Mute tokens</h1>
+        <ul>
+            <li>
+                <p style="font-weight: normal;"><a href="#Signed">Signed in user muting other user in a channel</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Admin">Admin user muting other user in a channel</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Signed"></a>Signed in user muting other user in a channel</h2>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"beef"</span> to mute the user <span style="font-family: monospace;">"jerky"</span> in the channel <span style="font-family: monospace;">"testchannel"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload</p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":123456,
+    "sub":"sip:.blindmelon-AppName-dev.jerky.@tla.vivox.com",
+    "f":"sip:.blindmelon-AppName-dev.beef.@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"mute",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjEyMzQ1Niwic3ViIjoic2lwOi5ibGluZG1lbG9uLUFwcE5hbWUtZGV2Lmplcmt5LkB0bGEudml2b3guY29tIiwiZiI6InNpcDouYmxpbmRtZWxvbi1BcHBOYW1lLWRldi5iZWVmLkB0bGEudml2b3guY29tIiwiaXNzIjoiYmxpbmRtZWxvbi1BcHBOYW1lLWRldiIsInZ4YSI6Im11dGUiLCJ0Ijoic2lwOmNvbmZjdGwtZy1ibGluZG1lbG9uLUFwcE5hbWUtZGV2LnRlc3RjaGFubmVsQHRsYS52aXZveC5jb20iLCJleHAiOjE2MDAzNDk0MDB9.vM9zkCXTORjgv8w7eiMHHHkc4DumTwR_-I06y4SnpHA</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <h2><a name="Admin"></a>Admin user muting other user in a channel</h2>
+        <p>The token in this example allows the user <span style="font-family: monospace;">"blindmelon-AppName-dev-Admin"</span> to mute the user <span style="font-family: monospace;">"jerky"</span> in the channel <span style="font-family: monospace;">"testchannel"</span>.</p>
+        <p>The token expiration time is September 17, 2020 at 1:30 PM UTC.</p>
+        <p>The token signing key is <span style="font-family: monospace;">"secret!"</span> (not including quotes).</p>
+        <p style="font-weight: bold;">header</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">payload</p>
+        <p style="font-weight: normal;"><b>Note</b>: Spacing has been added to this code for demonstration purposes. You can also list claims in any order.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">{
+    "vxi":654321,
+    "sub":"sip:.blindmelon-AppName-dev.jerky.@tla.vivox.com",
+    "f":"sip:blindmelon-AppName-dev-Admin@tla.vivox.com",
+    "iss":"blindmelon-AppName-dev",
+    "vxa":"mute",
+    "t":"sip:confctl-g-blindmelon-AppName-dev.testchannel@tla.vivox.com",
+    "exp":1600349400
+}</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p style="font-weight: bold;">access token</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">e30.eyJ2eGkiOjY1NDMyMSwic3ViIjoic2lwOi5ibGluZG1lbG9uLUFwcE5hbWUtZGV2Lmplcmt5LkB0bGEudml2b3guY29tIiwiZiI6InNpcDpibGluZG1lbG9uLUFwcE5hbWUtZGV2LUFkbWluQHRsYS52aXZveC5jb20iLCJpc3MiOiJibGluZG1lbG9uLUFwcE5hbWUtZGV2IiwidnhhIjoibXV0ZSIsInQiOiJzaXA6Y29uZmN0bC1nLWJsaW5kbWVsb24tQXBwTmFtZS1kZXYudGVzdGNoYW5uZWxAdGxhLnZpdm94LmNvbSIsImV4cCI6MTYwMDM0OTQwMH0.ix0mFGS1XDXCBXH044f6B2JxutExbH2hZjGqZAwoHH8</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+    </body>
+</html>

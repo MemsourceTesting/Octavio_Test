@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Evidence report API</h1>
+        <p>Use the evidence report API to retrieve select messages from the server.</p>
+        <p>The game server uses <span style="font-family: monospace;">/evidence/report</span> to get the report of chat messages between a sender and a target (channel or user).</p>
+        <p>Use the following parameters to get the evidence report:</p>
+        <table style="width: 100%;">
+            <col style="width: 181px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;">Parameter</td>
+                    <td style="font-weight: bold;">Description</td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">auth_token</span>
+                    </td>
+                    <td>The token that viv_signin.php returns.</td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">sender_uri</span>
+                    </td>
+                    <td>The URI of the text message sending entity. </td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">target_uri</span>
+                    </td>
+                    <td>The URI of the message receiving entity (channel or user).</td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">user_uri</span>
+                    </td>
+                    <td>The URI of the user who is making the request.</td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">start_ts</span>
+                    </td>
+                    <td> All messages reported at this time stamp and after this time stamp in Unix time format (Optional).</td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">end_ts</span>
+                    </td>
+                    <td>All messages reported before and including this time stamp in Unix time format (Optional). </td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">as_file</span>
+                    </td>
+                    <td>Specify whether to return as a file. The default value is false. Returns response as JSON (Optional).</td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">file_type</span>
+                    </td>
+                    <td>If the as_file parameter is set, set the file format of the response. The default is CSV format (Optional).</td>
+                </tr>
+                <tr>
+                    <td><span style="font-family: monospace;">num_messages</span>
+                    </td>
+                    <td>The number of messages to return (Optional). A maximum value of 500 messages is returned per request query if this number is not provided.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>Note:</b> The <span style="font-family: monospace;">num_message</span> parameter does not work in conjunction with the <span style="font-family: monospace;">start_ts</span> and <span style="font-family: monospace;">end_ts</span> parameters. A request with a specified number of messages will return a <span style="font-family: monospace;">next_cursor</span> pointing to the next message in the results if there are more messages to return. However, you must remove the <span style="font-family: monospace;">num_messages</span> filter and retrieve all subsequent results using the <span style="font-family: monospace;">next_cursor</span> as the <span style="font-family: monospace;">start_ts</span>. The <span style="font-family: monospace;">next_cursor</span> value will be null if there are no more messages to return.</p>
+        <p>Regardless of the number of messages that exist; at most 500 messages (message_ids) are returned per query. If more than 500 messages are wanted, you can continue to send new queries for subsequent message results until no more results exist.</p>
+        <p>To retrieve the next page of the message results, use the <span style="font-family: monospace;">next_cursor</span> value provided in the results as the <span style="font-family: monospace;">start_ts</span> parameter in your next query. A <span style="font-family: monospace;">next_cursor</span> value of null indicates that there are no more messages to return.</p>
+    </body>
+</html>

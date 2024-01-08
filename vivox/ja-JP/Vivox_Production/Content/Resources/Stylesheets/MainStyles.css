@@ -1,0 +1,1409 @@
+/*<meta />*/
+
+@import url('../prettify/prettify.css') ;
+
+@import url('../../Skins/Default/Stylesheets/Vivox/styles.css') ;
+
+@font-face 
+{
+	font-family: 'Montserrat';
+	src: url('Fonts/montserrat-v12-latin-regular.eot');
+	src: url('Fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), url('Fonts/montserrat-v12-latin-regular.woff2') format('woff2'), url('Fonts/montserrat-v12-latin-regular.woff') format('woff'), url('Fonts/montserrat-v12-latin-regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+	font-family: 'Montserrat';
+	font-weight: 500;
+	src: url('Fonts/montserrat-v12-latin-500.eot');
+	src: url('Fonts/montserrat-v12-latin-500.eot?#iefix') format('embedded-opentype'), url('Fonts/montserrat-v12-latin-500.woff2') format('woff2'), url('Fonts/montserrat-v12-latin-500.woff') format('woff'), url('Fonts/montserrat-v12-latin-500.ttf') format('truetype');
+}
+
+@font-face 
+{
+	font-family: 'Montserrat';
+	font-weight: 600;
+	src: url('Fonts/montserrat-v12-latin-600.eot');
+	src: url('Fonts/montserrat-v12-latin-600.eot?#iefix') format('embedded-opentype'), url('Fonts/montserrat-v12-latin-600.woff2') format('woff2'), url('Fonts/montserrat-v12-latin-600.woff') format('woff'), url('Fonts/montserrat-v12-latin-600.ttf') format('truetype');
+}
+
+@font-face 
+{
+	font-family: 'Montserrat';
+	font-weight: 700;
+	src: url('Fonts/montserrat-v12-latin-700.eot');
+	src: url('Fonts/montserrat-v12-latin-700.eot?#iefix') format('embedded-opentype'), url('Fonts/montserrat-v12-latin-700.woff2') format('woff2'), url('Fonts/montserrat-v12-latin-700.woff') format('woff'), url('Fonts/montserrat-v12-latin-700.ttf') format('truetype');
+}
+
+body
+{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	font-size: 12pt;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+/******************************* FONTS **********************************************/
+
+body
+{
+	line-height: 14pt;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p.Title,
+p.SubTitle
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.code,
+.code_comment
+{
+	font-family: Consolas, serif;
+}
+
+/******************************* END FONTS **********************************************/
+
+p,
+li
+{
+	orphans: 2;
+	widows: 2;
+	font-size: 12pt;
+	line-height: normal;
+}
+
+li p,
+li
+{
+	margin-top: 2px;
+	margin-bottom: 3px;
+}
+
+a.MCBreadcrumbsLink
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #000000;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	color: #BED230;
+}
+
+div.GlossaryPageDefinition
+{
+	
+}
+
+div.GlossaryPageHeading
+{
+	
+}
+
+div.GlossaryPageTerm
+{
+	
+}
+
+div.TopicContent
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 25px;
+}
+
+h1
+{
+	orphans: 2;
+	widows: 2;
+	margin-bottom: 12pt;
+	margin-left: 0;
+	mc-heading-level: 1;
+	font-weight: bold;
+	font-size: 18pt;
+	color: #20b2aa;
+}
+
+h1.Contents
+{
+	mc-heading-level: 0;
+	mc-toc-depth: 0;
+}
+
+h2
+{
+	page-break-after: avoid;
+	orphans: 2;
+	widows: 2;
+	margin-top: 12pt;
+	margin-bottom: 6pt;
+	mc-heading-level: 2;
+	font-weight: bold;
+	color: #0B5294;
+	font-size: 16pt;
+}
+
+h3
+{
+	font-weight: bold;
+	color: #0B5294;
+	font-size: 12pt;
+	mc-heading-level: 0;
+}
+
+h4
+{
+	orphans: 2;
+	widows: 2;
+	page-break-after: avoid;
+	margin-top: 12pt;
+	margin-bottom: 6pt;
+	font-weight: bold;
+	mc-heading-level: 0;
+	color: #000000;
+	font-size: 12pt;
+}
+
+p.Steps
+{
+	orphans: 2;
+	widows: 2;
+	page-break-after: avoid;
+	margin-top: 12pt;
+	margin-bottom: 6pt;
+	font-weight: normal;
+	color: #365F91;
+	font-size: 14pt;
+}
+
+.code
+{
+	color: red;
+	margin: 0;
+	mc-hyphenate: never;
+	margin-left: 0px;
+	font-size: 12pt;
+	mc-conditions: 'General.Code';
+}
+
+.code_comment
+{
+	margin: 0;
+	font-size: 10pt;
+	color: #20b2aa;
+	mc-hyphenate: never;
+	margin-left: 10px;
+	mc-conditions: 'General.Code';
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	font-size: .7em;
+	font-style: italic;
+	mc-breadcrumbs-count: 10;
+	font-family: 'Montserrat', sans-serif;
+	mc-breadcrumbs-prefix: ' ';
+}
+
+MadCap|glossaryProxy
+{
+	
+}
+
+MadCap|indexProxy
+{
+	
+}
+
+MadCap|tocProxy
+{
+	
+}
+
+MadCap|xref
+{
+	color: #2D8DCC;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	mc-format: 'Incorrect Xref Label, Please Re-Link';
+}
+
+MadCap|xref:hover
+{
+	color: #BED230;
+}
+
+p.CopyrightText
+{
+	font-size: 11pt;
+	line-height: normal;
+}
+
+p.EmptyPageText
+{
+	
+}
+
+p.FrameFooterText
+{
+	
+}
+
+p.IndexHeading
+{
+	
+}
+
+p.Title
+{
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	line-height: 50pt;
+	font-weight: normal;
+	font-size: 24pt;
+}
+
+p.SubTitle
+{
+	font-size: 18pt;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	margin-top: 10px;
+	letter-spacing: 3px;
+	color: #000000;
+	line-height: 25pt;
+	font-weight: normal;
+}
+
+p.Version
+{
+	font-size: 11pt;
+	text-align: right;
+	line-height: normal;
+}
+
+p.ManualVersionNumber
+{
+	
+}
+
+div.sideContent
+{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 33.33%;
+}
+
+html.templateTopic div.sideContent
+{
+	display: none;
+}
+
+div.ContentRow	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ContentRow::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.ContentRow::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.ContentRow > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.ContentRow > div:nth-child(1)
+{
+	width: 58.333%;
+	margin-left: 0%;
+}
+
+div.ContentRow > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+p.TOC1
+{
+	font-size: 11pt;
+	margin-top: 12px;
+	margin-bottom: 3px;
+	font-weight: bold;
+	mc-leader-align: right;
+	mc-leader-format: ' ';
+}
+
+p.TOC2
+{
+	font-size: 11pt;
+	font-weight: normal;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	margin-left: 10px;
+	mc-leader-format: ' ';
+}
+
+p.TOC3
+{
+	font-size: 11pt;
+	font-weight: normal;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	margin-left: 20px;
+	mc-leader-format: ' ';
+}
+
+p.TOC4
+{
+	font-size: 11pt;
+	font-weight: normal;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	margin-left: 30px;
+	mc-leader-format: ' ';
+}
+
+h5
+{
+	mc-heading-level: 0;
+}
+
+h6
+{
+	mc-heading-level: 0;
+}
+
+p.Index1
+{
+	font-size: 10pt;
+}
+
+p.Index2
+{
+	font-size: 10pt;
+}
+
+p.Index3
+{
+	font-size: 10pt;
+}
+
+p.footer-text
+{
+	mc-hyphenate: never;
+}
+
+li
+{
+	line-height: 20pt;
+}
+
+p
+{
+	text-align: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+address
+{
+	font-family: sans-serif;
+}
+
+tr
+{
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10;
+}
+
+td
+{
+	border-bottom-color: #000000;
+	border-spacing: 0;
+	border: solid 1px #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10pt;
+}
+
+th
+{
+	border: solid 1px #000000;
+}
+
+table
+{
+	border-spacing: 0;
+}
+
+tbody
+{
+	
+}
+
+MadCap|miniTocProxy
+{
+	font-family: 'Montserrat', sans-serif;
+	color: #20b2aa;
+	font-size: 12pt;
+}
+
+p.MiniTOC1
+{
+	color: #1d8cfa;
+	font-size: 14pt;
+}
+
+p.MiniTOC2
+{
+	color: #1d8cfa;
+	text-indent: 10px;
+	margin-left: 0;
+	font-weight: normal;
+	font-size: 14pt;
+}
+
+p.MiniTOC3
+{
+	color: #1d8cfa;
+	font-weight: normal;
+	text-indent: 20px;
+	margin-left: 0;
+}
+
+p.MiniTOC4
+{
+	color: #1d8cfa;
+	font-weight: normal;
+	text-indent: 30px;
+	margin-left: 0;
+}
+
+p.MiniTOC5
+{
+	color: #1d8cfa;
+	font-weight: normal;
+	text-indent: 40px;
+	margin-left: 0;
+}
+
+p.MiniTOC6
+{
+	color: #1d8cfa;
+	font-weight: normal;
+	margin-left: 0;
+	text-indent: 50px;
+}
+
+@media print
+{
+	body
+	{
+		font-size: 8pt;
+		line-height: 13px;
+		margin: 8px;
+	}
+
+	MadCap|tocProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+	}
+
+	p.EmptyPageText
+	{
+		font-size: 10pt;
+		font-weight: bold;
+	}
+
+	p.PageFooter
+	{
+		font-size: 10pt;
+		color: #000000;
+	}
+
+	h3
+	{
+		mc-heading-level: 0;
+	}
+}
+
+@media tablet
+{
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media mobile
+{
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+div.indent
+{
+	margin-left: 50px;
+}
+
+span.Click
+{
+	font-weight: bold;
+}
+
+div.webFooter
+{
+	text-align: center;
+	margin-top: 50px;
+	padding: 10px 20px 20px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 10pt;
+	line-height: 10pt;
+	color: #696969;
+}
+
+div.webFooter p
+{
+	color: #999999;
+	font-size: 9pt;
+}
+
+img
+{
+	max-width: 6in;
+	max-height: auto;
+	margin: 10px 0;
+}
+
+img.border
+{
+	border: #000000 1px solid;
+}
+
+img.floatLeft
+{
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+img.floatRight
+{
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+img.icon
+{
+	margin: 0;
+	max-height: 25px;
+	max-width: auto;
+}
+
+MadCap|xref.Text-PageNumber
+{
+	mc-format: '{quote}{para} on page {page}{quote}';
+}
+
+p.calculation
+{
+	font-weight: bold;
+	font-size: 10pt;
+	margin-left: 50px;
+}
+
+/**************************  PDF PAGE STYLES ********************************/
+
+p.header-text,
+p.footer-text
+{
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	color: #20b2aa;
+}
+
+p.header-text
+{
+	align-text: center;
+	mc-hyphenate: never;
+}
+
+/************************** END PDF PAGE STYLES ********************************/
+
+div.Important
+{
+	margin: 12px 50px;
+	width: 80%;
+	padding-left: 0;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+p.Important
+{
+	mc-auto-number-format: '{b}Important: {/b} ';
+}
+
+div.Centered
+{
+	text-align: center;
+	font-size: 10pt;
+}
+
+.code_black
+{
+	color: #000000;
+	font-family: Consolas, serif;
+	mc-hyphenate: never;
+	margin: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-left: 0;
+	mc-conditions: 'General.Code';
+	font-size: 12pt;
+}
+
+.code_purple
+{
+	color: #9400d3;
+	font-family: Consolas, serif;
+	font-size: 12pt;
+	margin: 0;
+	mc-hyphenate: never;
+	mc-conditions: 'General.Code';
+	margin-left: 0;
+}
+
+.code_include
+{
+	color: #800000;
+	font-family: Consolas, serif;
+	font-size: 12pt;
+	margin: 0;
+	mc-hyphenate: never;
+	margin-left: 0;
+	mc-conditions: 'General.Code';
+}
+
+.code_blue
+{
+	color: #0000ff;
+	font-family: Consolas, serif;
+	font-size: 12pt;
+	margin-bottom: 0;
+	margin: 0;
+	mc-hyphenate: never;
+	margin-left: 0;
+	mc-conditions: 'General.Code';
+}
+
+.code_lightblue
+{
+	font-family: Consolas, serif;
+	font-size: 12pt;
+	margin-bottom: 0;
+	margin: 0;
+	mc-hyphenate: never;
+	mc-conditions: 'General.Code';
+	color: #00bfff;
+	margin-left: 0;
+}
+
+MadCap|xref.XRef_File_Name
+{
+	mc-format: '{filename}';
+}
+
+MadCap|conditionalText.SubTitle
+{
+	font-family: 'Montserrat', 'Candara', Arial, sans-serif;
+	font-size: 18pt;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	margin-top: 10px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	font-variant: small-caps;
+	color: #000000;
+	line-height: 25pt;
+}
+
+MadCap|xref.Windows
+{
+	mc-format: 'Windows';
+}
+
+MadCap|xref.initialization_for_channels
+{
+	mc-format: 'initialization for channels';
+}
+
+p.Title_thin
+{
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	line-height: 50pt;
+	font-size: 16pt;
+	background-color: #f5f5f5;
+	font-weight: lighter;
+}
+
+MadCap|xref.Core_Android
+{
+	mc-format: 'Core Android';
+}
+
+MadCap|xref.Unity_Android
+{
+	mc-format: 'Unity Android';
+}
+
+MadCap|xref.Web
+{
+	mc-format: 'Web';
+}
+
+MadCap|xref.Core_iOS
+{
+	mc-format: 'Core iOS';
+}
+
+MadCap|xref.Unity_iOS
+{
+	mc-format: 'Unity iOS';
+}
+
+MadCap|xref.Core_macOS
+{
+	mc-format: 'Core macOS';
+}
+
+MadCap|xref.Unity_macOS
+{
+	mc-format: 'Unity macOS';
+}
+
+MadCap|xref.Core_PS4
+{
+	mc-format: 'Core PlayStation 4';
+}
+
+MadCap|xref.Core_UWP
+{
+	mc-format: 'Core Universal Windows Platform';
+}
+
+MadCap|xref.Core_Xbox_One
+{
+	mc-format: 'Core Xbox One';
+}
+
+MadCap|xref.First_Steps
+{
+	mc-format: 'First Steps';
+}
+
+MadCap|xref.Developer_Guide
+{
+	mc-format: 'Developer Guide';
+}
+
+h1.SubTitle
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18pt;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	letter-spacing: 3px;
+	color: #000000;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 10px;
+	margin-top: 10px;
+	line-height: 25pt;
+}
+
+h1.Title
+{
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	line-height: 50pt;
+	font-weight: normal;
+	font-size: 24pt;
+	padding-left: 0;
+	margin: 0;
+	text-indent: 10px;
+}
+
+p.italicized_footnote
+{
+	color: #000000;
+	font-size: 10pt;
+	font-style: italic;
+}
+
+div.webFooter_left
+{
+	margin-top: 50px;
+	padding: 10px 20px 20px;
+	bottom: 0;
+	width: 100%;
+	font-size: 10pt;
+	line-height: 10pt;
+	text-align: left;
+	color: #000000;
+	font-style: italic;
+	margin-right: 10px;
+	padding-right: 40px;
+}
+
+MadCap|xref.Access_Token_Guide
+{
+	mc-format: 'Access Token Developer Guide';
+}
+
+MadCap|xref.Server_to_Server
+{
+	mc-format: 'Vivox 5 Server to Server Web API Reference';
+}
+
+MadCap|xref.Server_to_Server_dev
+{
+	mc-format: 'Server to Server Web API Reference';
+}
+
+MadCap|xref.Appendix_A_Tokens
+{
+	mc-format: 'Appendix A - {quote}Access Tokens{quote}';
+}
+
+MadCap|xref.Appendix_A
+{
+	mc-format: 'Appendix A';
+}
+
+MadCap|xref.Earlier_in_doc
+{
+	mc-format: 'See the note earlier in this documentation';
+}
+
+MadCap|xref.Core_Unity_Dev_Guide
+{
+	mc-format: 'Windows/Unity Windows/Vivox Unity Developer Guide';
+}
+
+MadCap|xref.Windows_Core_Dev_Guide
+{
+	mc-format: 'Windows/Core Windows/Core Developer Guide';
+}
+
+MadCap|xref.V5DevGuide
+{
+	mc-format: 'Core Developer Guide';
+}
+
+MadCap|xref.Initial_User_Mode
+{
+	mc-format: 'Initial User Mode';
+}
+
+MadCap|xref.Local_browser_issues
+{
+	mc-format: 'Browser Issues (Local only)';
+}
+
+MadCap|xref.Known_Issues-Limitations
+{
+	mc-format: 'Known Issues/Limitations';
+}
+
+MadCap|xref.Integration_Guide
+{
+	mc-format: 'Core Integration Guide';
+}
+
+MadCap|xref.Server2Server_Web_API
+{
+	mc-format: 'Vivox Server to Server Web API';
+}
+
+MadCap|xref.ADILogins
+{
+	mc-format: 'Additional Developer Information: Logins';
+}
+
+MadCap|xref.ADIChannels
+{
+	mc-format: 'Additional Developer Information: Channels';
+}
+
+MadCap|xref.ADIAccessTokens
+{
+	mc-format: 'Additional Developer Information: Access Tokens';
+}
+
+MadCap|xref.ADIUII
+{
+	mc-format: 'Additional Developer Information: UI Integration';
+}
+
+MadCap|xref.ADI
+{
+	mc-format: 'Additional Developer Information';
+}
+
+MadCap|xref.ReferenceManual
+{
+	mc-format: 'Core Reference Manual';
+}
+
+MadCap|xref.MVCAppWithTightLoops
+{
+	mc-format: 'Match Voice Chat App With Tight Loops';
+}
+
+MadCap|xref.SDKSampleAppAndroid
+{
+	mc-format: 'SDK Sample App';
+}
+
+MadCap|xref.RebuildingOpenArena
+{
+	mc-format: 'Rebuilding Open Arena';
+}
+
+MadCap|xref.EvaluatingVoiceChatInOpenArena
+{
+	mc-format: 'Evaluating Voice Chat in Open Arena';
+}
+
+MadCap|xref.XB1
+{
+	mc-format: 'Xbox One';
+}
+
+MadCap|xref.PS4
+{
+	mc-format: 'PlayStation 4';
+}
+
+MadCap|xref.Android
+{
+	mc-format: 'Android';
+}
+
+MadCap|xref.iOS
+{
+	mc-format: 'iOS';
+}
+
+MadCap|xref.UWP
+{
+	mc-format: 'Universal Windows Platform';
+}
+
+MadCap|xref.MVCAppWithoutTightLoops
+{
+	mc-format: 'Match Voice Chat Without Tight Loops';
+}
+
+MadCap|xref.ApplyingChangesAndroid
+{
+	mc-format: 'Applying Changes';
+}
+
+MadCap|xref.EvaluatingVivoxVoiceChatInOpenArena
+{
+	mc-format: 'Evaluating Vivox Voice Chat In Open Arena';
+}
+
+MadCap|xref.PositionChannelProperties
+{
+	mc-format: 'Position Channel Properties';
+}
+
+MadCap|xref.WorkingWithPositionalChannels
+{
+	mc-format: 'Working With Positional Channels';
+}
+
+MadCap|xref.OpenArenaGame
+{
+	mc-format: 'Open Arena Game';
+}
+
+MadCap|xref.ExampleOpenArena
+{
+	mc-format: 'Example: Open Arena';
+}
+
+MadCap|xref.ConnectingDisconnectingAudio
+{
+	mc-format: 'Connecting/Disconnecting Audio';
+}
+
+MadCap|xref.ConnectingDisconnectingText
+{
+	mc-format: 'Connecting/Disconnecting Text';
+}
+
+MadCap|xref.AndroidPrerqeuisites
+{
+	mc-format: 'Android Prerequisites';
+}
+
+MadCap|xref.TokenFormatOverview
+{
+	mc-format: 'Token Format';
+}
+
+MadCap|xref.ApplicationManifestoChangesAndroid
+{
+	mc-format: 'Application Manifesto Changes';
+}
+
+MadCap|xref.ExampleMatchVoiceChat
+{
+	mc-format: 'Example: Match Voice Chat';
+}
+
+MadCap|xref.HowToAddUnityProject
+{
+	mc-format: 'How to Add a Unity Project';
+}
+
+MadCap|xref.SendingAndReceivingGroupMessages
+{
+	mc-format: 'Sending and Receiving Group Messages';
+}
+
+MadCap|xref.XR073
+{
+	mc-format: 'XR-073 Blocking and Muting Support';
+}
+
+MadCap|xref.XR68
+{
+	mc-format: 'XR-68 Matchmaking Filtering By Reputation';
+}
+
+MadCap|xref.AccessTokenGuideKorean
+{
+	mc-format: '비복스 코어 엑세스 토큰 개발자 가이드';
+}
+
+MadCap|xref.ServerToServerAPIJapan
+{
+	mc-format: 'Vivox 5 サーバートゥサーバー・ウ ェブ API 参考資料  ';
+}
+
+MadCap|xref.IntegrationGuideJapan
+{
+	mc-format: 'Vivox 5 統合ガイド';
+}
+
+MadCap|xref.DevelopersGuide
+{
+	mc-format: 'Vivox 5 開発者ガイド';
+}
+
+MadCap|xref.AccessTokenGuideJapan
+{
+	mc-format: 'Vivox Core アクセストークン 開発者ガイド';
+}
+
+MadCap|xref.DeveloperGuideKorea
+{
+	mc-format: 'Vivox 5 개발자 안내서';
+}
+
+MadCap|xref.IntegrationGuideKorea
+{
+	mc-format: 'Vivox 5 통합 안내서 ';
+}
+
+MadCap|xref.Unreal4Korea
+{
+	mc-format: 'Vivox Core Unreal 4 개발자 안내서';
+}
+
+MadCap|xref.CleanBookmark
+{
+	mc-format: 'Clean Up Files';
+}
+
+MadCap|xref.HereLink
+{
+	mc-format: 'here';
+}
+
+MadCap|xref.V5IG
+{
+	mc-format: 'Core Integration Guide';
+}
+
+MadCap|xref.VivoxCoreUnityDeveloperGuide
+{
+	mc-format: 'Windows/Unity Windows/Vivox Unity Developer Guide';
+}
+
+MadCap|xref.CoreDeveloperSDK
+{
+	mc-format: 'Windows/Core Windows/Core Developer Guide';
+}
+
+MadCap|xref.UnityDevFirSteps
+{
+	mc-format: 'Unity Developer First Steps';
+}
+
+MadCap|xref.UnrealDevFirStep
+{
+	mc-format: 'Unreal Developer First Steps';
+}
+
+MadCap|xref.VivoxCoreUnity
+{
+	mc-format: 'Vivox Unity';
+}
+
+MadCap|xref.BrowserBased
+{
+	mc-format: 'Browser Based';
+}
+
+MadCap|xref.CoreWindows
+{
+	mc-format: 'Core Windows';
+}
+
+MadCap|xref.UnityWindows
+{
+	mc-format: 'Unity Windows';
+}
+
+MadCap|xref.UnrealWindows
+{
+	mc-format: 'Unreal Windows';
+}
+
+MadCap|xref.UnrealXB1
+{
+	mc-format: 'Unreal Xbox One';
+}
+
+MadCap|xref.SlashCommandReference
+{
+	mc-format: 'Slash Command Reference';
+}
+
+MadCap|xref.VoiceServer
+{
+	mc-format: 'Voice Server';
+}
+
+MadCap|xref.Classes
+{
+	mc-format: 'Classes';
+}
+
+MadCap|xref.KnownIssues
+{
+	mc-format: 'Known Issues';
+}
+
+MadCap|xref.UpdatingEnvironmentAPIValues
+{
+	mc-format: 'Updating Environment and API Values';
+}
+
+MadCap|xref.GameManager
+{
+	mc-format: 'Game Manager';
+}
+
+MadCap|xref.CommandProcessor
+{
+	mc-format: 'Command Processor';
+}
+
+MadCap|xref.MatchTeamRosters
+{
+	mc-format: 'match and team rosters';
+}
+
+MadCap|xref.ChatConsole
+{
+	mc-format: 'Chat Console';
+}
+
+MadCap|xref.PushToTalk
+{
+	mc-format: 'Push-To-Talk';
+}
+
+MadCap|xref.build_unity_ios_xcode
+{
+	mc-format: 'build_unity_ios_xcode.sh';
+}
+
+b.BoldAndItalics	/*For extra emphasus*/
+{
+	font-style: italic;
+}
+
+MadCap|xref.HowAddPluginSpecificProject
+{
+	mc-format: 'How to Add Plugin to Specific Project';
+}
+
+MadCap|xref.HowAddPluginAll
+{
+	mc-format: 'How to Add Plugin to All Projects';
+}
+
+MadCap|xref.Playstation4
+{
+	mc-format: 'PlayStation 4';
+}
+
+MadCap|xref.UnrealPlaystion4
+{
+	mc-format: 'Unreal Playstion 4';
+}
+
+MadCap|xref.BuildingSampleApp
+{
+	mc-format: 'Building Sample App';
+}
+
+MadCap|xref.UsingSampleApp
+{
+	mc-format: 'Using Sample App';
+}
+
+MadCap|xref.GettingStartedWithVivoxCoreUnity
+{
+	mc-format: 'Getting Started With Vivox Unity';
+}
+
+MadCap|xref.UnityDeveloperGuide
+{
+	mc-format: 'Vivox Unity Developer Guide';
+}
+
+MadCap|xref.macOS
+{
+	mc-format: 'macOS';
+}
+
+MadCap|xref.ClassesUnity
+{
+	mc-format: 'Classes';
+}
+
+MadCap|xref.CoreUnityReference
+{
+	mc-format: 'Ⅴivox Core Unity Reference';
+}
+
+MadCap|xref.ConsoleController
+{
+	mc-format: 'ConsoleController';
+}
+
+h1.SubHeader
+{
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	letter-spacing: 3px;
+	color: #000000;
+	margin: 0;
+	text-indent: 10px;
+	margin-top: 10px;
+	line-height: 25pt;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+span#hyperlink
+{
+	font-family: Consolas;
+	text-decoration: underline;
+	color: #0000ff;
+}
+

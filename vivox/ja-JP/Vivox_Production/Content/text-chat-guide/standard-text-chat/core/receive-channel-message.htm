@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1 class="Title">Receive a channel message</h1>
+        <p>When a channel message is received, the <span style="font-family: monospace;">vx_evt_message</span> event is raised.</p>
+        <MadCap:codeSnippet>
+            <MadCap:codeSnippetCopyButton />
+            <MadCap:codeSnippetBody MadCap:useLineNumbers="False" MadCap:lineNumberStart="1" MadCap:continue="False" xml:space="preserve">typedef struct vx_evt_message
+{
+    /**
+    * The common properties for all events
+    */
+    vx_evt_base_t base;
+    /**
+    * The handle returned from a successful SessionGroup create request.
+    * \see vx_req_sessiongroup_create
+    */
+    VX_HANDLE sessiongroup_handle;
+    /**
+    * The handle returned from successful Session add request.
+    * \see vx_req_sessiongroup_add_session
+    */
+    VX_HANDLE session_handle;
+    /**
+    * The URI of the sender of the message.
+    */
+    char *participant_uri;
+    /**
+    * The content type of the message.
+    */
+    char *message_header;
+    /**
+    * The contents of the message.
+    */
+    char *message_body;
+    /**
+    * The displayname if the participant_uri had a displayname.
+    */
+    char *participant_displayname;
+    /**
+    * The application of the entity who is sending the message.
+    * Can be NULL or empty.
+    */
+    char *application;
+    /**
+    * The identity that the original sender wants to present.
+    * This is different than the participant_uri, which is the actual internal Vivox identity of the original sender.
+    */
+    char *alias_username;
+    /**
+    * The encoded URI for the user with the tag.
+    * This uniquely identifies users that might appear multiple times in a channel
+    */
+    char *encoded_uri_with_tag;
+    /**
+    * The message is from the current signed in user.
+    */
+    int is_current_user;
+    /**
+    * The language (default NULL, implies "en").
+    */
+    char *language;
+    /**
+    * The namespace of the custom application stanza (optional, default NULL).
+    */
+    char *application_stanza_namespace;
+    /**
+    * The custom application stanza body (optional, default NULL).
+    */
+    char *application_stanza_body;
+}
+
+vx_evt_message_t;</MadCap:codeSnippetBody>
+        </MadCap:codeSnippet>
+        <p>For more information, see <a href="../../../Core/developer-guide/messaging/group-text-messages.htm">Group text messages</a>.</p>
+    </body>
+</html>

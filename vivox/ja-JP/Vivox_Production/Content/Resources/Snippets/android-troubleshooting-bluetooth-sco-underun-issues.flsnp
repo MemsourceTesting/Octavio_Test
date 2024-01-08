@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h1 class="Title">Troubleshooting Bluetooth SCO underrun issues</h1>
+        <p>If your users are experiencing Bluetooth SCO underrun issues, which can cause sound to be choppy on SCO, it is possible to force the Bluetooth device to use A2DP by going into the Android Bluetooth settings and disabling the “Phone Calls” option under the Bluetooth device options.</p>
+    </body>
+</html>

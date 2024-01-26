@@ -1,0 +1,1696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChassisDisplayName" xml:space="preserve">
+    <value>Fahrgestell {0}</value>
+  </data>
+  <data name="InstrumentDisplayName" xml:space="preserve">
+    <value>Instrument {0}</value>
+  </data>
+  <data name="ChassisNotMatched" xml:space="preserve">
+    <value>Das Chassis {0} in der Konfiguration stimmt mit keinem PXI-Chassis überein (die nächste Übereinstimmung ist das Chassis {1}): {2}</value>
+  </data>
+  <data name="NoChassisDetected" xml:space="preserve">
+    <value>Kein PXI-Chassis erkannt.</value>
+  </data>
+  <data name="CoercingInstrumentNames" xml:space="preserve">
+    <value>Erzwingen von Instrumentennamen.</value>
+  </data>
+  <data name="ControllerRevisionCheckFailed" xml:space="preserve">
+    <value>Controller-Revisionsprüfung fehlgeschlagen: {0}</value>
+  </data>
+  <data name="ControllerRevisionCheckNotSupported" xml:space="preserve">
+    <value>Controller-Revisionsprüfung nicht unterstützt, aber Maximal- oder Minimalwert konfiguriert.</value>
+  </data>
+  <data name="ErrorPXIControllerModelIsIncorrect" xml:space="preserve">
+    <value>Das Modell des PXI-Embedded-Controllers ist falsch: Erwartet {0}, gefunden {1}.</value>
+  </data>
+  <data name="DetectingInstruments" xml:space="preserve">
+    <value>Erkennungsinstrumente.</value>
+  </data>
+  <data name="DevicesNotMatched" xml:space="preserve">
+    <value>Nicht übereinstimmende Geräte:</value>
+  </data>
+  <data name="ErrorEnableStaticIPFailed" xml:space="preserve">
+    <value>EnableStatic gibt {0} zurück.</value>
+  </data>
+  <data name="ErrorInstrumentNameMismatch" xml:space="preserve">
+    <value>Übereinstimmung des Instrumentennamens fehlgeschlagen. Gefundenes Instrument namens {0}. Erwartetes Instrument mit dem Namen {1}.</value>
+  </data>
+  <data name="ErrorInternalEthernetPortNotFound" xml:space="preserve">
+    <value>Interner Ethernet-Anschluss nicht gefunden.</value>
+  </data>
+  <data name="ErrorInvalidFirmwareVersionFormat" xml:space="preserve">
+    <value>Ungültiges Format der Firmware-Version. Erwartetes Format: major.minor[.build[.revision]][(d|a|b|f)number], gefunden {0}.</value>
+  </data>
+  <data name="ErrorUnexpectedSysCfgRestartRequired" xml:space="preserve">
+    <value>Unerwarteter Neustart aufgrund von Änderungen der Systemkonfiguration erforderlich.</value>
+  </data>
+  <data name="ErrorUpdatingInternalEthernetSettingsFailed" xml:space="preserve">
+    <value>Die Aktualisierung der internen Ethernet-Einstellungen ist fehlgeschlagen: {0}</value>
+  </data>
+  <data name="FailedToDetectExpectedInstruments" xml:space="preserve">
+    <value>Die erwarteten Instrumente wurden nicht erkannt.</value>
+  </data>
+  <data name="FailedToDeletePostData" xml:space="preserve">
+    <value>Die Daten konnten während des POST nicht gelöscht werden.</value>
+  </data>
+  <data name="ModelCheckFailed" xml:space="preserve">
+    <value>Die Modellprüfung für {0} ist fehlgeschlagen: Erwartet '{1}', gefunden '{2}'.</value>
+  </data>
+  <data name="FirmwareRevisionCheckFailed" xml:space="preserve">
+    <value>Firmware-Revisionsprüfung für {0} fehlgeschlagen: Erwartet {1}, gefunden {2}.</value>
+  </data>
+  <data name="NumberOfPowerSuppliesCheckFailed" xml:space="preserve">
+    <value>Anzahl der fehlgeschlagenen Stromversorgungsprüfungen für {0}: Erwartet {1}, gefunden {2}.</value>
+  </data>
+  <data name="HardwareRevisionCheckFailed" xml:space="preserve">
+    <value>Hardware-Revisionsprüfung für {0} fehlgeschlagen: Erwartet {1}, gefunden {2}.</value>
+  </data>
+  <data name="HyperthreadingCheckFailed" xml:space="preserve">
+    <value>Hyperthreading aktiviert Prüfung fehlgeschlagen: Erwartet {0}, gefunden {1}.</value>
+  </data>
+  <data name="LoadingDefinitionFiles" xml:space="preserve">
+    <value>Laden von Definitionsdateien.</value>
+  </data>
+  <data name="MaxFailedElaboration" xml:space="preserve">
+    <value>Maximum {0}, gefunden {1}.</value>
+  </data>
+  <data name="Maximum" xml:space="preserve">
+    <value>Höchstwert</value>
+  </data>
+  <data name="MinDiskSpaceCheckFailed" xml:space="preserve">
+    <value>Die Prüfung des minimalen primären Speicherplatzes ist fehlgeschlagen: Minimum erforderlich {0} GB, gefunden {1:#.##} GB.</value>
+  </data>
+  <data name="MinFailedElaboration" xml:space="preserve">
+    <value>Minimum {0}, gefunden {1}.</value>
+  </data>
+  <data name="Minimum" xml:space="preserve">
+    <value>Mindestwert</value>
+  </data>
+  <data name="MinRAMCheckFailed" xml:space="preserve">
+    <value>Die Prüfung des minimalen RAM-Speicherplatzes ist fehlgeschlagen: Minimum erforderlich {0} MB, gefunden {1:#.##} MB.</value>
+  </data>
+  <data name="POSTCancelledByUser" xml:space="preserve">
+    <value>POST wird vom Benutzer abgebrochen.</value>
+  </data>
+  <data name="PxiInstrumentId" xml:space="preserve">
+    <value>Instrument: {0}, Slot: {1}, Modell: {2}</value>
+  </data>
+  <data name="RetryOnFailureMessage" xml:space="preserve">
+    <value>{0} Wird in {1} Sekunden erneut versucht.<LF/>Die folgenden Fehler sind aufgetreten:<LF/>{2}</value>
+  </data>
+  <data name="RunningReset" xml:space="preserve">
+    <value>Alle Instrumente werden zurückgesetzt.</value>
+  </data>
+  <data name="ResetFailed" xml:space="preserve">
+    <value>Reset fehlgeschlagen.</value>
+  </data>
+  <data name="RunningSelfTest" xml:space="preserve">
+    <value>Durchführung eines Selbsttests für alle Instrumente.</value>
+  </data>
+  <data name="SelfTestFailed" xml:space="preserve">
+    <value>Selbsttest fehlgeschlagen.</value>
+  </data>
+  <data name="UnableToDetermineIfHyperthreadingEnabled" xml:space="preserve">
+    <value>Es kann nicht festgestellt werden, ob Hyperthreading aktiviert ist.</value>
+  </data>
+  <data name="ValidatingInstrumentNames" xml:space="preserve">
+    <value>Validierung von Instrumentennamen.</value>
+  </data>
+  <data name="VerificationFailed" xml:space="preserve">
+    <value>Die Verifizierung ist fehlgeschlagen:</value>
+  </data>
+  <data name="VerifyingCapabilities" xml:space="preserve">
+    <value>Überprüfung der Fähigkeiten.</value>
+  </data>
+  <data name="WaitingForDriversToInitialize" xml:space="preserve">
+    <value>Wartet auf die Initialisierung der Gerätetreiber.</value>
+  </data>
+  <data name="NumCpusCheckFailed" xml:space="preserve">
+    <value>Prüfung der Anzahl der CPUs fehlgeschlagen: {0}</value>
+  </data>
+  <data name="InstrumentRevisionCheckFailed" xml:space="preserve">
+    <value>Die Revisionsprüfung des Instruments {0} ist fehlgeschlagen: {1}</value>
+  </data>
+  <data name="InstrumentRevisionCheckNotSupported" xml:space="preserve">
+    <value>Revisionsprüfung am Gerät {0} nicht unterstützt, aber Maximal- oder Minimalwert konfiguriert.</value>
+  </data>
+  <data name="CoercingChassisNumbers" xml:space="preserve">
+    <value>Erzwingen von Fahrgestellnummern.</value>
+  </data>
+  <data name="ErrorChassisNumberMismatch" xml:space="preserve">
+    <value>Die Fahrgestellnummer stimmt nicht überein. Das Fahrgestell mit der Nummer {0} sollte mit {1} nummeriert werden.</value>
+  </data>
+  <data name="ValidatingChassisNumbers" xml:space="preserve">
+    <value>Validierung von Fahrgestellnummern.</value>
+  </data>
+  <data name="ErrorUnexpectedChassisNameFormat" xml:space="preserve">
+    <value>Unerwartetes Format des Fahrgestellnamens: Erwartet PXI{{number}}, gefunden {0}.</value>
+  </data>
+  <data name="ErrorCouldNotCreateUniqueNameForDevice" xml:space="preserve">
+    <value>Es konnte kein eindeutiger Name für das Gerät '{0}' erstellt werden. Die erzeugte ID lautet '{1}'. Ändern Sie den Gerätenamen, um Konflikte zu vermeiden.</value>
+  </data>
+  <data name="QueryingForInitialValuesForHealthMonitoring" xml:space="preserve">
+    <value>Abfrage der Ausgangswerte für die Gesundheitsüberwachung.</value>
+  </data>
+  <data name="InitializingAlarmMonitoring" xml:space="preserve">
+    <value>Initialisierung der Alarmüberwachung.</value>
+  </data>
+  <data name="ErrorMoreThanOneControllerMatchesSpecifiedModel" xml:space="preserve">
+    <value>Es wurden mehrere Steuergeräte mit demselben Modell '{0}' erkannt. STS unterstützt nur einen Controller pro System.</value>
+  </data>
+  <data name="UnexpectedHealthMonitoringError" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Überwachung des Systemzustands: {0}.</value>
+  </data>
+  <data name="AlarmMinAvailableRAM" xml:space="preserve">
+    <value>Verfügbarer RAM unter dem Minimum: Mindestens {0} MB, tatsächlich {1:#.##} MB.</value>
+  </data>
+  <data name="AlarmMinFreeDiskSpace" xml:space="preserve">
+    <value>Freier Speicherplatz unter dem Minimum: Mindestens {0} GB, tatsächlich {1:#.##} GB.</value>
+  </data>
+  <data name="ErrorUnknownTempSensorSpecifiedForInstrument" xml:space="preserve">
+    <value>Unbekannter Temperatursensor '{0}' für Gerät '{1}' in der PXI-Definitionsdatei angegeben. Das Gerät verfügt nicht über einen Temperatursensor mit diesem Namen.</value>
+  </data>
+  <data name="ErrorCouldNotFindSystemResourceForController" xml:space="preserve">
+    <value>SystemResource für PXI-Controller konnte nicht gefunden werden.</value>
+  </data>
+  <data name="ErrorPXIDefinitionContainsMoreThanOneController" xml:space="preserve">
+    <value>Die PXI-Definitionsdatei enthält mehr als einen Controller. STS unterstützt nur einen Controller pro System.</value>
+  </data>
+  <data name="ErrorUsbInstrumentMismatch" xml:space="preserve">
+    <value>USB-Hub {0} Anschluss {1} Gerät passt nicht: Erwartet {2}, gefunden {3}.</value>
+  </data>
+  <data name="ErrorUsbInstrumentMissing" xml:space="preserve">
+    <value>USB-Hub {0} Anschluss {1} Gerät fehlt: Erwartet {2}.</value>
+  </data>
+  <data name="ErrorPciInstrumentMismatch" xml:space="preserve">
+    <value>PCI-Bus {0} device {1} instrument mismatch: Erwartet {2}, gefunden {3}.</value>
+  </data>
+  <data name="ErrorPciInstrumentMissing" xml:space="preserve">
+    <value>PCI-Bus {0} Gerät {1} Instrument fehlt: Erwartet {2}.</value>
+  </data>
+  <data name="ErrorPxiInstrumentMismatch" xml:space="preserve">
+    <value>PXI-Chassis {0} slot {1} instrument mismatch: Erwartet {2}, gefunden {3}.</value>
+  </data>
+  <data name="ErrorPxiInstrumentMissing" xml:space="preserve">
+    <value>PXI-Chassis {0} Steckplatz {1} Instrument fehlt: Erwartet {2}.</value>
+  </data>
+  <data name="ErrorPxiChassisMultipleErrors" xml:space="preserve">
+    <value>PXI-Chassis {0} hat {1} Übereinstimmungsfehler.</value>
+  </data>
+  <data name="ErrorSubSystemMissingControlInstruments" xml:space="preserve">
+    <value>PXI-Chassis {0} sub-system {1} fehlende Kontrollinstrumente: Erwartet {2}, gefunden {3}.</value>
+  </data>
+  <data name="ErrorUsbInstrumentMissingByModel" xml:space="preserve">
+    <value>USB-Instrument {0} fehlt.</value>
+  </data>
+  <data name="ErrorAdditionalInstrumentMissingByModel" xml:space="preserve">
+    <value>Zusätzliches Instrument {0} fehlt.</value>
+  </data>
+  <data name="RebootRequiredForChassisRenumbering" xml:space="preserve">
+    <value>Ein oder mehrere Chassis wurden neu nummeriert, um die Chassis-Match-Richtlinie durchzusetzen. Neustart erforderlich.</value>
+  </data>
+  <data name="RebootRequiredForDriverTestSigning" xml:space="preserve">
+    <value>Die Test-Signierung ist in einer Pre-Beta-Version nicht aktiviert.  Aktivieren Sie die Testsignierung, indem Sie "bcdedit /set testsigning on" in einer Administrator-Eingabeaufforderung ausführen und anschließend neu starten.</value>
+  </data>
+  <data name="RebootRequiredForCommunicationWithTestHead" xml:space="preserve">
+    <value>Die Kommunikation mit dem Prüfkopf ist verloren gegangen und kann nicht wiederhergestellt werden. Wahrscheinlich hat der USB-Controller ein Treiber-Update erhalten. Neustart erforderlich.</value>
+  </data>
+  <data name="ErrorUnexpectedErrorRenumberingChassis" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Umnummerierung von Fahrgestellen.</value>
+  </data>
+  <data name="ErrorUnexpectedErrorRenumberingChassisWithDetails" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Umnummerierung von Chassis {0} auf {1}.</value>
+  </data>
+  <data name="DeterminingSelfCalibrationFrequency" xml:space="preserve">
+    <value>Bestimmung der Häufigkeit der Selbstkalibrierung.</value>
+  </data>
+  <data name="SelfCalibrationExecuting" xml:space="preserve">
+    <value>Selbstkalibrierung Ausführend<LF/><LF/>Ungefähre Laufzeit: {0}<LF/>Gestartet unter {1:T} am {1:D}<LF/><LF/>{2}</value>
+    <comment>{1:T} will be replaced with the long-format time (in en-US: 1:45:30 PM), {1:D} will be replaced with the date (in en-US: Monday, June 15, 2009)</comment>
+  </data>
+  <data name="SelfCalibrationComplete" xml:space="preserve">
+    <value>Selbstkalibrierung abgeschlossen<LF/><LF/>Tatsächliche Laufzeit: {0}<LF/>Begonnen<LF/>Beendet am: {2:F}</value>
+  </data>
+  <data name="SelfCalibrationFailed" xml:space="preserve">
+    <value>Die Selbstkalibrierung des Geräts {0} ist fehlgeschlagen. Siehe Serviceprotokoll für weitere Details zum Fehler</value>
+  </data>
+  <data name="SelfCalibrationInstrumentDetails_TemperatureIntervalExceeded" xml:space="preserve">
+    <value>Temperaturintervall für die Selbstkalibrierung des Sensors {0} überschritten ({1:0.00} C +- {2:0.00} C; aktuelle Temperatur: {3:0.00} C)</value>
+  </data>
+  <data name="SelfCalibrationInstrumentDetails_TemperatureIntervalAlmostExceeded" xml:space="preserve">
+    <value>Das Temperaturintervall für die Selbstkalibrierung liegt innerhalb des Verfallszeitraums von {4} C für den Sensor {0} ({1:0.00} C +- {2:0.00} C; aktuelle Temperatur: {3:0.00} C)</value>
+  </data>
+  <data name="SelfCalibrationInstrumentDetails_NoIntervalNoDueDate" xml:space="preserve">
+    <value>Das Gerät hat kein Fälligkeitsdatum für die Selbstkalibrierung.</value>
+  </data>
+  <data name="SelfCalibrationInstrumentDetails_TimeIntervalExceededNoDueDate" xml:space="preserve">
+    <value>Zeitintervall für die Selbstkalibrierung ({0:0.00} Stunden), Gerät hat kein Fälligkeitsdatum für die Selbstkalibrierung</value>
+  </data>
+  <data name="SelfCalibrationInstrumentDetails_TimeIntervalExceeded" xml:space="preserve">
+    <value>Das Zeitintervall für die Selbstkalibrierung ({0:0.00} Stunden) ist abgelaufen am {1}</value>
+  </data>
+  <data name="SelfCalibrationInstrumentDetails_DueDateExceededNoInterval" xml:space="preserve">
+    <value>Selbstkalibrierung ist abgelaufen am {0}</value>
+  </data>
+  <data name="SelfCalibrationInstrumentDetails_TimeIntervalAlmostExceeded" xml:space="preserve">
+    <value>Das Zeitintervall für die Selbstkalibrierung ({0:0.00} Stunden) läuft innerhalb von {2:0} Minuten am {1}</value>
+  </data>
+  <data name="SelfCalibrationMedusaDetails_SelfCalibrationExpired" xml:space="preserve">
+    <value>Die Selbstkalibrierung ist abgelaufen.</value>
+  </data>
+  <data name="SelfCalibratonDetails_ExecutionState" xml:space="preserve">
+    <value>; aktueller Stand: {0}</value>
+  </data>
+  <data name="SelfCalibratonDetails_ExceptionDetails" xml:space="preserve">
+    <value> Ausnahme</value>
+  </data>
+  <data name="ExternalCalibration_TemperatureIntervalExceeded" xml:space="preserve">
+    <value>Externes Kalibrierungsintervall für den Sensor {0} überschritten ({1:0.00} C +- {2:0.00} C; aktuelle Temperatur: {3:0.00} C)</value>
+  </data>
+  <data name="ExternalCalibration_TemperatureIntervalAlmostExceeded" xml:space="preserve">
+    <value>Das Temperaturintervall für die externe Kalibrierung liegt innerhalb des Verfallszeitraums von {4} C für den Sensor {0} ({1:0.00} C +- {2:0.00} C; aktuelle Temperatur: {3:0.00} C)</value>
+  </data>
+  <data name="ExternalCalibration_TimeIntervalExceeded" xml:space="preserve">
+    <value>Das Zeitintervall für die externe Kalibrierung ({0:0} Tage) ist abgelaufen am {1}</value>
+  </data>
+  <data name="ExternalCalibration_TimeIntervalExceededNoDueDate" xml:space="preserve">
+    <value>Externes Kalibrierungszeitintervall ({0:0} Tage), Gerät hat kein externes Kalibrierungsdatum</value>
+  </data>
+  <data name="ExternalCalibration_TimeIntervalAlmostExceeded" xml:space="preserve">
+    <value>Das Zeitintervall für die externe Kalibrierung ({0:0} days) läuft innerhalb von {2:0} Tagen ab. {1}</value>
+  </data>
+  <data name="ExternalCalibration_Expired" xml:space="preserve">
+    <value>; externe Kalibrierung abgelaufen</value>
+  </data>
+  <data name="ExternalCalibration_NotCalibrated" xml:space="preserve">
+    <value>Externe Kalibrierungsdaten, die nicht auf dem Gerät vorhanden sind</value>
+  </data>
+  <data name="ExternalCalibration_CanBeInSituCalibrated" xml:space="preserve">
+    <value>; kann vor Ort kalibriert werden, Hardware erforderlich: {0}</value>
+  </data>
+  <data name="SelfCalibratonDetails_DataStale" xml:space="preserve">
+    <value>{0} veraltete Selbstkalibrierungsdaten anzeigt; schließen Sie alle Anwendungen, die für das Gerät geöffnet sind, um die Kalibrierungsdaten zu aktualisieren</value>
+  </data>
+  <data name="ExternalCalibratonDetails_DataStale" xml:space="preserve">
+    <value>{0} veraltete externe Kalibrierungsdaten anzeigt; schließen Sie alle Anwendungen, die für das Gerät geöffnet sind, um die Kalibrierungsdaten zu aktualisieren</value>
+  </data>
+  <data name="WarmupRequired" xml:space="preserve">
+    <value>{1:0.00} Minute Aufwärmzeit erforderlich<LF/><LF/>Aktuelle Aufwärmzeit: {2:0.00} Minuten<LF/><LF/>Die Aufwärmphase muss abgeschlossen sein, bevor die folgenden Vorgänge ausgeführt werden:<LF/>{0}<LF/><LF/>Der Betrieb wird nach Abschluss der Aufwärmphase automatisch fortgesetzt.</value>
+  </data>
+  <data name="DevicesAreWarmedUp" xml:space="preserve">
+    <value>Alle Geräte sind aufgewärmt.</value>
+  </data>
+  <data name="SelfCalibrationNeededOnInstrument" xml:space="preserve">
+    <value>Selbstkalibrierung des Geräts erforderlich: {0}</value>
+  </data>
+  <data name="UnknownSupportedInterfaceInChecker" xml:space="preserve">
+    <value>Unbekannte Schnittstelle '{0}' bei der Überprüfung der unterstützten Schnittstellen.</value>
+  </data>
+  <data name="AlarmCalibrationFailed" xml:space="preserve">
+    <value>Selbstkalibrierung für Gerät '{0}' fehlgeschlagen. -Details</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>&lt;Unerwarteter Fehler&gt;: {0}</value>
+  </data>
+  <data name="UnexpectedSelfCalibrationMonitoringError" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Durchführung der automatischen Selbstkalibrierungsüberwachung: {0}.</value>
+  </data>
+  <data name="UnexpectedSelfCalibrationError" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Durchführung der Selbstkalibrierung: {0}.</value>
+  </data>
+  <data name="UnexpectedSequenceFileGenerationError" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Erstellung einer Sequenzdatei.</value>
+  </data>
+  <data name="SequenceFileGenerationCanceled" xml:space="preserve">
+    <value>Die Erstellung der Sequenzdatei wurde abgebrochen.</value>
+  </data>
+  <data name="ErrorInvalidPowerLineFrequency" xml:space="preserve">
+    <value>Ungültige PowerLineFrequenzeinstellung: {0}. Der Wert muss 50 oder 60 betragen.</value>
+  </data>
+  <data name="ErrorPowerLineFrequencyMismatchBetweenChassisAndConfiguration" xml:space="preserve">
+    <value>Ungültige PowerLineFrequenzeinstellung: {0}. Die im Gehäuse festgestellte Netzfrequenz ist {1}. Es wird die Netzfrequenz im Gehäuse verwendet.</value>
+  </data>
+  <data name="ErrorMissingSystemDMMConnectionInSTSDefinition" xml:space="preserve">
+    <value>SpringPinSystemDMM-Verbindung fehlt in der Datei STS_Definition.xml.</value>
+  </data>
+  <data name="ErrorMissingSystemPSUConnectionInSTSDefinition" xml:space="preserve">
+    <value>SpringPinSystemPSU-Verbindung fehlt in der Datei STS_Definition.xml.</value>
+  </data>
+  <data name="ErrorMissingSystemSMUConnectionInSTSDefinition" xml:space="preserve">
+    <value>SpringPinSystemSMU-Verbindung fehlt in der Datei STS_Definition.xml.</value>
+  </data>
+  <data name="ConnectingToSystemController" xml:space="preserve">
+    <value>Herstellen der Verbindung zum Systemcontroller.</value>
+  </data>
+  <data name="ErrorEnableStaticIPRebootRequired" xml:space="preserve">
+    <value>EnableStatic ist erfolgreich. Neustart erforderlich.</value>
+  </data>
+  <data name="InitializingSystemController" xml:space="preserve">
+    <value>Initialisierung des Systemcontrollers.</value>
+  </data>
+  <data name="LoadBoard12V" xml:space="preserve">
+    <value>Lastplatte 12V</value>
+  </data>
+  <data name="LoadBoard48V" xml:space="preserve">
+    <value>Lastkarte 48V</value>
+  </data>
+  <data name="FailedSelfCalibrationOfInstrument" xml:space="preserve">
+    <value>Fehlgeschlagene Selbstkalibrierung für das Gerät '{0}'.</value>
+  </data>
+  <data name="AutomaticSelfCalibration" xml:space="preserve">
+    <value>Automatische Selbstkalibrierung</value>
+  </data>
+  <data name="HealthMonitoring" xml:space="preserve">
+    <value>Überwachung der Gesundheit</value>
+  </data>
+  <data name="TestHeadMonitoring" xml:space="preserve">
+    <value>Testkopf-Überwachung</value>
+  </data>
+  <data name="ContinuousHealthMonitoring" xml:space="preserve">
+    <value>Kontinuierliche Gesundheitsüberwachung</value>
+  </data>
+  <data name="StartingWarmUp" xml:space="preserve">
+    <value>Aufwärmen beginnen.</value>
+  </data>
+  <data name="ConfiguringWarmUp" xml:space="preserve">
+    <value>Aufwärmen konfigurieren.</value>
+  </data>
+  <data name="StoppingWarmUp" xml:space="preserve">
+    <value>Aufwärmen stoppen.</value>
+  </data>
+  <data name="WarmUpDisabled" xml:space="preserve">
+    <value>Aufwärmen deaktiviert.</value>
+  </data>
+  <data name="WarmUpEnabled" xml:space="preserve">
+    <value>Aufwärmen aktiviert.</value>
+  </data>
+  <data name="ErrorInternalEthernetPortConflictsFound" xml:space="preserve">
+    <value>Es wurden mehrere interne Ethernet-Adapter mit widersprüchlichen Konfigurationen identifiziert.</value>
+  </data>
+  <data name="SyncingSystemControllerFiles" xml:space="preserve">
+    <value>Synchronisierung von Dateien mit dem Systemcontroller.</value>
+  </data>
+  <data name="AlarmDetailsNumericValueOutOfRangeBoth" xml:space="preserve">
+    <value>{0} : erwartet {1} &lt; x &lt; {2}, tatsächlich {3}.</value>
+  </data>
+  <data name="AlarmDetailsNumericValueOutOfRangeMaxOnly" xml:space="preserve">
+    <value>{0} : erwartetes x &lt; {1}, tatsächliches {2}.</value>
+  </data>
+  <data name="AlarmDetailsNumericValueOutOfRangeMinOnly" xml:space="preserve">
+    <value>{0} : erwartetes x &gt; {1}, tatsächliches {2}.</value>
+  </data>
+  <data name="FanSensorOutOfRangeFormatString" xml:space="preserve">
+    <value>Außerhalb des möglichen Bereichs</value>
+  </data>
+  <data name="TemperatureSensorOutOfRangeFormatString" xml:space="preserve">
+    <value>Temperatur '{0}' außerhalb des Bereichs</value>
+  </data>
+  <data name="CriticalLowerLimitShouldBeLessThanWarnLowerLimit" xml:space="preserve">
+    <value>Die kritische Untergrenze {0} sollte kleiner sein als die untere Warngrenze {1}.</value>
+  </data>
+  <data name="ErrorInvalidSensorLimits" xml:space="preserve">
+    <value>Die Grenzwerte für den Sensor '{0}' sind ungültig: {1}</value>
+  </data>
+  <data name="WarningLowerLimitShouldBeLessThanWarningUpperLimit" xml:space="preserve">
+    <value>Die untere Warngrenze {0} sollte kleiner als die obere Warngrenze {1} sein.</value>
+  </data>
+  <data name="WarningUpperLimitShouldBeLessThanCriticalUpperLimit" xml:space="preserve">
+    <value>Die obere Warngrenze {0} sollte kleiner sein als die obere kritische Grenze {1}.</value>
+  </data>
+  <data name="SelfCalibrationFrequencyNotSpecified" xml:space="preserve">
+    <value>Die Selbstkalibrierung nach Zeit ist für das Gerät {0} aktiviert, aber die Häufigkeit der Selbstkalibrierung ist nicht festgelegt.</value>
+  </data>
+  <data name="SelfCalibrationTemperatureDeltaNotSpecified" xml:space="preserve">
+    <value>Die Selbstkalibrierung über die Temperatur ist für das Gerät {0} aktiviert, aber das Selbstkalibrierungs-Temperaturdelta ist nicht eingestellt.</value>
+  </data>
+  <data name="WarnAutomaticSelfCalibrationWithNoInstruments" xml:space="preserve">
+    <value>Die automatische Selbstkalibrierung wurde gestartet, aber es wurde kein Instrument zur Selbstkalibrierung gefunden.</value>
+  </data>
+  <data name="UnsupportedSTSModel" xml:space="preserve">
+    <value>Das STS-Modell {0} wird von der Wartungssoftware nicht unterstützt.</value>
+  </data>
+  <data name="VoltageSensorOutOfRangeFormatString" xml:space="preserve">
+    <value>Spannung '{0}' außerhalb des Bereichs (Nennwert: {1})</value>
+  </data>
+  <data name="ErrorMissingInstrumentForSTSSystemConnection" xml:space="preserve">
+    <value>Eine Systeminstrumentverbindung in der STS-Definitionsdatei gibt ein Instrument '{0}' an, das in der PXI-Definitionsdatei nicht existiert.</value>
+  </data>
+  <data name="ErrorUnknownConnectionTypeInSTSDefinitionFile" xml:space="preserve">
+    <value>Unbekannter Verbindungstyp '{0}' für Instrument '{1}' in STS-Definitionsdatei.</value>
+  </data>
+  <data name="AlarmMessageSelfCalibrationExpired" xml:space="preserve">
+    <value>Die Selbstkalibrierung für das Gerät {0} auf {1} ist abgelaufen.</value>
+  </data>
+  <data name="AlarmMessageSelfCalibrationTemperatureDeltaGreaterThanDegrees" xml:space="preserve">
+    <value>Das Temperaturdelta der Selbstkalibrierung für einen oder mehrere Sensoren im Gerät {0} liegt außerhalb des Bereichs (x &gt; {1} C).</value>
+  </data>
+  <data name="AlarmMessageSelfCalibrationTemperatureForSensorDeltaGreaterThanDegrees" xml:space="preserve">
+    <value>Die Selbstkalibrierung für den Sensor {1} im Gerät {0} liegt außerhalb des Bereichs (x &gt; {2} + {3} C).</value>
+  </data>
+  <data name="AlarmMessageSelfCalibrationExpiresWithinMinutes" xml:space="preserve">
+    <value>Die Selbstkalibrierung für das Gerät {0} läuft innerhalb von {1} Minuten auf {2} ab.</value>
+  </data>
+  <data name="AlarmMessageExternalCalibrationExpired" xml:space="preserve">
+    <value>Externe Kalibrierung für das Gerät abgelaufen {0}.</value>
+  </data>
+  <data name="AlarmMessageExternalCalibrationExpiresWithinDays" xml:space="preserve">
+    <value>Die externe Kalibrierung für das Gerät {0} läuft innerhalb von {1} Tagen auf {2} ab.</value>
+  </data>
+  <data name="AlarmMessagePostWarnings" xml:space="preserve">
+    <value>POST wurde mit Warnungen beendet. Einzelheiten der Warnung:<LF/>{0}</value>
+  </data>
+  <data name="AlarmMessageRelatedInstrumentsAlarmed" xml:space="preserve">
+    <value>Ein oder mehrere zugehörige Geräte haben Alarme.</value>
+  </data>
+  <data name="UnexpectedHardwareLockError" xml:space="preserve">
+    <value>Beim Zuweisen der globalen Hardwaresperre ist ein unerwarteter Fehler aufgetreten: {0}. Weitere Tests können erst beginnen, wenn Sie POST erneut ausführen.</value>
+  </data>
+  <data name="UnexpectedTestHeadMonitoringError" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Durchführung der Prüfkopfüberwachung: {0}.</value>
+  </data>
+  <data name="UnexpectedContinuousMonitoringError" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Durchführung der kontinuierlichen Gesundheitsüberwachung: {0}.</value>
+  </data>
+  <data name="AlarmMessageRFSystemCalibrationRequired" xml:space="preserve">
+    <value>RF-Systemkalibrierung für das Gerät erforderlich {0}.</value>
+  </data>
+  <data name="UnspecifiedInstrumentsDetected" xml:space="preserve">
+    <value>Nicht spezifizierte Instrumente entdeckt:</value>
+  </data>
+  <data name="UnspecifiedAccessoriesDetected" xml:space="preserve">
+    <value>Nicht spezifiziertes Zubehör entdeckt:</value>
+  </data>
+  <data name="ReadingSimulatedMaxConfiguration" xml:space="preserve">
+    <value>Lesen der simulierten MAX-Konfiguration.</value>
+  </data>
+  <data name="ReadingConfigurationFiles" xml:space="preserve">
+    <value>Lesen von Konfigurationsdateien.</value>
+  </data>
+  <data name="ErrorEnableDhcpRebootRequired" xml:space="preserve">
+    <value>EnableDhcp war erfolgreich. Neustart erforderlich.</value>
+  </data>
+  <data name="ErrorEnableDhcpFailed" xml:space="preserve">
+    <value>EnableDhcp gab {0} zurück.</value>
+  </data>
+  <data name="ErrorRfTwoToneRfAmplifierInstrumentNotFound" xml:space="preserve">
+    <value>RFSubSystem "{0}" enthält einen Zweiton-HF-Verstärker, der auf ein Instrument "{1}" verweist, das nicht mit einem in der PXI-Definitionsdatei definierten Instrument übereinstimmt.</value>
+  </data>
+  <data name="ErrorRfTwoToneSecondaryRfSignalGeneratorInstrumentNotFound" xml:space="preserve">
+    <value>RFSubSystem "{0}" enthält einen Zweiton-Sekundär-HF-Signalgenerator, der auf ein Instrument "{1}" verweist, das nicht mit einem in der PXI-Definitionsdatei definierten Instrument übereinstimmt.</value>
+  </data>
+  <data name="ErrorRfTwoToneSecondaryRfSignalGeneratorInvalidPair" xml:space="preserve">
+    <value>RFSubSystem "{0}" enthält einen Zweiton-Sekundär-RF-Signalgenerator, der auf ein RFSubSystem "{1}" verweist, dessen Zweiton-Sekundär-RF-Signalgenerator nicht auf "{0}" verweist.</value>
+  </data>
+  <data name="ErrorRfTwoToneSecondaryRfSignalGeneratorSelfReference" xml:space="preserve">
+    <value>RFSubSystem "{0}" enthält einen Zweiton-Sekundär-HF-Signalgenerator, der sich selbst referenziert.</value>
+  </data>
+  <data name="CouldNotDetermineSTSMaintenanceProgramFilesPath" xml:space="preserve">
+    <value>Der Pfad zu den STS-Wartungsprogrammdateien konnte nicht ermittelt werden. Kein gültiger Registrierungsschlüssel und keine gültige Umgebungsvariable für das Verzeichnis der Programmdateien gefunden.</value>
+  </data>
+  <data name="ErrorOccurredWhileReadingCheckerSequenceFileForInstrumentAction" xml:space="preserve">
+    <value>Beim Lesen der Checker-Sequenzdatei '{0}', um festzustellen, ob eine Instrumentenaktion unterstützt wird, ist folgender Fehler aufgetreten<LF/>{1}</value>
+  </data>
+  <data name="ErrorOccurredWhileReadingCheckerSequenceFileForPromptLoadBoard" xml:space="preserve">
+    <value>Der folgende Fehler ist beim Lesen der Prüfsequenzdatei '{0}' aufgetreten, um festzustellen, ob externe Hardware-Erkennungsüberschreibungen erforderlich sind.</value>
+  </data>
+  <data name="ErrorChassisIdsAreNotUnique" xml:space="preserve">
+    <value>Die Chassis-ID '{0}' ist mehrfach definiert.</value>
+  </data>
+  <data name="InstrumentIdsAreNotUnique" xml:space="preserve">
+    <value>Die Geräte-ID '{0}' ist mehrfach definiert.</value>
+  </data>
+  <data name="InstrumentUserAliasesAreNotUnique" xml:space="preserve">
+    <value>Der Instrumentenbenutzer-Alias '{0}' ist mehrfach definiert.</value>
+  </data>
+  <data name="InstrumentConfigurationNamesAreNotUnique" xml:space="preserve">
+    <value>Der Gerätekonfigurationsname '{0}' ist mehrfach definiert.</value>
+  </data>
+  <data name="SubsystemIdsAreNotUnique" xml:space="preserve">
+    <value>Die Subsystem-ID '{0}' ist mehrfach definiert.</value>
+  </data>
+  <data name="RFSubSystemInitializationError" xml:space="preserve">
+    <value>RF-Subsysteme können nicht initialisiert werden. Der folgende Fehler ist aufgetreten: {0}</value>
+  </data>
+  <data name="RFSubSystemInitializationMissingRFPMInstallationError" xml:space="preserve">
+    <value>RF-Subsysteme können nicht initialisiert werden. Keine RFPM-Installation gefunden.</value>
+  </data>
+  <data name="RFSubSystemInitializationUnsupportedRFPMVersionError" xml:space="preserve">
+    <value>RF-Subsysteme können nicht initialisiert werden. Nicht unterstützte RFPM-Version gefunden.</value>
+  </data>
+  <data name="AssociatedDevicesChildMatchFailed" xml:space="preserve">
+    <value>Ein assoziiertes Gerät in der PXI-Definitionsdatei gibt einen ChildDeviceName '{0}' an, für den kein entsprechendes PXI-, VST-, USB- oder PCI-Instrument in der PXI-Definitionsdatei definiert ist.</value>
+  </data>
+  <data name="AssociatedDevicesParentMatchFailed" xml:space="preserve">
+    <value>Ein assoziiertes Gerät in der PXI-Definitionsdatei gibt einen ParentDeviceName '{0}' an, für den kein entsprechendes PXI-, VST-, USB- oder PCI-Instrument in der PXI-Definitionsdatei definiert ist.</value>
+  </data>
+  <data name="DeviceAssociationFailed" xml:space="preserve">
+    <value>Die Gerätezuordnung zwischen dem übergeordneten Gerät '{0}' und dem untergeordneten Gerät '{1}' mit dem Zweck '{2}' ist mit Fehler fehlgeschlagen: {3}</value>
+  </data>
+  <data name="UpdatingDeviceAssociations" xml:space="preserve">
+    <value>Aktualisieren von Gerätezuordnungen.</value>
+  </data>
+  <data name="ErrorNotAllSensorReadingsRefreshed" xml:space="preserve">
+    <value>Die Systemkonfigurations-API hat für die Ressource '{0}' nicht für alle Sensoren Messwerte zurückgegeben.</value>
+  </data>
+  <data name="ErrorNotAllFanSensorReadingsRefreshed" xml:space="preserve">
+    <value>Die Systemkonfigurations-API lieferte keine Messwerte für alle Lüftersensoren für die Ressource '{0}'.</value>
+  </data>
+  <data name="ErrorNotAllTempSensorReadingsRefreshed" xml:space="preserve">
+    <value>Die Systemkonfigurations-API hat für die Ressource '{0}' nicht für alle Temperatursensoren Messwerte zurückgegeben.</value>
+  </data>
+  <data name="ErrorUnknownFanSensorWhileRefreshingReadings" xml:space="preserve">
+    <value>Die Systemkonfigurations-API hat beim Aktualisieren der Messwerte einen unbekannten Lüftersensor '{0}' für die Ressource '{1}' zurückgegeben.</value>
+  </data>
+  <data name="ErrorUnknownTempSensorWhileRefreshingReadings" xml:space="preserve">
+    <value>Die Systemkonfigurations-API hat beim Aktualisieren der Messwerte einen unbekannten Temperatursensor '{0}' für die Ressource '{1}' zurückgegeben.</value>
+  </data>
+  <data name="ErrorNotAllVoltageSensorReadingsRefreshed" xml:space="preserve">
+    <value>Die Systemkonfigurations-API lieferte keine Messwerte für alle Spannungssensoren für die Ressource '{0}'.</value>
+  </data>
+  <data name="ErrorNotAllPxiPowerSupplyReadingsRefreshed" xml:space="preserve">
+    <value>Die Systemkonfigurations-API lieferte keine Messwerte für alle PXI-Stromversorgungen für die Ressource '{0}'.</value>
+  </data>
+  <data name="ErrorUnknownSensorWhileRefreshingReadings" xml:space="preserve">
+    <value>Die Systemkonfigurations-API hat beim Aktualisieren von Messwerten einen unbekannten Sensor '{0}' für die Ressource '{1}' zurückgegeben.</value>
+  </data>
+  <data name="ErrorUnknownVoltageSensorWhileRefreshingReadings" xml:space="preserve">
+    <value>Die Systemkonfigurations-API hat beim Aktualisieren von Messwerten einen unbekannten Spannungssensor '{0}' für die Ressource '{1}' zurückgegeben.</value>
+  </data>
+  <data name="ErrorUnknownPxiPowerSupplyWhileRefreshingReadings" xml:space="preserve">
+    <value>Die Systemkonfigurations-API hat beim Aktualisieren der Messwerte einen unbekannten PXI-Stromversorgungssensor '{0}' für die Ressource '{1}' zurückgegeben.</value>
+  </data>
+  <data name="CalculatingSupportedOperations" xml:space="preserve">
+    <value>Berechnung der unterstützten Operationen.</value>
+  </data>
+  <data name="CalibrationForfeitErrorMessage" xml:space="preserve">
+    <value>Konfiguration wurde geändert, externe Kalibrierung für das Gerät erforderlich {0}.  Entdeckte Änderungen:<LF/>{1}</value>
+    <comment>A comma separated list of all applicable CalibrationForfeitReason(s) will be appended at the {1} variable location.</comment>
+  </data>
+  <data name="CalibrationVerificationUnsuccessfulErrorMessage" xml:space="preserve">
+    <value>Die Kalibrierung ist für das Gerät ungültig {0}; der Abgleich war erfolgreich, aber die Überprüfung ist fehlgeschlagen</value>
+  </data>
+  <data name="CalibrationForfeitReasonChassisSerialNumber" xml:space="preserve">
+    <value>PXI-Chassis Seriennummer:  Erwartet {0:X} Erkannt {1}</value>
+  </data>
+  <data name="CalibrationForfeitReasonChassisSTSBay" xml:space="preserve">
+    <value>PXI-Chassis STS-Schacht:  Erwartet {0} Erkannt {1}</value>
+  </data>
+  <data name="CalibrationForfeitReasonInstrumentSerialNumber" xml:space="preserve">
+    <value>Seriennummer des Geräts:  Erwartet {0} Erkannt {1}</value>
+  </data>
+  <data name="CalibrationForfeitReasonInstrumentSlot" xml:space="preserve">
+    <value>Instrumentenschlitz:  Erwartet {0} Erkannt {1}</value>
+  </data>
+  <data name="CalibrationForfeitReasonSpringPinLocation" xml:space="preserve">
+    <value>Lage des Federbolzens:  Erwartet {0}</value>
+  </data>
+  <data name="CalibrationForfeitReasonSystemSerialNumber" xml:space="preserve">
+    <value>Ab Seriennummer  Erwartet {0} Erkannt {1}</value>
+  </data>
+  <data name="CalibrationForfeitReasonDigitalSubSystemChanged" xml:space="preserve">
+    <value>Digitale Teilsystemänderung erkannt, Neukalibrierung erforderlich für Geräte ohne Systemkalibrierungsdaten: {0}.</value>
+  </data>
+  <data name="ErrorAccessoryWithoutSlotMismatch" xml:space="preserve">
+    <value>Unpassendes Zubehör: Erwartet {0}, gefunden {1}.</value>
+  </data>
+  <data name="ErrorAccessoryWithoutSlotMissing" xml:space="preserve">
+    <value>Zubehör fehlt: Erwartet {0}.</value>
+  </data>
+  <data name="ErrorAccessoryWithoutSlotPrefix" xml:space="preserve">
+    <value>Zubehörmodell {0} - {1}</value>
+  </data>
+  <data name="ErrorAccessoryWithSlotMismatch" xml:space="preserve">
+    <value>Zubehörsteckplatz {0} stimmt nicht überein: Erwartet {1}, gefunden {2}.</value>
+  </data>
+  <data name="ErrorAccessoryWithSlotMissing" xml:space="preserve">
+    <value>Zubehörsteckplatz {0} fehlt: Erwartet {1}.</value>
+  </data>
+  <data name="ErrorAccessoryWithSlotPrefix" xml:space="preserve">
+    <value>Zubehörsteckplatz {0} Modell {1} - {2}</value>
+  </data>
+  <data name="ErrorPxiInstrumentAccessoriesMismatch" xml:space="preserve">
+    <value>PXI-Chassis {0} slot {1} model {2} accessories mismatch: {3}</value>
+  </data>
+  <data name="ErrorPluginInstrumentInstantiation" xml:space="preserve">
+    <value>PXI-Chassis {0} slot {1} model {2} Fehler beim Erstellen eines Plugin-Instruments: {3}</value>
+  </data>
+  <data name="ErrorPluginFactoryNotAvailable" xml:space="preserve">
+    <value>Plugin-Fabrik nicht verfügbar: {0}.</value>
+  </data>
+  <data name="DeviceAssociationPurposeUnsupported" xml:space="preserve">
+    <value>Der Gerätezuordnungszweck '{0}' wird für das übergeordnete Gerät '{1}' und das untergeordnete Gerät '{2}' nicht unterstützt.</value>
+  </data>
+  <data name="PxiPowerSupplyStates_NotPresent" xml:space="preserve">
+    <value>Der Stromversorgungsschacht {1} im Gehäuse {0} ist nicht vorhanden.</value>
+  </data>
+  <data name="PxiPowerSupplyStates_On" xml:space="preserve">
+    <value>Ein</value>
+  </data>
+  <data name="PxiPowerSupplyStates_UnexpectedPowerSupplyState" xml:space="preserve">
+    <value>Der Stromversorgungsschacht {1} im Gehäuse {0} hat ein Problem.</value>
+  </data>
+  <data name="PxiPowerSupplyStates_UnexpectedPowerSupplyStateInputVoltage" xml:space="preserve">
+    <value>Der Stromversorgungsschacht {1} im Gehäuse {0} hat ein Problem mit der Eingangsspannung.</value>
+  </data>
+  <data name="PxiPowerSupplyStates_Unknown" xml:space="preserve">
+    <value>Nicht bekannt</value>
+  </data>
+  <data name="PxiPowerSupplyBay" xml:space="preserve">
+    <value>Stromversorgung {0}</value>
+  </data>
+  <data name="ChassisPxiFanModeDoesNotMatchConfiguration" xml:space="preserve">
+    <value>Die Konfiguration des Lüftermodus des Gehäuses {0} von {1} stimmt nicht mit dem Status des Lüftermodus von {2}</value>
+  </data>
+  <data name="PxiPowerSupplyCoolingProfileDoesNotMatchConfiguration" xml:space="preserve">
+    <value>Gehäuse {0} Kühlprofilkonfiguration von {1} stimmt nicht mit dem Kühlprofilstatus von {2}</value>
+  </data>
+  <data name="ErrorIncorrectTemperatureMonitoringConfigurationNoSensors" xml:space="preserve">
+    <value>Das Gerät {0} ist für die Überwachung des Temperatursensors {1} konfiguriert, aber das Gerät hat keine Sensorwerte zurückgegeben.</value>
+  </data>
+  <data name="ErrorIncorrectTemperatureMonitoringConfigurationSensorDoesNotExist" xml:space="preserve">
+    <value>Das Gerät {0} ist für die Überwachung des Temperatursensors {1} konfiguriert, aber der Sensor ist nicht vorhanden.</value>
+  </data>
+  <data name="ErrorIncorrectTemperatureMonitoringConfigurationMultipleSensors" xml:space="preserve">
+    <value>Das Gerät {0} ist so konfiguriert, dass es den Temperatursensor {1} überwacht, aber es gibt mehrere Temperatursensoren.</value>
+  </data>
+  <data name="PxiCoolingProfile_ProfileSystemDefined" xml:space="preserve">
+    <value>Systemdefiniert</value>
+  </data>
+  <data name="PxiCoolingProfile_ProfileUnknown" xml:space="preserve">
+    <value>Nicht bekannt</value>
+  </data>
+  <data name="PxiCoolingProfile_Profile38W" xml:space="preserve">
+    <value>38 Watt</value>
+  </data>
+  <data name="PxiCoolingProfile_Profile58W" xml:space="preserve">
+    <value>58 Watt</value>
+  </data>
+  <data name="PxiCoolingProfile_Profile82W" xml:space="preserve">
+    <value>82 Watt</value>
+  </data>
+  <data name="TemperatureSensorConfigurationError" xml:space="preserve">
+    <value>Die Gerätekonfiguration ist falsch. Das Gerät '{0}' enthält keinen Temperatursensor '{1}', verfügbare Sensoren: '{2}'</value>
+  </data>
+  <data name="ErrorConfigurationInvalidForInstrument" xml:space="preserve">
+    <value>Die Konfiguration für das Gerät '{0}' ist falsch, eines oder mehrere seiner Teilsysteme haben widersprüchliche Werte für {1}.</value>
+  </data>
+  <data name="ErrorConfigurationInvalidForSubSystem" xml:space="preserve">
+    <value>Die Konfiguration für das Subsystem '{0}' ist falsch, die Einstellung {1} ist im Subsystem auf '{2}' gesetzt, das Instrument '{3}' hat aber den Wert '{4}'.</value>
+  </data>
+  <data name="ConfigurationElementName_SelfCalibrationTimeSpanForWarning" xml:space="preserve">
+    <value>Selbstkalibrierungszeitspanne für Warnung</value>
+  </data>
+  <data name="ConfigurationElementName_SelfCalibrationTemperatureDeltaForWarning" xml:space="preserve">
+    <value>Selbstkalibrierung Temperaturdelta für Warnung</value>
+  </data>
+  <data name="ConfigurationElementName_ExternalCalibrationTimeSpanForWarning" xml:space="preserve">
+    <value>externe Kalibrierungszeitspanne für Warnung</value>
+  </data>
+  <data name="ConfigurationElementName_ExternalCalibrationTimeSpanForLotExecutionWarning" xml:space="preserve">
+    <value>Externe Kalibrierungszeitspanne für Warnung bei Losausführung</value>
+  </data>
+  <data name="ConfigurationElementName_UserSpecifiedSelfCalibrationMode" xml:space="preserve">
+    <value>Selbstkalibrierungsmodus</value>
+  </data>
+  <data name="ConfigurationElementName_ExternalCalibrationEnabled" xml:space="preserve">
+    <value>externe Kalibrierung aktiviert</value>
+  </data>
+  <data name="ConfigurationElementName_ExternalCalibrationTemperatureDeltaForWarning" xml:space="preserve">
+    <value>externes Kalibrierungs-Temperaturdelta für Warnung</value>
+  </data>
+  <data name="ResetComplete" xml:space="preserve">
+    <value>Vollständig zurücksetzen<LF/><LF/>Tatsächliche Laufzeit: {0}<LF/>Begonnen<LF/>Beendet am: {2:F}</value>
+  </data>
+  <data name="ResetExecuting" xml:space="preserve">
+    <value>Zurücksetzen Ausführend<LF/><LF/>Gestartet unter {0:T} am {0:D}<LF/><LF/>{1}</value>
+    <comment>{0:T} will be replaced with the long-format time (in en-US: 1:45:30 PM), {0:D} will be replaced with the date (in en-US: Monday, June 15, 2009)</comment>
+  </data>
+  <data name="SelfTestComplete" xml:space="preserve">
+    <value>Selbsttest abgeschlossen<LF/><LF/>Tatsächliche Laufzeit: {0}<LF/>Begonnen<LF/>Beendet am: {2:F}</value>
+  </data>
+  <data name="SelfTestExecuting" xml:space="preserve">
+    <value>Selbsttest wird ausgeführt<LF/><LF/>Gestartet unter {0:T} am {0:D}<LF/><LF/>{1}</value>
+    <comment>{0:T} will be replaced with the long-format time (in en-US: 1:45:30 PM), {0:D} will be replaced with the date (in en-US: Monday, June 15, 2009)</comment>
+  </data>
+  <data name="CalibrationExtensionDataChecksumDoesNotMatch" xml:space="preserve">
+    <value>Die Kalibrierungsdatendatei ({0}) ist beschädigt.</value>
+  </data>
+  <data name="CalibrationOverrideDataChecksumDoesNotMatch" xml:space="preserve">
+    <value>Die Kalibrierungsüberschreibungsdatei ({0}) ist beschädigt.</value>
+  </data>
+  <data name="CalibrationOverrideDataIncorrectFormat" xml:space="preserve">
+    <value>Die Kalibrierungsüberschreibungsdatei ({0}) enthält ungültige Daten.</value>
+  </data>
+  <data name="UnexpectedNumberOfPartsForCalibrationExtensions" xml:space="preserve">
+    <value>Die Zeile '{0}' hat nicht die richtige Anzahl von Werten, erwartet {1} Werte, gefunden {2}.</value>
+  </data>
+  <data name="UnexpectedSystemTypeForCalibrationExtensions" xml:space="preserve">
+    <value>Der Wert '{0}' ist kein gültiger Systemtyp für Kalibrierungserweiterungen, erwartet wurde 'STS'.</value>
+  </data>
+  <data name="SystemSerialNumberDoesNotMatchForCalibrationExtensions" xml:space="preserve">
+    <value>Die System-Seriennummer in der Kalibrierungserweiterungsdatei enthält widersprüchliche Werte: '{0}', '{1}'.</value>
+  </data>
+  <data name="CannotInitializeCheckersDatabaseWarning" xml:space="preserve">
+    <value>Die Datenbank der Prüfer kann nicht initialisiert werden. Datenbankversion: {0}.</value>
+  </data>
+  <data name="InvalidManufacturingData" xml:space="preserve">
+    <value>Fertigungsdaten können nicht initialisiert werden, die Datei '{0}' ist ungültig.</value>
+  </data>
+  <data name="InvalidCalibrationExtensionsData" xml:space="preserve">
+    <value>Kalibrierungserweiterungsdaten können nicht initialisiert werden, die Datei '{0}' ist ungültig.</value>
+  </data>
+  <data name="InvalidCalibrationOverridesData" xml:space="preserve">
+    <value>Kalibrierungsüberschreibungsdaten können nicht initialisiert werden, die Datei '{0}' ist ungültig.</value>
+  </data>
+  <data name="ManufacturingDataChecksumDoesNotMatch" xml:space="preserve">
+    <value>Die Datei mit den Fertigungsdaten ({0}) ist beschädigt.</value>
+  </data>
+  <data name="ManufacturingDataInvalidDataDetected" xml:space="preserve">
+    <value>Die Datei mit den Fertigungsdaten ({0}) enthält ungültige Daten, die nicht dem erwarteten Format entsprechen.  Ungültige Daten: {1}</value>
+  </data>
+  <data name="ManufacturingDataContainsDuplicateSerialNumbers" xml:space="preserve">
+    <value>Die Herstellungsdaten-Datei ({0}) enthält fälschlicherweise doppelte Werte für die Seriennummer {1}.</value>
+  </data>
+  <data name="OperationNotSupported" xml:space="preserve">
+    <value>Dieser Vorgang wird von diesem Gerät nicht unterstützt.</value>
+  </data>
+  <data name="UnknownActionName" xml:space="preserve">
+    <value>Unbekannter Aktionscode {0}</value>
+  </data>
+  <data name="SkippedSequenceNotAvailable" xml:space="preserve">
+    <value>{0}  (Übersprungen - Routine nicht verfügbar)</value>
+  </data>
+  <data name="Blocks1To40" xml:space="preserve">
+    <value>Blöcke 1-40</value>
+  </data>
+  <data name="Blocks41To80" xml:space="preserve">
+    <value>Blöcke 41-80</value>
+  </data>
+  <data name="SystemPins" xml:space="preserve">
+    <value>System Stifte</value>
+  </data>
+  <data name="NonSystemInstrumentInSystemPins" xml:space="preserve">
+    <value>Nicht-System Instrument In System Pins</value>
+  </data>
+  <data name="CheckersSequenceNameHmu" xml:space="preserve">
+    <value>HMU</value>
+    <comment>This will be appended to the name of the RF continuity checkers that use the HMU.</comment>
+  </data>
+  <data name="CheckersSequenceNameMmWave" xml:space="preserve">
+    <value>mmWave</value>
+    <comment>This will be appended to the name of the RF continuity checkers that use mmWave.</comment>
+  </data>
+  <data name="NoLoadBoardsForFeature" xml:space="preserve">
+    <value>Keine der konfigurierten Lastkarten unterstützt die Funktion '{0}'.</value>
+  </data>
+  <data name="InstrumentIncludedInMultipleSubSystems" xml:space="preserve">
+    <value>Das Instrument '{0}' ist in mehrere digitale Teilsysteme eingebunden.</value>
+  </data>
+  <data name="InstrumentNotSupportedInDigitalSubSystem" xml:space="preserve">
+    <value>Das Instrument '{0}' kann nicht zu einem digitalen Teilsystem hinzugefügt werden.</value>
+  </data>
+  <data name="InvalidDigitalSubSystemConnections" xml:space="preserve">
+    <value>Ein digitales Teilsystem kann nicht mehrere Geräte mit sich widersprechenden benutzerdefinierten Prüfsequenzen haben. Das digitale Teilsystem [{0}] verfügt über die kollidierenden benutzerdefinierten Prüfgeräte [{1}].</value>
+  </data>
+  <data name="CannotRunCheckersCalibrationStandardsNotMet" xml:space="preserve">
+    <value>Die Aktionen können nicht ausgeführt werden:<LF/>{0}<LF/><LF/>Externe Kalibrierung erforderlich für:<LF/>{1}<LF/><LF/>{2}. Bitte wenden Sie sich an den NI-Support.</value>
+  </data>
+  <data name="CannotRunCheckersCalibrationStandardsNotMet_RunAdjustFirst" xml:space="preserve">
+    <value>Führen Sie Adjust für die angegebenen Instrumente aus, bevor Sie Verify (As Found) ausführen.</value>
+  </data>
+  <data name="CannotRunCheckersCalibrationStandardsNotMet_SendSystemDmmForCalibration" xml:space="preserve">
+    <value>Entfernen Sie das System-DMM und schicken Sie es zur Kalibrierung, bevor Sie fortfahren.</value>
+  </data>
+  <data name="SystemSmuNotConnectedCorrectly" xml:space="preserve">
+    <value>Die System-SMU ist nicht mit dem Federstift P142 Kanal 0 verbunden. DC Continuity kann nicht ausgeführt werden.</value>
+  </data>
+  <data name="SystemPsuNotConnectedCorrectly" xml:space="preserve">
+    <value>Das Systemnetzteil ist nicht mit dem Federstift P143 verbunden. DC Continuity kann nicht ausgeführt werden.</value>
+  </data>
+  <data name="SystemDmmNotConnectedCorrectly" xml:space="preserve">
+    <value>Das System DMM ist nicht mit dem Federstift P143 verbunden. DC Continuity kann nicht ausgeführt werden.</value>
+  </data>
+  <data name="OperatingSystemNotSupported" xml:space="preserve">
+    <value>Das Betriebssystem wird nicht unterstützt. Die Wartungssoftware unterstützt nur Windows 10 oder höher.</value>
+  </data>
+  <data name="SystemControllerNotFound" xml:space="preserve">
+    <value>Systemcontroller nicht gefunden.</value>
+  </data>
+  <data name="MultipleValidChassisConfigurations" xml:space="preserve">
+    <value>Es kann nicht eindeutig festgestellt werden, welches Konfigurations-Chassis mit dem verfügbaren Chassis übereinstimmt.</value>
+  </data>
+  <data name="NoValidChassisConfigurations" xml:space="preserve">
+    <value>Es kann nicht festgestellt werden, welches Konfigurations-Chassis mit dem verfügbaren Chassis übereinstimmt.<LF/><LF/>Weitere Einzelheiten:<LF/>{0}</value>
+  </data>
+  <data name="NoValidChassisConfigurationsDefaultDetails" xml:space="preserve">
+    <value>Nicht alle Konfigurations-Chassis passen zu einem verfügbaren Chassis.</value>
+  </data>
+  <data name="SystemDmmCalibrationStandard" xml:space="preserve">
+    <value>System DMM Kalibrierungsstandard ({0} - SN {1})</value>
+  </data>
+  <data name="SystemSmuCalibrationStandard" xml:space="preserve">
+    <value>System SMU Kalibrierungsstandard ({0} - SN {1})</value>
+  </data>
+  <data name="SystemPsuCalibrationStandard" xml:space="preserve">
+    <value>System PSU Kalibrierungsstandard ({0} - SN {1})</value>
+  </data>
+  <data name="UnexpectedErrorCode" xml:space="preserve">
+    <value>Fehlercode: {0}, Meldung: {1}</value>
+  </data>
+  <data name="RfConnectionSpecifiesNonRfInstrument" xml:space="preserve">
+    <value>Die HF-Verbindung mit dem Kabeltyp '{0}' und dem Gerät '{1}' gibt an, dass es sich um eine HF-Verbindung handelt, aber das Gerät ist kein HF-Controller.</value>
+  </data>
+  <data name="DuplicatedConnectionId" xml:space="preserve">
+    <value>Mehrere Verbindungen haben die gleiche ID: {0}.</value>
+  </data>
+  <data name="OrderedOperationsForSequenceGeneration" xml:space="preserve">
+    <value>Berechnete Operationen, die für die Sequenzerstellung benötigt werden.</value>
+  </data>
+  <data name="GeneratingSequence" xml:space="preserve">
+    <value>Erstellende Sequenz: {0}.</value>
+  </data>
+  <data name="SequenceFileGeneration" xml:space="preserve">
+    <value>Erzeugung von Sequenzdateien</value>
+  </data>
+  <data name="NoLoadBoard" xml:space="preserve">
+    <value>Keine Lastkarte</value>
+  </data>
+  <data name="AnyLoadBoard" xml:space="preserve">
+    <value>Jede Lastentafel</value>
+  </data>
+  <data name="CalibrationCartDisplayName" xml:space="preserve">
+    <value>STS-Kalibrierungssystem</value>
+  </data>
+  <data name="CalibrationLoadBoardRequirementName" xml:space="preserve">
+    <value>Kalibrierung Lastplatte {0}</value>
+  </data>
+  <data name="LoadBoardDisplayString" xml:space="preserve">
+    <value>Hersteller: "{0}" Teilenummer: "{1}"</value>
+  </data>
+  <data name="LoadBoardDisplayStringWithDescription" xml:space="preserve">
+    <value>Hersteller: "{0}" Teilenummer: "{1}" ({2})</value>
+  </data>
+  <data name="InitializingRequiredHardwareDetails" xml:space="preserve">
+    <value>Initialisierung der erforderlichen Hardware-Details</value>
+  </data>
+  <data name="ActionDisplayNameDcAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>DC Einstellen &amp; Prüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameDcContinuity" xml:space="preserve">
+    <value>DC-Durchgangsprüfung</value>
+  </data>
+  <data name="ActionDisplayNameDcVerifyAsFound" xml:space="preserve">
+    <value>DC Verify (wie gefunden)</value>
+  </data>
+  <data name="ActionDisplayNameDcVerifyAsLeft" xml:space="preserve">
+    <value>DC Verify (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameNoiseSourceContinuity" xml:space="preserve">
+    <value>Prüfung der Kontinuität der Geräuschquelle</value>
+  </data>
+  <data name="ActionDisplayNameReset" xml:space="preserve">
+    <value>Zurücksetzen</value>
+  </data>
+  <data name="ActionDisplayNameRfContinuity" xml:space="preserve">
+    <value>RF-Durchgangsprüfung</value>
+  </data>
+  <data name="ActionDisplayNameRfpmAdjust" xml:space="preserve">
+    <value>RF-System-Kalibrierung</value>
+  </data>
+  <data name="ActionDisplayNameSelfCalibrate" xml:space="preserve">
+    <value>Selbst-Kalibrierung</value>
+  </data>
+  <data name="ActionDisplayNameSelfTest" xml:space="preserve">
+    <value>Selbsttest</value>
+  </data>
+  <data name="ActionDisplayNameTimebaseAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>Zeitbasis einstellen und überprüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameTimebaseContinuity" xml:space="preserve">
+    <value>Kontinuität der Zeitbasis</value>
+  </data>
+  <data name="ActionDisplayNameTimebaseVerifyAsFound" xml:space="preserve">
+    <value>Zeitbasis verifizieren (As Found)</value>
+  </data>
+  <data name="ActionDisplayNameTimebaseVerifyAsLeft" xml:space="preserve">
+    <value>Zeitbasis verifizieren (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameTimingAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>Timing einstellen und überprüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameTimingCalibrationTdr" xml:space="preserve">
+    <value>Zeitmessung TDR</value>
+  </data>
+  <data name="ActionDisplayNameTimingVerifyAsFound" xml:space="preserve">
+    <value>Timing überprüfen (As Found)</value>
+  </data>
+  <data name="ActionDisplayNameTimingVerifyAsLeft" xml:space="preserve">
+    <value>Timing überprüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameHssContinuity" xml:space="preserve">
+    <value>HSS-Kontinuität</value>
+  </data>
+  <data name="ActionDisplayNameAutomaticSelfCalibration" xml:space="preserve">
+    <value>Automatische Selbst-Kalibrierung</value>
+  </data>
+  <data name="ActionDisplayNameQueryInfo" xml:space="preserve">
+    <value>Abfrage von Informationen</value>
+  </data>
+  <data name="ActionDisplayNameSetPowerSupplyEnabled" xml:space="preserve">
+    <value>Stromversorgung einstellen aktiviert</value>
+  </data>
+  <data name="ActionDisplayNameDcDibInterlockCheck" xml:space="preserve">
+    <value>DIB-Verriegelungsprüfung</value>
+  </data>
+  <data name="ActionCategoryDisplayNameGeneral" xml:space="preserve">
+    <value>Allgemeines</value>
+  </data>
+  <data name="ActionCategoryDisplayNameRFSubsystem" xml:space="preserve">
+    <value>RF-Teilsystem</value>
+  </data>
+  <data name="ActionCategoryDisplayNameDCCalibration" xml:space="preserve">
+    <value>DC-Kalibrierung</value>
+  </data>
+  <data name="ActionCategoryDisplayNameTimingCalibration" xml:space="preserve">
+    <value>Timing-Kalibrierung</value>
+  </data>
+  <data name="ActionCategoryDisplayNameTimebaseCalibration" xml:space="preserve">
+    <value>Zeitbasiskalibrierung</value>
+  </data>
+  <data name="ActionButtonDisplayNameDcAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>DC Einstellen &amp; Prüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameDcContinuity" xml:space="preserve">
+    <value>DC-Durchgangsprüfung Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameDcVerifyAsFound" xml:space="preserve">
+    <value>DC Verify (As Found) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameDcVerifyAsLeft" xml:space="preserve">
+    <value>DC Verify (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameNoiseSourceContinuity" xml:space="preserve">
+    <value>Rauschquelle Kontinuität prüfen Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameReset" xml:space="preserve">
+    <value>Alle Instrumente zurücksetzen</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfContinuity" xml:space="preserve">
+    <value>RF-Durchgangsprüfung Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfpmAdjust" xml:space="preserve">
+    <value>RF-Systemkalibrierung Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameSelfCalibrate" xml:space="preserve">
+    <value>Alle Instrumente selbst kalibrieren</value>
+  </data>
+  <data name="ActionButtonDisplayNameSelfTest" xml:space="preserve">
+    <value>Selbsttest aller Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimebaseAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>Zeitbasis einstellen und überprüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimebaseContinuity" xml:space="preserve">
+    <value>Zeitbasiskontinuität Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimebaseVerifyAsFound" xml:space="preserve">
+    <value>Zeitbasis überprüfen (As Found) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimebaseVerifyAsLeft" xml:space="preserve">
+    <value>Überprüfung der Zeitbasis (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimingAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>Kalibrierung des digitalen Teilsystems Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimingCalibrationTdr" xml:space="preserve">
+    <value>Zeitmessung TDR Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimingVerifyAsFound" xml:space="preserve">
+    <value>Timing-Überprüfung (As Found) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameTimingVerifyAsLeft" xml:space="preserve">
+    <value>Timing überprüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameHssContinuity" xml:space="preserve">
+    <value>HSS-Durchgangsprüfung Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameDcDibInterlockCheck" xml:space="preserve">
+    <value>DIB-Verriegelungsprüfung</value>
+  </data>
+  <data name="ProveMessagePrefix" xml:space="preserve">
+    <value>Sie müssen die folgenden Schritte ausführen, bevor Sie die Aktionen {0} ausführen können:</value>
+  </data>
+  <data name="ProveMessageRetrySuffix" xml:space="preserve">
+    <value>Wenn diese Aufgaben abgeschlossen sind, klicken Sie auf Weiter.<LF/>Klicken Sie auf Abbrechen, um den Vorgang abzubrechen.</value>
+  </data>
+  <data name="ProveAnyOf" xml:space="preserve">
+    <value>Jedes von:</value>
+  </data>
+  <data name="ProveDefaultLoadBoardMessage" xml:space="preserve">
+    <value>1. Installieren Sie eine kompatible Ladekarte:<LF/>{1}<LF/>2. DIB sperren (nur DX).<LF/>3. Trennen Sie alle externen Geräteverbindungen.</value>
+  </data>
+  <data name="ProveDefaultHardwareMessage" xml:space="preserve">
+    <value>1. Installieren oder verbinden Sie die folgende erforderliche Hardware:<LF/>{1}<LF/>2. Trennen Sie alle anderen externen Geräteverbindungen.</value>
+  </data>
+  <data name="ProveNoLoadBoardMessage" xml:space="preserve">
+    <value>1. Stoppen Sie alle laufenden Geräteaufgaben.<LF/>2. DIB freischalten (nur DX).<LF/>3. Trennen Sie alle externen Geräteverbindungen.<LF/></value>
+  </data>
+  <data name="ProveTimingTdrMessage" xml:space="preserve">
+    <value>1. Trennen Sie die BNC-Kabel von Timing CLB CH0 und CH1.<LF/>2. DIB freischalten.<LF/>3. Entfernen Sie die Lastplatine für die Zeitkalibrierung.<LF/>4. Lassen Sie die Federstifte für die Dauer dieses Schritts nicht eingerastet.</value>
+  </data>
+  <data name="ProveRfLoadBoardMessage" xml:space="preserve">
+    <value>1. Installieren Sie ein NI RF Multiport Calibration Module:<LF/>{1}<LF/>2. DIB sperren.<LF/>3. Verbinden Sie das USB-Kabel vom STS mit dem NI RF Multiport Calibration Module.</value>
+  </data>
+  <data name="ProveRfCornersLoadBoardMessage" xml:space="preserve">
+    <value>1. Installieren Sie eine NI RF Auxiliary Ports Continuity Load Board:<LF/>{1}<LF/>2. DIB sperren.</value>
+  </data>
+  <data name="ProveRfMmWaveLoadBoardMessage" xml:space="preserve">
+    <value>1. Installieren Sie ein NI RF mmWave-Kalibrierungsmodul:<LF/>{1}<LF/>2. DIB sperren.</value>
+  </data>
+  <data name="ProveTimingLoadBoardMessage" xml:space="preserve">
+    <value>1. Installieren Sie eine kompatible Ladekarte:<LF/>{1}<LF/>2. DIB sperren (nur DX).<LF/>3. Verbinden Sie das Timing Calibration System mit dem STS und dem Timing CLB:<LF/>          STS Externes Ethernet -&gt; Kalibriersystem Ethernet #1<LF/>          Zeitsteuerung CLB CH0 -&gt; Kalibriersystem 5162 CH0<LF/>          Zeitsteuerung CLB CH1 -&gt; Kalibrierungssystem 5162 CH2</value>
+  </data>
+  <data name="ConnectRequiredHardwareMainInstruction" xml:space="preserve">
+    <value>Bitte schließen Sie die folgende erforderliche Hardware an</value>
+  </data>
+  <data name="ConnectRequiredHardwareErrorUpdatingData" xml:space="preserve">
+    <value>Beim Lesen der Daten von der erforderlichen Hardware sind ein oder mehrere Fehler aufgetreten</value>
+  </data>
+  <data name="ConnectRequiredHardwareTitle" xml:space="preserve">
+    <value>Erforderliche Hardware anschließen</value>
+  </data>
+  <data name="DisconnectRequiredHardwareMainInstruction" xml:space="preserve">
+    <value>Bitte trennen Sie die angeschlossene Hardware</value>
+  </data>
+  <data name="DisconnectRequiredHardwareTitle" xml:space="preserve">
+    <value>Hardware abschalten</value>
+  </data>
+  <data name="UnsupportedSTSInterface" xml:space="preserve">
+    <value>Die STS-Schnittstelle {0} wird von der Wartungssoftware nicht unterstützt.</value>
+  </data>
+  <data name="CannotExportClockSourceChassis1NotConfigured" xml:space="preserve">
+    <value>Die Taktquelle kann nicht exportiert werden, da Chassis 1 nicht in PXI_Definition.xml konfiguriert ist.</value>
+  </data>
+  <data name="AlarmTypeMismatch" xml:space="preserve">
+    <value>Alarm type mismatch, erwarteter Typ {0}, tatsächlicher Typ: {1}.</value>
+  </data>
+  <data name="FailedToInitializeCheckersDatabase" xml:space="preserve">
+    <value>Der Versuch, die Prüferdatenbank zu initialisieren, ist fehlgeschlagen.</value>
+  </data>
+  <data name="MultipleLocations" xml:space="preserve">
+    <value>Mehrere Standorte.</value>
+  </data>
+  <data name="DigitalSubSystemMenuEntryDisplayHeader" xml:space="preserve">
+    <value>Fahrgestell #{0} Digitales Teilsystem ({1}).</value>
+  </data>
+  <data name="ConflictingPowerLineFrequenciesInChassis" xml:space="preserve">
+    <value>Widersprüchliche Netzfrequenzen im Gehäuse. Rückfall auf den Standardwert.</value>
+  </data>
+  <data name="InitializingTestStand" xml:space="preserve">
+    <value>Initialisierung von TestStand.</value>
+  </data>
+  <data name="TestStandNotInstalled" xml:space="preserve">
+    <value>TestStand ist nicht installiert, kann die Wartungssoftware nicht initialisieren.</value>
+  </data>
+  <data name="CannotAssignMultipleInstrumentsToMedusa" xml:space="preserve">
+    <value>Dem NI PXIe-5530 RF-Subsystem können nicht mehrere Steuergeräte zugewiesen werden.</value>
+  </data>
+  <data name="CannotAddSubSystemAndInstrumentDoNotMatch" xml:space="preserve">
+    <value>Teilsystem kann nicht zum Teilsystemsatz hinzugefügt werden, da das Kontrollinstrument und das Teilsystem nicht übereinstimmen.</value>
+  </data>
+  <data name="RfSubSystemMissingControlInstrument" xml:space="preserve">
+    <value>Das Teilsystem {0} muss ein {1} Kontrollinstrument enthalten.</value>
+  </data>
+  <data name="InitializingPlugins" xml:space="preserve">
+    <value>Initialisierung von Plug-ins.</value>
+  </data>
+  <data name="AdditionalInstruments" xml:space="preserve">
+    <value>Zusätzliche Instrumente</value>
+  </data>
+  <data name="LoadBoardCalibrationRequired" xml:space="preserve">
+    <value>Fälligkeitsdatum der externen Kalibrierung überschritten:<LF/>{0}<LF/><LF/>Bitte wenden Sie sich an den NI-Support.</value>
+  </data>
+  <data name="LoadBoardCalibrationRequiredTitle" xml:space="preserve">
+    <value>Fälligkeitsdatum der Kalibrierung überschritten</value>
+  </data>
+  <data name="ExternalCalibrationRequiredForExternalDevice" xml:space="preserve">
+    <value>Fälligkeitsdatum der Kalibrierung überschritten</value>
+  </data>
+  <data name="LoadBoardInServiceDateNotSet" xml:space="preserve">
+    <value>Das In-Service-Datum wurde für die folgenden Geräte nicht konfiguriert und die Haltbarkeit wird möglicherweise nicht berücksichtigt:<LF/>{0}<LF/><LF/>Ein Administrator kann sich bei der STS-Wartungssoftware anmelden und das Werkzeug "Konfiguration -&gt; Externe Kalibrierungsfristen/Haltbarkeitsdauer aktualisieren" verwenden, um das In-Service-Datum festzulegen.</value>
+  </data>
+  <data name="LoadBoardInServiceDateNotSetTitle" xml:space="preserve">
+    <value>Inbetriebnahmedatum nicht festgelegt</value>
+  </data>
+  <data name="LoadBoardInServiceDateNotSetMainInstruction" xml:space="preserve">
+    <value>Inbetriebnahmedatum nicht festgelegt</value>
+  </data>
+  <data name="LoadBoardCannotReadCalibrationOrInServiceDate" xml:space="preserve">
+    <value>Das Kalibrierungs- und In-Service-Datum kann für die folgenden Geräte nicht gelesen werden:<LF/>{0}<LF/><LF/>Überprüfen Sie die Verbindungen zu den Geräten. Sollte der Fehler weiterhin bestehen, wenden Sie sich bitte an NI.</value>
+  </data>
+  <data name="RfMultiportCalibrationModule" xml:space="preserve">
+    <value>NI RF-Multiport-Kalibriermodul</value>
+  </data>
+  <data name="RfMultiportCalibrationModuleWideDynamicRange" xml:space="preserve">
+    <value>NI RF-Multiport-Kalibriermodul (großer Dynamikbereich)</value>
+  </data>
+  <data name="SystemInstrumentDefinedManyTimes" xml:space="preserve">
+    <value>Die Verbindung {0} wurde in STS_Definition.xml mehrfach definiert</value>
+  </data>
+  <data name="SystemInstrumentDefinedManyTimes_SystemDmm" xml:space="preserve">
+    <value>System DMM</value>
+  </data>
+  <data name="SystemInstrumentDefinedManyTimes_SystemSmu" xml:space="preserve">
+    <value>System SMU</value>
+  </data>
+  <data name="SystemInstrumentDefinedManyTimes_SystemPsu" xml:space="preserve">
+    <value>System-Netzteil</value>
+  </data>
+  <data name="InvalidMaxSupportedRfpmMajorVerOverride" xml:space="preserve">
+    <value>Ungültiger MaxSupportedRfpmMajorVerOverride-Registrierungsschlüssel.  Erwartet eine Ganzzahl, gefunden "{0}".</value>
+    <comment>{0} = Value string read from registry key.</comment>
+  </data>
+  <data name="InvalidRFInitOptionStringOverride" xml:space="preserve">
+    <value>Ungültiger RFInitOptionStringOverride-Registrierungsschlüssel.  Erwartet eine Zeichenkette, gefunden "{0}".</value>
+    <comment>{0} = Value string read from registry key.</comment>
+  </data>
+  <data name="CannotInitializeRfpmSession" xml:space="preserve">
+    <value>RFPM-Sitzung kann nicht initialisiert werden.</value>
+  </data>
+  <data name="RfpmVersionNotSupported" xml:space="preserve">
+    <value>Die RFPM-Version {0} wird nicht unterstützt; erwartet wird eine Version zwischen {1} und {2}.</value>
+  </data>
+  <data name="RfpmInstallationNotFound" xml:space="preserve">
+    <value>RFPM-Installation nicht gefunden.</value>
+  </data>
+  <data name="RfsaVersionNotSupported" xml:space="preserve">
+    <value>RFSA-Version {0} wird nicht unterstützt; die minimal unterstützte Version ist {1}.</value>
+  </data>
+  <data name="RfsaInstallationNotFound" xml:space="preserve">
+    <value>RFSA-Installation nicht gefunden.</value>
+  </data>
+  <data name="UnsupportedRfpmConfigurationFileRevision" xml:space="preserve">
+    <value>Nicht unterstützte RFPM-Konfigurationsdateirevision.</value>
+  </data>
+  <data name="ErrorDownloadingBitfile" xml:space="preserve">
+    <value>Fehler beim Herunterladen der Bitdatei. Fehlercode</value>
+  </data>
+  <data name="RfErrorWithCode" xml:space="preserve">
+    <value>{0}Fehler: -Details</value>
+  </data>
+  <data name="RfErrorWithInstrumentAndCode" xml:space="preserve">
+    <value>Fehler {0} auf dem Gerät {1}. -Details</value>
+  </data>
+  <data name="ChassisHasConflictingSubSystemsMedusaAndBarcelona" xml:space="preserve">
+    <value>Ungültige Konfiguration in PXI_Definition.xml, die Konfiguration hat ein STS-5530 Subsystem und ein PXIe-5831 Subsystem.</value>
+  </data>
+  <data name="DuplicatedInstrumentInCalibrationDefinitions" xml:space="preserve">
+    <value>Ungültige Konfiguration. Das Gerätemodell "{0}" wird in den Kalibrierungsdefinitionen mehr als einmal angegeben.</value>
+  </data>
+  <data name="DuplicatedSubSystemInCalibrationDefinitions" xml:space="preserve">
+    <value>Ungültige Konfiguration. Das Teilsystemmodell "{0}" wird in den Kalibrierungsdefinitionen mehr als einmal angegeben.</value>
+  </data>
+  <data name="HardwareDocumentationFileError" xml:space="preserve">
+    <value>Fehler in NI Hardware Documentation.xml entdeckt. Bitte installieren Sie die Wartungssoftware neu oder wenden Sie sich an NI, um Unterstützung zu erhalten.</value>
+  </data>
+  <data name="CancelingPendingSelfCalibration" xml:space="preserve">
+    <value>Abbruch der anstehenden Selbstkalibrierung.</value>
+  </data>
+  <data name="DoNotUseHmuAssociationForSub8Ghz" xml:space="preserve">
+    <value>Die Assoziation "{0}" ist für das Subsystem "{1}" nicht zulässig. Verwenden Sie den NI PXIe-5831 im Subsystem für Oberwellenmessungen.</value>
+  </data>
+  <data name="AssociationInstrumentNotFoundInInstruments" xml:space="preserve">
+    <value>Das Instrument mit dem Benutzer-Alias "{0}" wurde in den angegebenen Instrumenten nicht gefunden.</value>
+  </data>
+  <data name="DuplicateInstrumentSlotNumberInChassis" xml:space="preserve">
+    <value>Das Chassis "{0}" hat mehr als ein Gerät im Steckplatz {1}.</value>
+  </data>
+  <data name="DuplicateMxiCardSlotNumberInChassis" xml:space="preserve">
+    <value>Das Chassis "{0}" hat mehr als eine MXI-Karte im Steckplatz {1}.</value>
+  </data>
+  <data name="ErrorMxiCardMismatch" xml:space="preserve">
+    <value>PXI-Gehäuse {0} Steckplatz {1} MXI-Karte passt nicht: Erwartet {2}, gefunden {3}.</value>
+  </data>
+  <data name="ErrorMxiCardMissing" xml:space="preserve">
+    <value>PXI-Chassis {0} Steckplatz {1} MXI-Karte fehlt: Erwartet {2}.</value>
+  </data>
+  <data name="MxiCardUnableToFindDestinationChassisNumber" xml:space="preserve">
+    <value>Ungültige Konfiguration für {0}. Die Zielfahrgestellnummer kann nicht gefunden werden {1}.</value>
+  </data>
+  <data name="MxiCardUnableToFindDestinationChassisSlot" xml:space="preserve">
+    <value>Ungültige Konfiguration für {0}. Die MXI-Zielkarte kann im Steckplatz {1} nicht gefunden werden. {2}</value>
+  </data>
+  <data name="MxiCardMismatch" xml:space="preserve">
+    <value>Ungültige Konfiguration für {0}. Die MXI-Karte im Gehäuse {1} Steckplatz {2} ist nicht mit {0} verbunden.</value>
+  </data>
+  <data name="ChassisConfigurationDuplicateSlotDetected" xml:space="preserve">
+    <value>Ungültige Konfiguration für das Fahrgestell {0}. Dort ist der Steckplatz {1} mehr als einmal definiert.</value>
+  </data>
+  <data name="InvalidMxiCardConfigurationDestinationChassisAndSlotMustBeSpecified" xml:space="preserve">
+    <value>Ungültige Konfiguration für {0}. Eine MXI-Karte mit einer Zielfahrgestellnummer muss auch einen Zielfahrgestellplatz haben.</value>
+  </data>
+  <data name="InvalidAuxiliaryPowerSupplyConfiguration" xml:space="preserve">
+    <value>Ungültige Konfiguration der Hilfsstromversorgung.</value>
+  </data>
+  <data name="SystemConfigurationOperationNotSupportedOverrideIsEmpty" xml:space="preserve">
+    <value>Die "Operation Not Supported"-Overrides für das Instrument {0} enthalten ein oder mehrere nicht spezifizierte Elemente.</value>
+  </data>
+  <data name="ErrorDeviceInUse" xml:space="preserve">
+    <value>Fehler beim Ausführen von {0}, das Gerät {1} ist in Gebrauch.</value>
+  </data>
+  <data name="ErrorExecutingAction" xml:space="preserve">
+    <value>Fehler beim Ausführen von {0} auf dem Gerät {1}.</value>
+  </data>
+  <data name="ErrorExecutingActionWithDetails" xml:space="preserve">
+    <value>Fehler beim Ausführen von {0} auf dem Gerät {1}, Details: {2}.</value>
+  </data>
+  <data name="CheckersFeatureName" xml:space="preserve">
+    <value>{0} (Schnittstelle: {1})</value>
+  </data>
+  <data name="ExternalCalibration_WarnExpiresToday" xml:space="preserve">
+    <value>Externe Kalibrierung läuft heute ab</value>
+  </data>
+  <data name="SystemSmuIsNotSupportedModel" xml:space="preserve">
+    <value>Das System SMU {0} (Modell: {1}) gehört nicht zu den unterstützten Modellen: {2}</value>
+  </data>
+  <data name="SystemPsuIsNotSupportedModel" xml:space="preserve">
+    <value>Das Systemnetzteil {0} (Modell: {1}) gehört nicht zu den unterstützten Modellen: {2}</value>
+  </data>
+  <data name="SystemDmmIsNotSupportedModel" xml:space="preserve">
+    <value>Das System DMM {0} (Modell: {1}) gehört nicht zu den unterstützten Modellen: {2}</value>
+  </data>
+  <data name="UserConfigurationDisplayName_Operator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="UserConfigurationDisplayName_Technician" xml:space="preserve">
+    <value>Techniker</value>
+  </data>
+  <data name="UserConfigurationDisplayName_Maintenance" xml:space="preserve">
+    <value>Wartung</value>
+  </data>
+  <data name="UserConfigurationDisplayName_Engineering" xml:space="preserve">
+    <value>Technik</value>
+  </data>
+  <data name="UserConfigurationDisplayName_Administrator" xml:space="preserve">
+    <value>Verwaltung</value>
+  </data>
+  <data name="UserConfigurationDisplayName_NiEmployee" xml:space="preserve">
+    <value>An Mitarbeiter</value>
+  </data>
+  <data name="ExternalCalibration_ExpiredRequireAuthentication" xml:space="preserve">
+    <value>Die externe Kalibrierung ist für die folgenden Geräte abgelaufen:<LF/>{0}<LF/>Wenn Sie den Test fortsetzen möchten, wählen Sie einen der verfügbaren Benutzernamen und geben Sie das Passwort ein.</value>
+    <comment>The list of user names will be filtered to only those with a high enough authentication level to continue.</comment>
+  </data>
+  <data name="ExternalCalibration_ExpiredRequireAuthenticationTitle" xml:space="preserve">
+    <value>Kalibrierung abgelaufen - Anmeldung erforderlich</value>
+  </data>
+  <data name="ExternalCalibration_WarnExpiresSoonRequireAuthentication" xml:space="preserve">
+    <value>Die externe Kalibrierung läuft unter {0} für die folgenden Instrumente aus:<LF/>{1}<LF/>Wenn Sie den Test fortsetzen möchten, wählen Sie Ihren Benutzernamen und geben Sie Ihr Passwort ein.</value>
+    <comment>All user names will be available.</comment>
+  </data>
+  <data name="ExternalCalibration_WarnExpiresSoonRequireAuthenticationTitle" xml:space="preserve">
+    <value>Bald ablaufende Kalibrierung - Anmeldung erforderlich</value>
+  </data>
+  <data name="LoadBoardDisplayName_None" xml:space="preserve">
+    <value> **keiner**</value>
+  </data>
+  <data name="LoadBoardDisplayName_RfMultiportClb" xml:space="preserve">
+    <value>RF-Multiport-Kalibrierungslastkarte</value>
+  </data>
+  <data name="LoadBoardDisplayName_TimingClb" xml:space="preserve">
+    <value>Timing-Kalibrierung Lastkarte</value>
+  </data>
+  <data name="LoadBoardDisplayName_Dc1to40Clb" xml:space="preserve">
+    <value>DC-Kalibrierungslastplatte (1-40)</value>
+  </data>
+  <data name="LoadBoardDisplayName_Dc41to80Clb" xml:space="preserve">
+    <value>DC-Kalibrierungslastplatte (41-80)</value>
+  </data>
+  <data name="LoadBoardDisplayName_DcSystemClb" xml:space="preserve">
+    <value>DC-Kalibrierungslastkarte</value>
+  </data>
+  <data name="LoadBoardDisplayName_MmWaveContinuityClb" xml:space="preserve">
+    <value>STS mmWave-Durchgangstest-Lastplatte</value>
+  </data>
+  <data name="LoadBoardDisplayName_RfWideDynamicRangeClb" xml:space="preserve">
+    <value>RF-Kalibrierungslastkarte mit großem Dynamikbereich für HMU</value>
+  </data>
+  <data name="LoadBoardDisplayName_Unknown" xml:space="preserve">
+    <value>{0} Kalibrierung Lastplatte</value>
+  </data>
+  <data name="CheckRfpmLoadBoardUsbConnection" xml:space="preserve">
+    <value>Überprüfen Sie die USB-Verbindung zwischen dem STS und dem NI RF Multiport Calibration Module</value>
+  </data>
+  <data name="DuplicatedSerialNumberInTestHeadClbLockCount" xml:space="preserve">
+    <value>Der CLB mit der Seriennummer {0} erscheint mehrfach in der Zählung der Ladeplattensperren.</value>
+  </data>
+  <data name="SystemLinkIntegrationDuplicateInstrumentId" xml:space="preserve">
+    <value>Beim Hinzufügen des Geräts {1} wurde festgestellt, dass die Geräte-ID {0} bereits zu SystemLinkIntegration hinzugefügt wurde.</value>
+  </data>
+  <data name="ExternalCalibration_InvalidExternalCalibrationInterval" xml:space="preserve">
+    <value>Wenn Sie ein ungültiges externes Kalibrierungsintervall haben, überprüfen Sie bitte die externen Kalibrierungsdaten und wenden Sie sich an NI, um Unterstützung zu erhalten.</value>
+  </data>
+  <data name="ActionButtonDisplayNameHighPowerRf" xml:space="preserve">
+    <value>RF-Sicherheitscheck für hohe Leistung</value>
+  </data>
+  <data name="ActionDisplayNameHighPowerRf" xml:space="preserve">
+    <value>RF-Sicherheitscheck für hohe Leistung</value>
+  </data>
+  <data name="FpgaOperationError" xml:space="preserve">
+    <value>FPGA C API Funktionsaufruffehler: {0}</value>
+  </data>
+  <data name="SandiaDriverNotInstalled" xml:space="preserve">
+    <value>Ein Hochleistungssteuergerät ist konfiguriert, aber der NI RMM-5545-Treiber wurde nicht gefunden oder ist nicht installiert.</value>
+  </data>
+  <data name="SandiaBitfileNotExist" xml:space="preserve">
+    <value>Die in der Registrierung angegebene NI RMM-5545-Bitdatei ist auf der Festplatte nicht vorhanden.</value>
+  </data>
+  <data name="UnexpectedSandiaHealthMonitoringError" xml:space="preserve">
+    <value>Unerwarteter Fehler bei der Durchführung der NI RMM-5545-Zustandsüberwachung: {0}.</value>
+  </data>
+  <data name="SandiaAuxPowerSupplyConfiguredError" xml:space="preserve">
+    <value>AuxPowerSupply: {0} verwendet von NI RMM-5545 RF SubSystem {1} wird in STS_Defintion.xml konfiguriert.</value>
+  </data>
+  <data name="Rio78xxCalDllError" xml:space="preserve">
+    <value>Unerwarteter Fehler {0} beim Aufruf von Funktionen der 78xxCal.dll: {1}.</value>
+  </data>
+  <data name="SandiaControlInstrumentModelError" xml:space="preserve">
+    <value>RF Subsystem #{0} hat eine hohe Leistung, aber sein Control Instrument Model ({1}) ist nicht PXIe-7862.</value>
+  </data>
+  <data name="LoadBoardDisplayName_SMxCLB_96" xml:space="preserve">
+    <value>STS-RF-5501 26,5GHz / 96 Anschluss RF-Kalibrierungsmodul</value>
+  </data>
+  <data name="LoadBoardDisplayName_SMxCLB_48_or_96" xml:space="preserve">
+    <value>STS-RF-5501 26,5GHz / 48 oder 96 Anschluss RF-Kalibrierungsmodul</value>
+  </data>
+  <data name="MM1CalibrationKit" xml:space="preserve">
+    <value>NI PXIe-5842 (54GHz) Kalibrierungskit</value>
+  </data>
+  <data name="SandiaHighPowerRfCalibrationKit" xml:space="preserve">
+    <value>NI RMM-5545 Hochleistungskalibrierungskit für RF</value>
+  </data>
+  <data name="ActionDisplayNameHighPowerRfAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>High Power RF Einstellen und Prüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameHighPowerRfContinuity" xml:space="preserve">
+    <value>RF-Kontinuität bei hoher Leistung</value>
+  </data>
+  <data name="ActionDisplayNameHighPowerRfVerifyAsLeft" xml:space="preserve">
+    <value>High Power RF Verify (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameRfVerifyAsLeft" xml:space="preserve">
+    <value>RF Verify (wie links)</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfVerifyAsLeft" xml:space="preserve">
+    <value>RF Verify (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionDisplayNameCoarseRfAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>Grobe RF-Einstellung und Überprüfung (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameCoarseRfVerifyAsFound" xml:space="preserve">
+    <value>Grobe RF-Prüfung (wie gefunden)</value>
+  </data>
+  <data name="ActionDisplayNameCoarseRfVerifyAsLeft" xml:space="preserve">
+    <value>Grobe RF-Überprüfung (wie links)</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>RF Einstellen &amp; Prüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionDisplayNameRfAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>RF Einstellen &amp; Prüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameHighPowerRfAdjust" xml:space="preserve">
+    <value>Kalibrierung von RF-Hochleistungssystemen</value>
+  </data>
+  <data name="ActionButtonDisplayNameHighPowerRfAdjust" xml:space="preserve">
+    <value>Kalibrierung von RF-Hochleistungssystemen Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameHighPowerRfAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>High Power RF Einstellen und Prüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameHighPowerRfContinuity" xml:space="preserve">
+    <value>Hochleistungs-RF-Kontinuität Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameHighPowerRfVerifyAsLeft" xml:space="preserve">
+    <value>High Power RF Verify (wie links) Alle Instrumente</value>
+  </data>
+  <data name="RfSubSystemExtrasSpecifier" xml:space="preserve">
+    <value>Mit</value>
+    <comment>This string will be added to the model of a 5842 subsystem.  There will be a line break between the model and this "extras" string.  In English, it will look like:
+NI 5842 54GHz
+with VNA</comment>
+  </data>
+  <data name="RfSubSystemWithHighPower" xml:space="preserve">
+    <value>{0}mit hoher Leistung</value>
+    <comment>This string will be added to the model of a 5842 subsystem.  There will be a line break between the model and the translated part.  In English, it will look like:
+NI 5842 54GHz
+with High Power</comment>
+  </data>
+  <data name="RfSubSystemWithVNA" xml:space="preserve">
+    <value>VNA</value>
+    <comment>This string will be added to the model of a 5842 subsystem.  There will be a comma separated (if multiple extras) list of "extras" in the subsystem.  In English, it will look like:
+NI 5842 54GHz
+with VNA (Vector Network Analyzer)</comment>
+  </data>
+  <data name="RfSubSystemWithBandA" xml:space="preserve">
+    <value>,{0}Band A</value>
+    <comment>This string will be added to the model of a 5842 subsystem.  There will be a comma separated (if multiple extras) list of "extras" in the subsystem.  In English, it will look like:
+NI 5842 26.5GHz
+with VNA (Vector Network Analyzer),
+Band A</comment>
+  </data>
+  <data name="RfSubSystemWithBandB" xml:space="preserve">
+    <value>,{0}Band B</value>
+    <comment>This string will be added to the model of a 5842 subsystem.  There will be a comma separated (if multiple extras) list of "extras" in the subsystem.  In English, it will look like:
+NI 5842 26.5GHz
+with VNA (Vector Network Analyzer),
+Band B</comment>
+  </data>
+  <data name="RfSubSystemWithBandC" xml:space="preserve">
+    <value>,{0}Band C</value>
+    <comment>This string will be added to the model of a 5842 subsystem.  There will be a comma separated (if multiple extras) list of "extras" in the subsystem.  In English, it will look like:
+NI 5842 26.5GHz
+with VNA (Vector Network Analyzer),
+Band C</comment>
+  </data>
+  <data name="ActionButtonDisplayNameSParameterPowerAdjust" xml:space="preserve">
+    <value>S-Parameter Leistungsanpassung</value>
+  </data>
+  <data name="ActionDisplayNameSParameterPowerAdjust" xml:space="preserve">
+    <value>S-Parameter Leistungsanpassung</value>
+  </data>
+  <data name="InvalidConnectionWhenInstrumentsPresent" xml:space="preserve">
+    <value>Der Anschluss an die Position {0} ist nicht zulässig, wenn die folgenden Instrumente im System vorhanden sind: {1}</value>
+  </data>
+  <data name="Rf5842VstVariantMismatch" xml:space="preserve">
+    <value>RF 5842 Subsystem VSTVariant attribute in PXI_Definition.xml mismatch: found {0}, expected {1}.</value>
+  </data>
+  <data name="Rf5842Rainier1CVstVariantNotConfigured" xml:space="preserve">
+    <value>Eine {0} VST-Variante wurde im RF 5842 Subsystem {1} erkannt, aber das Attribut VstVariant="{2}" wurde in PXI_Definition.xml nicht gesetzt.</value>
+    <comment>{0} and {2} will be the VST Variant such as "26.5GHz" or "8GHz" and {1} will be the RF Subsystem Number.</comment>
+  </data>
+  <data name="Rf5842UnsupportedVstVariant" xml:space="preserve">
+    <value>Eine nicht unterstützte VST-Variante (Feature-IDs: {0}) wurde in einem RF 5842 Subsystem entdeckt. Unterstützte Varianten sind: {1}</value>
+    <comment>{0} will be a comma separated list of feature IDs returned from syscfg api and {1} will be a comma separated list of supported VST Variants, eg "8GHz, 23GHz, 26.5GHz".</comment>
+  </data>
+  <data name="LoadBoardDirection_Back" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="LoadBoardDirection_Front" xml:space="preserve">
+    <value>Vorderseite</value>
+  </data>
+  <data name="LoadBoardDirection_Left" xml:space="preserve">
+    <value>Ausgeschieden</value>
+  </data>
+  <data name="LoadBoardDirection_Right" xml:space="preserve">
+    <value>Rechts</value>
+  </data>
+  <data name="LoadBoardRotationRequired" xml:space="preserve">
+    <value>Die aktuelle Ladetafel muss gedreht werden, bevor es weitergeht.</value>
+  </data>
+  <data name="LoadBoardRotationRequiredMessage" xml:space="preserve">
+    <value>Bitte drehen Sie die Lastplatine so, dass die {0} der Lastplatine zur {1} des Testers zeigt.</value>
+  </data>
+  <data name="LoadBoardRotationRequiredTitle" xml:space="preserve">
+    <value>Rotation der Ladefläche erforderlich</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfVectorSystemAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektorsystem Einstellen und Überprüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfVectorSystemVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektorsystem überprüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfVectorUserAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektor Benutzerdefiniert Einstellen und Prüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfVectorUserVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektor Benutzerdefiniert Überprüfen (wie links) Alle Instrumente</value>
+  </data>
+  <data name="ActionDisplayNameRfVectorSystemAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektorsystem einstellen und überprüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameRfVectorSystemVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektorsystem überprüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameRfVectorUserAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektor Benutzerdefiniert Einstellen &amp; Überprüfen (wie links)</value>
+  </data>
+  <data name="ActionDisplayNameRfVectorUserVerifyAsLeft" xml:space="preserve">
+    <value>RF-Vektor Benutzerdefinierte Verifizierung (wie links)</value>
+  </data>
+  <data name="Rf5842Rmm5546DcInstrumentAlias" xml:space="preserve">
+    <value>DC_INSTRUMENT_ALIAS</value>
+  </data>
+  <data name="Rf5842Rmm5546InvalidConnectionCount" xml:space="preserve">
+    <value>Das RF-Subsystem mit VST {0} erfordert zwei DC-Verbindungen, die in STS_Definition.xml mit dem folgenden Format definiert sind:<LF/>{1}<LF/>wobei {2} die Kanalnummer des DC-Instruments und {3} die Anschlussnummer des RMM-5546 ist. {4} muss 0 oder 1 sein.</value>
+    <comment>The error message will look like the following in English:
+The The RF subsystem with VST {0} requires two DC Connections defined in STS_Definition.xml with the following format:
+"&lt;Internal Instrument="[DC_INSTRUMENT_ALIAS]" CablePartNumber="" Channel="ChannelX" DestinationInstrument="[VST_ALIAS]" DestinationChannel="DcConnectionY" /&gt;"
+where X is the DC Instrument channel number and Y is the connection number on the RMM-5546. Y must be 0 or 1.</comment>
+  </data>
+  <data name="Rf5842Rmm5546VstAlias" xml:space="preserve">
+    <value>VST_ALIAS</value>
+  </data>
+  <data name="Rmm5546SiloBandAttributeMismatch" xml:space="preserve">
+    <value>Die Attributeigenschaft für das RMM-5546 im Subsystem '{0}' lautet: {1}, aber die Hardware meldet den Wert: {2}. Überprüfen Sie, ob alle Hardware richtig angeschlossen ist und ob das Siloband in der Datei PXI_Definition.xml korrekt definiert ist.</value>
+  </data>
+  <data name="ActionButtonDisplayNameCoarseRfAdjustAndVerifyAsLeft" xml:space="preserve">
+    <value>Grobe RF-Einstellung und Überprüfung (wie links)</value>
+  </data>
+  <data name="ActionButtonDisplayNameCoarseRfVerifyAsFound" xml:space="preserve">
+    <value>Grobe RF-Prüfung (wie gefunden)</value>
+  </data>
+  <data name="ActionButtonDisplayNameCoarseRfVerifyAsLeft" xml:space="preserve">
+    <value>Grobe RF-Überprüfung (wie links)</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfVectorSystemAdjust" xml:space="preserve">
+    <value>RF-Vektor-System einstellen</value>
+  </data>
+  <data name="ActionButtonDisplayNameRfVectorUserAdjust" xml:space="preserve">
+    <value>RF-Vektor Benutzerdefinierte Einstellung</value>
+  </data>
+  <data name="ActionDisplayNameRfVectorSystemAdjust" xml:space="preserve">
+    <value>RF-Vektor-System einstellen</value>
+  </data>
+  <data name="ActionDisplayNameRfVectorUserAdjust" xml:space="preserve">
+    <value>RF-Vektor Benutzerdefinierte Einstellung</value>
+  </data>
+</root>

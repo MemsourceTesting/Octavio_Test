@@ -1338,7 +1338,7 @@
     <value>L'association "{0}" n'est pas autorisé pour le sous-système "{1}". Utilisez le NI PXIe-5831 dans le sous-système pour les mesures harmoniques.</value>
   </data>
   <data name="AssociationInstrumentNotFoundInInstruments" xml:space="preserve">
-    <value>L'instrument avec l'alias d'utilisateur "{0}" n'a pas été trouvé dans les instruments spécifiés.</value>
+    <value>L'instrument avec l'alias utilisateur "{0}" n'a pas été trouvé dans les instruments spécifiés.</value>
   </data>
   <data name="DuplicateInstrumentSlotNumberInChassis" xml:space="preserve">
     <value>Le châssis "{0}" a plus d'un instrument dans l'emplacement {1}.</value>
